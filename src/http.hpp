@@ -4,6 +4,8 @@ extern "C" {
 #include "mongoose.h"
 }
 
+#include <map>
+
 namespace http {
     /**
      * Event handler function type
@@ -52,10 +54,17 @@ namespace http {
          */
         void set_serve_dir(const char *dir, bool is_listing);
 
+        /**
+         * Retrieves mongoose HTTP options.
+         * @return pointer to options structure.
+         */
+        const struct mg_serve_http_opts* get_http_options() const;
+
         private:
         struct mg_mgr manager;
         struct mg_connection *conn;
 
+        struct mg_serve_http_opts http_options;
         int max_sleep;
         const char *serve_dir;
     };

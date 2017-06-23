@@ -1,0 +1,1108 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/1bbb18a8/
+ARRAY_SIZE	3pp\\mongoose-6.8\\mongoose.h	/^#define ARRAY_SIZE(/;"	d
+BASE64_ENCODE_BODY	3pp\\mongoose-6.8\\mongoose.c	/^#define BASE64_ENCODE_BODY /;"	d	file:
+BASE64_FLUSH	3pp\\mongoose-6.8\\mongoose.c	/^#define BASE64_FLUSH(/;"	d	file:
+BASE64_OUT	3pp\\mongoose-6.8\\mongoose.c	/^#define BASE64_OUT(/;"	d	file:
+BIG_ENDIAN	3pp\\mongoose-6.8\\mongoose.c	/^#define BIG_ENDIAN /;"	d	file:
+BIG_ENDIAN	3pp\\mongoose-6.8\\mongoose.h	/^#define BIG_ENDIAN /;"	d
+BYTE_ORDER	3pp\\mongoose-6.8\\mongoose.c	/^#define BYTE_ORDER /;"	d	file:
+BYTE_ORDER	3pp\\mongoose-6.8\\mongoose.h	/^#define BYTE_ORDER /;"	d
+CONSOLE_UART	3pp\\mongoose-6.8\\mongoose.c	/^#define CONSOLE_UART /;"	d	file:
+CONTENT_DISPOSITION	3pp\\mongoose-6.8\\mongoose.c	/^#define CONTENT_DISPOSITION /;"	d	file:
+CS_COMMON_CS_DBG_H_	3pp\\mongoose-6.8\\mongoose.c	/^#define CS_COMMON_CS_DBG_H_$/;"	d	file:
+CS_COMMON_CS_DIRENT_H_	3pp\\mongoose-6.8\\mongoose.c	/^#define CS_COMMON_CS_DIRENT_H_$/;"	d	file:
+CS_COMMON_CS_ENDIAN_H_	3pp\\mongoose-6.8\\mongoose.c	/^#define CS_COMMON_CS_ENDIAN_H_$/;"	d	file:
+CS_COMMON_MG_MEM_H_	3pp\\mongoose-6.8\\mongoose.c	/^#define CS_COMMON_MG_MEM_H_$/;"	d	file:
+CS_COMMON_PLATFORMS_LWIP_MG_NET_IF_LWIP_H_	3pp\\mongoose-6.8\\mongoose.c	/^#define CS_COMMON_PLATFORMS_LWIP_MG_NET_IF_LWIP_H_$/;"	d	file:
+CS_COMMON_PLATFORMS_PIC32_NET_IF_H_	3pp\\mongoose-6.8\\mongoose.c	/^#define CS_COMMON_PLATFORMS_PIC32_NET_IF_H_$/;"	d	file:
+CS_COMMON_PLATFORMS_PLATFORM_CC3100_H_	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_COMMON_PLATFORMS_PLATFORM_CC3100_H_$/;"	d
+CS_COMMON_PLATFORMS_PLATFORM_CC3200_H_	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_COMMON_PLATFORMS_PLATFORM_CC3200_H_$/;"	d
+CS_COMMON_PLATFORMS_PLATFORM_ESP32_H_	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_COMMON_PLATFORMS_PLATFORM_ESP32_H_$/;"	d
+CS_COMMON_PLATFORMS_PLATFORM_ESP8266_H_	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_COMMON_PLATFORMS_PLATFORM_ESP8266_H_$/;"	d
+CS_COMMON_PLATFORMS_PLATFORM_MSP432_H_	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_COMMON_PLATFORMS_PLATFORM_MSP432_H_$/;"	d
+CS_COMMON_PLATFORMS_PLATFORM_TM4C129_H_	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_COMMON_PLATFORMS_PLATFORM_TM4C129_H_$/;"	d
+CS_COMMON_PLATFORMS_PLATFORM_UNIX_H_	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_COMMON_PLATFORMS_PLATFORM_UNIX_H_$/;"	d
+CS_COMMON_PLATFORMS_PLATFORM_WINDOWS_H_	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_COMMON_PLATFORMS_PLATFORM_WINDOWS_H_$/;"	d
+CS_COMMON_PLATFORMS_SIMPLELINK_SL_FS_SLFS_H_	3pp\\mongoose-6.8\\mongoose.c	/^#define CS_COMMON_PLATFORMS_SIMPLELINK_SL_FS_SLFS_H_$/;"	d	file:
+CS_COMMON_PLATFORMS_SIMPLELINK_SL_NET_IF_H_	3pp\\mongoose-6.8\\mongoose.c	/^#define CS_COMMON_PLATFORMS_SIMPLELINK_SL_NET_IF_H_$/;"	d	file:
+CS_COMMON_PLATFORM_H_	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_COMMON_PLATFORM_H_$/;"	d
+CS_DEFINE_DIRENT	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_DEFINE_DIRENT$/;"	d
+CS_ENABLE_DEBUG	3pp\\mongoose-6.8\\mongoose.c	/^#define CS_ENABLE_DEBUG /;"	d	file:
+CS_ENABLE_STDIO	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_ENABLE_STDIO /;"	d
+CS_LOG_ENABLE_TS_DIFF	3pp\\mongoose-6.8\\mongoose.c	/^#define CS_LOG_ENABLE_TS_DIFF /;"	d	file:
+CS_MONGOOSE_SRC_COMMON_H_	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_MONGOOSE_SRC_COMMON_H_$/;"	d
+CS_MONGOOSE_SRC_INTERNAL_H_	3pp\\mongoose-6.8\\mongoose.c	/^#define CS_MONGOOSE_SRC_INTERNAL_H_$/;"	d	file:
+CS_MONGOOSE_SRC_NET_IF_SOCKET_H_	3pp\\mongoose-6.8\\mongoose.c	/^#define CS_MONGOOSE_SRC_NET_IF_SOCKET_H_$/;"	d	file:
+CS_MONGOOSE_SRC_NET_IF_TUN_H_	3pp\\mongoose-6.8\\mongoose.c	/^#define CS_MONGOOSE_SRC_NET_IF_TUN_H_$/;"	d	file:
+CS_MONGOOSE_SRC_TUN_H_	3pp\\mongoose-6.8\\mongoose.c	/^#define CS_MONGOOSE_SRC_TUN_H_$/;"	d	file:
+CS_PLATFORM	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_PLATFORM /;"	d
+CS_P_CC3100	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_CC3100 /;"	d
+CS_P_CC3200	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_CC3200 /;"	d
+CS_P_CUSTOM	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_CUSTOM /;"	d
+CS_P_ESP32	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_ESP32 /;"	d
+CS_P_ESP8266	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_ESP8266 /;"	d
+CS_P_MBED	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_MBED /;"	d
+CS_P_MSP432	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_MSP432 /;"	d
+CS_P_NRF51	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_NRF51 /;"	d
+CS_P_NRF52	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_NRF52 /;"	d
+CS_P_NXP_KINETIS	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_NXP_KINETIS /;"	d
+CS_P_NXP_LPC	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_NXP_LPC /;"	d
+CS_P_PIC32	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_PIC32 /;"	d
+CS_P_STM32	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_STM32 /;"	d
+CS_P_TM4C129	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_TM4C129 /;"	d
+CS_P_UNIX	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_UNIX /;"	d
+CS_P_WINCE	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_WINCE /;"	d
+CS_P_WINDOWS	3pp\\mongoose-6.8\\mongoose.h	/^#define CS_P_WINDOWS /;"	d
+C_DISABLE_BUILTIN_SNPRINTF	3pp\\mongoose-6.8\\mongoose.c	/^#define C_DISABLE_BUILTIN_SNPRINTF /;"	d	file:
+C_SNPRINTF_APPEND_CHAR	3pp\\mongoose-6.8\\mongoose.c	/^#define C_SNPRINTF_APPEND_CHAR(/;"	d	file:
+C_SNPRINTF_FLAG_ZERO	3pp\\mongoose-6.8\\mongoose.c	/^#define C_SNPRINTF_FLAG_ZERO /;"	d	file:
+DATA_FILE	3pp\\mongoose-6.8\\mongoose.c	/^enum mg_http_proto_data_type { DATA_NONE, DATA_FILE, DATA_PUT };$/;"	e	enum:mg_http_proto_data_type	file:
+DATA_NONE	3pp\\mongoose-6.8\\mongoose.c	/^enum mg_http_proto_data_type { DATA_NONE, DATA_FILE, DATA_PUT };$/;"	e	enum:mg_http_proto_data_type	file:
+DATA_PUT	3pp\\mongoose-6.8\\mongoose.c	/^enum mg_http_proto_data_type { DATA_NONE, DATA_FILE, DATA_PUT };$/;"	e	enum:mg_http_proto_data_type	file:
+DBG	3pp\\mongoose-6.8\\mongoose.c	/^#define DBG(/;"	d	file:
+DIR	3pp\\mongoose-6.8\\mongoose.c	/^typedef struct { int dummy; } DIR;$/;"	t	typeref:struct:__anonfd0a45780108	file:
+DIRSEP	3pp\\mongoose-6.8\\mongoose.h	/^#define DIRSEP /;"	d
+DO_NOT_WARN_UNUSED	3pp\\mongoose-6.8\\mongoose.h	/^#define DO_NOT_WARN_UNUSED /;"	d
+DO_NOT_WARN_UNUSED	3pp\\mongoose-6.8\\mongoose.h	/^#define DO_NOT_WARN_UNUSED$/;"	d
+EINPROGRESS	3pp\\mongoose-6.8\\mongoose.h	/^#define EINPROGRESS /;"	d
+EWOULDBLOCK	3pp\\mongoose-6.8\\mongoose.h	/^#define EWOULDBLOCK /;"	d
+F1	3pp\\mongoose-6.8\\mongoose.c	/^#define F1(/;"	d	file:
+F2	3pp\\mongoose-6.8\\mongoose.c	/^#define F2(/;"	d	file:
+F3	3pp\\mongoose-6.8\\mongoose.c	/^#define F3(/;"	d	file:
+F4	3pp\\mongoose-6.8\\mongoose.c	/^#define F4(/;"	d	file:
+FD_INVALID	3pp\\mongoose-6.8\\mongoose.c	/^  FD_INVALID,$/;"	e	enum:fd_type	file:
+FD_SLFS	3pp\\mongoose-6.8\\mongoose.c	/^  FD_SLFS$/;"	e	enum:fd_type	file:
+FD_SPIFFS	3pp\\mongoose-6.8\\mongoose.c	/^  FD_SPIFFS,$/;"	e	enum:fd_type	file:
+FD_SYS	3pp\\mongoose-6.8\\mongoose.c	/^  FD_SYS,$/;"	e	enum:fd_type	file:
+FS_SLFS_MAX_FILE_SIZE	3pp\\mongoose-6.8\\mongoose.c	/^#define FS_SLFS_MAX_FILE_SIZE /;"	d	file:
+HEXTOI	3pp\\mongoose-6.8\\mongoose.c	/^#define HEXTOI(/;"	d	file:
+HOSTtime	3pp\\mongoose-6.8\\mongoose.c	/^time_t HOSTtime() {$/;"	f	typeref:typename:time_t
+INT64_FMT	3pp\\mongoose-6.8\\mongoose.h	/^#define INT64_FMT /;"	d
+INT64_X_FMT	3pp\\mongoose-6.8\\mongoose.h	/^#define INT64_X_FMT /;"	d
+INVALID_SOCKET	3pp\\mongoose-6.8\\mongoose.h	/^#define INVALID_SOCKET /;"	d
+IPADDR_NTOA	3pp\\mongoose-6.8\\mongoose.c	/^#define IPADDR_NTOA /;"	d	file:
+IPADDR_NTOA	3pp\\mongoose-6.8\\mongoose.c	/^#define IPADDR_NTOA(/;"	d	file:
+LITTLE_ENDIAN	3pp\\mongoose-6.8\\mongoose.c	/^#define LITTLE_ENDIAN /;"	d	file:
+LITTLE_ENDIAN	3pp\\mongoose-6.8\\mongoose.h	/^#define LITTLE_ENDIAN /;"	d
+LL_DEBUG	3pp\\mongoose-6.8\\mongoose.c	/^  LL_DEBUG = 3,$/;"	e	enum:cs_log_level	file:
+LL_ERROR	3pp\\mongoose-6.8\\mongoose.c	/^  LL_ERROR = 0,$/;"	e	enum:cs_log_level	file:
+LL_INFO	3pp\\mongoose-6.8\\mongoose.c	/^  LL_INFO = 2,$/;"	e	enum:cs_log_level	file:
+LL_NONE	3pp\\mongoose-6.8\\mongoose.c	/^  LL_NONE = -1,$/;"	e	enum:cs_log_level	file:
+LL_VERBOSE_DEBUG	3pp\\mongoose-6.8\\mongoose.c	/^  LL_VERBOSE_DEBUG = 4,$/;"	e	enum:cs_log_level	file:
+LL_WARN	3pp\\mongoose-6.8\\mongoose.c	/^  LL_WARN = 1,$/;"	e	enum:cs_log_level	file:
+LOG	3pp\\mongoose-6.8\\mongoose.c	/^#define LOG(/;"	d	file:
+LWIP_TIMEVAL_PRIVATE	3pp\\mongoose-6.8\\mongoose.h	/^#define LWIP_TIMEVAL_PRIVATE /;"	d
+MAX	3pp\\mongoose-6.8\\mongoose.c	/^#define MAX(/;"	d	file:
+MAX_OPEN_SLFS_FILES	3pp\\mongoose-6.8\\mongoose.c	/^#define MAX_OPEN_SLFS_FILES /;"	d	file:
+MBUF_FREE	3pp\\mongoose-6.8\\mongoose.c	/^#define MBUF_FREE /;"	d	file:
+MBUF_REALLOC	3pp\\mongoose-6.8\\mongoose.c	/^#define MBUF_REALLOC /;"	d	file:
+MD5STEP	3pp\\mongoose-6.8\\mongoose.c	/^#define MD5STEP(/;"	d	file:
+MG_CALLOC	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_CALLOC /;"	d	file:
+MG_COPY_COMMON_CONNECTION_OPTIONS	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_COPY_COMMON_CONNECTION_OPTIONS(/;"	d	file:
+MG_CTL_MSG_MESSAGE_SIZE	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_CTL_MSG_MESSAGE_SIZE /;"	d	file:
+MG_DEFAULT_NAMESERVER	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_DEFAULT_NAMESERVER /;"	d	file:
+MG_DISABLE_PFS	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_DISABLE_PFS$/;"	d	file:
+MG_ENABLE_BROADCAST	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_ENABLE_BROADCAST /;"	d
+MG_ENABLE_DIRECTORY_LISTING	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_ENABLE_DIRECTORY_LISTING /;"	d
+MG_ENABLE_FILESYSTEM	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_ENABLE_FILESYSTEM /;"	d
+MG_ENABLE_HTTP_CGI	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_ENABLE_HTTP_CGI /;"	d
+MG_ENABLE_NET_IF_LWIP_LOW_LEVEL	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_ENABLE_NET_IF_LWIP_LOW_LEVEL /;"	d	file:
+MG_ENABLE_NET_IF_PIC32	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_ENABLE_NET_IF_PIC32 /;"	d	file:
+MG_ENABLE_NET_IF_SIMPLELINK	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_ENABLE_NET_IF_SIMPLELINK /;"	d	file:
+MG_ENABLE_NET_IF_SOCKET	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_ENABLE_NET_IF_SOCKET /;"	d	file:
+MG_ENV_EXPORT_TO_CGI	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_ENV_EXPORT_TO_CGI /;"	d	file:
+MG_FREE	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_FREE /;"	d	file:
+MG_FS_SLFS	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_FS_SLFS$/;"	d
+MG_HOSTS_FILE_NAME	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_HOSTS_FILE_NAME /;"	d
+MG_INTERNAL	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_INTERNAL /;"	d	file:
+MG_LWIP	3pp\\mongoose-6.8\\mongoose.h	/^#  define MG_LWIP /;"	d
+MG_LWIP	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_LWIP /;"	d
+MG_LWIP_IFACE_VTABLE	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_LWIP_IFACE_VTABLE /;"	d	file:
+MG_LWIP_SSL_IO_SIZE	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_LWIP_SSL_IO_SIZE /;"	d	file:
+MG_LWIP_SSL_RECV_MBUF_LIMIT	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_LWIP_SSL_RECV_MBUF_LIMIT /;"	d	file:
+MG_MALLOC	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_MALLOC /;"	d	file:
+MG_MAX_CGI_ENVIR_VARS	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_MAX_CGI_ENVIR_VARS /;"	d	file:
+MG_MAX_HOST_LEN	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_MAX_HOST_LEN /;"	d	file:
+MG_MAX_HTTP_HEADERS	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_MAX_HTTP_HEADERS /;"	d
+MG_MAX_HTTP_REQUEST_SIZE	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_MAX_HTTP_REQUEST_SIZE /;"	d
+MG_MAX_HTTP_SEND_MBUF	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_MAX_HTTP_SEND_MBUF /;"	d
+MG_NET_IF	3pp\\mongoose-6.8\\mongoose.h	/^#    define MG_NET_IF /;"	d
+MG_NET_IF	3pp\\mongoose-6.8\\mongoose.h	/^#  define MG_NET_IF /;"	d
+MG_NET_IF	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_NET_IF /;"	d
+MG_NET_IF_LWIP_LOW_LEVEL	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_NET_IF_LWIP_LOW_LEVEL /;"	d
+MG_NET_IF_PIC32	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_NET_IF_PIC32 /;"	d
+MG_NET_IF_SIMPLELINK	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_NET_IF_SIMPLELINK /;"	d
+MG_NET_IF_SOCKET	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_NET_IF_SOCKET /;"	d
+MG_PIC32_IFACE_VTABLE	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_PIC32_IFACE_VTABLE /;"	d	file:
+MG_Q_MSG_CB	3pp\\mongoose-6.8\\mongoose.c	/^  MG_Q_MSG_CB,$/;"	e	enum:mg_q_msg_type	file:
+MG_REALLOC	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_REALLOC /;"	d	file:
+MG_RESOLV_CONF_FILE_NAME	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_RESOLV_CONF_FILE_NAME /;"	d
+MG_SET_PTRPTR	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_SET_PTRPTR(/;"	d	file:
+MG_SIG_ACCEPT	3pp\\mongoose-6.8\\mongoose.c	/^  MG_SIG_ACCEPT = 5,$/;"	e	enum:mg_sig_type	file:
+MG_SIG_CLOSE_CONN	3pp\\mongoose-6.8\\mongoose.c	/^  MG_SIG_CLOSE_CONN = 3,$/;"	e	enum:mg_sig_type	file:
+MG_SIG_CONNECT_RESULT	3pp\\mongoose-6.8\\mongoose.c	/^  MG_SIG_CONNECT_RESULT = 1,$/;"	e	enum:mg_sig_type	file:
+MG_SIG_QUEUE_LEN	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_SIG_QUEUE_LEN /;"	d	file:
+MG_SIG_RECV	3pp\\mongoose-6.8\\mongoose.c	/^  MG_SIG_RECV = 2,$/;"	e	enum:mg_sig_type	file:
+MG_SIG_TOMBSTONE	3pp\\mongoose-6.8\\mongoose.c	/^  MG_SIG_TOMBSTONE = 4,$/;"	e	enum:mg_sig_type	file:
+MG_SL_IFACE_VTABLE	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_SL_IFACE_VTABLE /;"	d	file:
+MG_SOCKET_IFACE_VTABLE	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_SOCKET_IFACE_VTABLE /;"	d	file:
+MG_SSL_IF	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_SSL_IF /;"	d
+MG_SSL_IF_MBEDTLS	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_SSL_IF_MBEDTLS /;"	d
+MG_SSL_IF_OPENSSL	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_SSL_IF_OPENSSL /;"	d
+MG_SSL_IF_SIMPLELINK	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_SSL_IF_SIMPLELINK /;"	d
+MG_TCP_RECV_BUFFER_SIZE	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_TCP_RECV_BUFFER_SIZE /;"	d	file:
+MG_TUN_DATA_FRAME	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_TUN_DATA_FRAME /;"	d	file:
+MG_TUN_F_END_STREAM	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_TUN_F_END_STREAM /;"	d	file:
+MG_TUN_IFACE_VTABLE	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_TUN_IFACE_VTABLE /;"	d	file:
+MG_TUN_PROTO_NAME	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_TUN_PROTO_NAME /;"	d	file:
+MG_TUN_RECONNECT_INTERVAL	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_TUN_RECONNECT_INTERVAL /;"	d	file:
+MG_UART_CHAR_PUT	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_UART_CHAR_PUT(/;"	d	file:
+MG_UART_WRITE	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_UART_WRITE(/;"	d	file:
+MG_UDP_RECV_BUFFER_SIZE	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_UDP_RECV_BUFFER_SIZE /;"	d	file:
+MG_VERSION	3pp\\mongoose-6.8\\mongoose.h	/^#define MG_VERSION /;"	d
+MG_WEBSOCKET_PING_INTERVAL_SECONDS	3pp\\mongoose-6.8\\mongoose.c	/^#define MG_WEBSOCKET_PING_INTERVAL_SECONDS /;"	d	file:
+MIME_ENTRY	3pp\\mongoose-6.8\\mongoose.c	/^#define MIME_ENTRY(/;"	d	file:
+MIN	3pp\\mongoose-6.8\\mongoose.c	/^#define MIN(/;"	d	file:
+MPS_BEGIN	3pp\\mongoose-6.8\\mongoose.c	/^  MPS_BEGIN,$/;"	e	enum:mg_http_multipart_stream_state	file:
+MPS_FINALIZE	3pp\\mongoose-6.8\\mongoose.c	/^  MPS_FINALIZE,$/;"	e	enum:mg_http_multipart_stream_state	file:
+MPS_FINISHED	3pp\\mongoose-6.8\\mongoose.c	/^  MPS_FINISHED$/;"	e	enum:mg_http_multipart_stream_state	file:
+MPS_GOT_BOUNDARY	3pp\\mongoose-6.8\\mongoose.c	/^  MPS_GOT_BOUNDARY,$/;"	e	enum:mg_http_multipart_stream_state	file:
+MPS_GOT_CHUNK	3pp\\mongoose-6.8\\mongoose.c	/^  MPS_GOT_CHUNK,$/;"	e	enum:mg_http_multipart_stream_state	file:
+MPS_WAITING_FOR_BOUNDARY	3pp\\mongoose-6.8\\mongoose.c	/^  MPS_WAITING_FOR_BOUNDARY,$/;"	e	enum:mg_http_multipart_stream_state	file:
+MPS_WAITING_FOR_CHUNK	3pp\\mongoose-6.8\\mongoose.c	/^  MPS_WAITING_FOR_CHUNK,$/;"	e	enum:mg_http_multipart_stream_state	file:
+NOINLINE	3pp\\mongoose-6.8\\mongoose.h	/^#define NOINLINE /;"	d
+NOINLINE	3pp\\mongoose-6.8\\mongoose.h	/^#define NOINLINE$/;"	d
+NOINSTR	3pp\\mongoose-6.8\\mongoose.h	/^#define NOINSTR /;"	d
+NOINSTR	3pp\\mongoose-6.8\\mongoose.h	/^#define NOINSTR$/;"	d
+NORETURN	3pp\\mongoose-6.8\\mongoose.h	/^#define NORETURN /;"	d
+NORETURN	3pp\\mongoose-6.8\\mongoose.h	/^#define NORETURN$/;"	d
+NO_LIBC	3pp\\mongoose-6.8\\mongoose.c	/^#define NO_LIBC$/;"	d	file:
+NUM_DIGITS	3pp\\mongoose-6.8\\mongoose.c	/^#define NUM_DIGITS /;"	d	file:
+NUM_LETTERS	3pp\\mongoose-6.8\\mongoose.c	/^#define NUM_LETTERS /;"	d	file:
+NUM_SYS_FDS	3pp\\mongoose-6.8\\mongoose.c	/^#define NUM_SYS_FDS /;"	d	file:
+NUM_UPPERCASES	3pp\\mongoose-6.8\\mongoose.c	/^#define NUM_UPPERCASES /;"	d	file:
+PDP_ENDIAN	3pp\\mongoose-6.8\\mongoose.h	/^#define PDP_ENDIAN /;"	d
+P_HOST	3pp\\mongoose-6.8\\mongoose.c	/^    P_HOST,$/;"	e	enum:mg_parse_uri::__anonfd0a45780203	file:
+P_PORT	3pp\\mongoose-6.8\\mongoose.c	/^    P_PORT,$/;"	e	enum:mg_parse_uri::__anonfd0a45780203	file:
+P_REST	3pp\\mongoose-6.8\\mongoose.c	/^    P_REST$/;"	e	enum:mg_parse_uri::__anonfd0a45780203	file:
+P_SCHEME_OR_PORT	3pp\\mongoose-6.8\\mongoose.c	/^    P_SCHEME_OR_PORT,$/;"	e	enum:mg_parse_uri::__anonfd0a45780203	file:
+P_START	3pp\\mongoose-6.8\\mongoose.c	/^    P_START,$/;"	e	enum:mg_parse_uri::__anonfd0a45780203	file:
+P_USER_INFO	3pp\\mongoose-6.8\\mongoose.c	/^    P_USER_INFO,$/;"	e	enum:mg_parse_uri::__anonfd0a45780203	file:
+R0	3pp\\mongoose-6.8\\mongoose.c	/^#define R0(/;"	d	file:
+R1	3pp\\mongoose-6.8\\mongoose.c	/^#define R1(/;"	d	file:
+R2	3pp\\mongoose-6.8\\mongoose.c	/^#define R2(/;"	d	file:
+R3	3pp\\mongoose-6.8\\mongoose.c	/^#define R3(/;"	d	file:
+R4	3pp\\mongoose-6.8\\mongoose.c	/^#define R4(/;"	d	file:
+SET_ADDR	3pp\\mongoose-6.8\\mongoose.c	/^#define SET_ADDR(/;"	d	file:
+SHA1HANDSOFF	3pp\\mongoose-6.8\\mongoose.c	/^#define SHA1HANDSOFF$/;"	d	file:
+SIZE_T_FMT	3pp\\mongoose-6.8\\mongoose.h	/^#define SIZE_T_FMT /;"	d
+SLFS_FD_BASE	3pp\\mongoose-6.8\\mongoose.c	/^#define SLFS_FD_BASE /;"	d	file:
+SNTP_ATTEMPTS	3pp\\mongoose-6.8\\mongoose.c	/^#define SNTP_ATTEMPTS /;"	d	file:
+SNTP_TIMEOUT	3pp\\mongoose-6.8\\mongoose.c	/^#define SNTP_TIMEOUT /;"	d	file:
+SNTP_TIME_OFFSET	3pp\\mongoose-6.8\\mongoose.c	/^#define SNTP_TIME_OFFSET /;"	d	file:
+SOMAXCONN	3pp\\mongoose-6.8\\mongoose.h	/^#define SOMAXCONN /;"	d
+SPIFFS_FD_BASE	3pp\\mongoose-6.8\\mongoose.c	/^#define SPIFFS_FD_BASE /;"	d	file:
+STR	3pp\\mongoose-6.8\\mongoose.h	/^#define STR(/;"	d
+STRX	3pp\\mongoose-6.8\\mongoose.h	/^#define STRX(/;"	d
+S_IFCHR	3pp\\mongoose-6.8\\mongoose.h	/^#define S_IFCHR /;"	d
+S_IFDIR	3pp\\mongoose-6.8\\mongoose.h	/^#define S_IFDIR /;"	d
+S_IFREG	3pp\\mongoose-6.8\\mongoose.h	/^#define S_IFREG /;"	d
+S_ISDIR	3pp\\mongoose-6.8\\mongoose.h	/^#define S_ISDIR(/;"	d
+S_ISREG	3pp\\mongoose-6.8\\mongoose.h	/^#define S_ISREG(/;"	d
+Server	src\\http.cpp	/^Server::Server() : Server(default_addr) {}$/;"	f	class:Server
+Server	src\\http.cpp	/^Server::Server(const char* addr) : max_sleep(1000) {$/;"	f	class:Server
+Server	src\\http.hpp	/^    class Server {$/;"	c	namespace:http
+TCP_BIND	3pp\\mongoose-6.8\\mongoose.c	/^#define TCP_BIND /;"	d	file:
+TCP_NEW	3pp\\mongoose-6.8\\mongoose.c	/^#define TCP_NEW /;"	d	file:
+UDP_BIND	3pp\\mongoose-6.8\\mongoose.c	/^#define UDP_BIND /;"	d	file:
+UINT16_MAX	3pp\\mongoose-6.8\\mongoose.h	/^#define UINT16_MAX /;"	d
+UINT32_MAX	3pp\\mongoose-6.8\\mongoose.h	/^#define UINT32_MAX /;"	d
+WARN_UNUSED_RESULT	3pp\\mongoose-6.8\\mongoose.h	/^#define WARN_UNUSED_RESULT /;"	d
+WARN_UNUSED_RESULT	3pp\\mongoose-6.8\\mongoose.h	/^#define WARN_UNUSED_RESULT$/;"	d
+WEAK	3pp\\mongoose-6.8\\mongoose.c	/^FILE *cs_log_file WEAK = NULL;$/;"	v	typeref:typename:FILE * cs_log_file
+WEAK	3pp\\mongoose-6.8\\mongoose.c	/^double cs_log_ts WEAK;$/;"	v	typeref:typename:double cs_log_ts
+WEAK	3pp\\mongoose-6.8\\mongoose.c	/^enum cs_log_level cs_log_cur_msg_level WEAK = LL_NONE;$/;"	v	typeref:enum:cs_log_level cs_log_cur_msg_level
+WEAK	3pp\\mongoose-6.8\\mongoose.c	/^enum cs_log_level cs_log_threshold WEAK =$/;"	v	typeref:enum:cs_log_level cs_log_threshold
+WEAK	3pp\\mongoose-6.8\\mongoose.h	/^#define WEAK /;"	d
+WEAK	3pp\\mongoose-6.8\\mongoose.h	/^#define WEAK$/;"	d
+_CRT_SECURE_NO_WARNINGS	3pp\\mongoose-6.8\\mongoose.h	/^#define _CRT_SECURE_NO_WARNINGS$/;"	d
+_FILE_OFFSET_BITS	3pp\\mongoose-6.8\\mongoose.h	/^#define _FILE_OFFSET_BITS /;"	d
+_LARGEFILE_SOURCE	3pp\\mongoose-6.8\\mongoose.h	/^#define _LARGEFILE_SOURCE$/;"	d
+_LL_MAX	3pp\\mongoose-6.8\\mongoose.c	/^  _LL_MAX = 5,$/;"	e	enum:cs_log_level	file:
+_LL_MIN	3pp\\mongoose-6.8\\mongoose.c	/^  _LL_MIN = -2,$/;"	e	enum:cs_log_level	file:
+_MG_ALLOWED_CONNECT_FLAGS_MASK	3pp\\mongoose-6.8\\mongoose.c	/^#define _MG_ALLOWED_CONNECT_FLAGS_MASK /;"	d	file:
+_MG_CALLBACK_MODIFIABLE_FLAGS_MASK	3pp\\mongoose-6.8\\mongoose.c	/^#define _MG_CALLBACK_MODIFIABLE_FLAGS_MASK /;"	d	file:
+_MG_F_FD_CAN_READ	3pp\\mongoose-6.8\\mongoose.c	/^#define _MG_F_FD_CAN_READ /;"	d	file:
+_MG_F_FD_CAN_WRITE	3pp\\mongoose-6.8\\mongoose.c	/^#define _MG_F_FD_CAN_WRITE /;"	d	file:
+_MG_F_FD_ERROR	3pp\\mongoose-6.8\\mongoose.c	/^#define _MG_F_FD_ERROR /;"	d	file:
+_WINSOCK_DEPRECATED_NO_WARNINGS	3pp\\mongoose-6.8\\mongoose.h	/^#define _WINSOCK_DEPRECATED_NO_WARNINGS /;"	d
+_XOPEN_SOURCE	3pp\\mongoose-6.8\\mongoose.h	/^#define _XOPEN_SOURCE /;"	d
+__STDC_FORMAT_MACROS	3pp\\mongoose-6.8\\mongoose.h	/^#define __STDC_FORMAT_MACROS$/;"	d
+__STDC_LIMIT_MACROS	3pp\\mongoose-6.8\\mongoose.h	/^#define __STDC_LIMIT_MACROS$/;"	d
+__S_IFCHR	3pp\\mongoose-6.8\\mongoose.h	/^#define __S_IFCHR /;"	d
+__S_IFDIR	3pp\\mongoose-6.8\\mongoose.h	/^#define __S_IFDIR /;"	d
+__S_IFMT	3pp\\mongoose-6.8\\mongoose.h	/^#define __S_IFMT /;"	d
+__S_IFREG	3pp\\mongoose-6.8\\mongoose.h	/^#define __S_IFREG /;"	d
+__S_ISTYPE	3pp\\mongoose-6.8\\mongoose.h	/^#define __S_ISTYPE(/;"	d
+__anonfd0a45780108	3pp\\mongoose-6.8\\mongoose.c	/^typedef struct { int dummy; } DIR;$/;"	s	file:
+__anonfd0a45780203	3pp\\mongoose-6.8\\mongoose.c	/^  enum {$/;"	g	function:mg_parse_uri	file:
+__anonfd0a45780308	3pp\\mongoose-6.8\\mongoose.c	/^static const struct {$/;"	s	file:
+__anonfd0a4578040a	3pp\\mongoose-6.8\\mongoose.c	/^  union {$/;"	u	struct:mg_lwip_conn_state	file:
+__cdecl	3pp\\mongoose-6.8\\mongoose.h	/^#define __cdecl$/;"	d
+__func__	3pp\\mongoose-6.8\\mongoose.h	/^#define __func__ /;"	d
+_exit	3pp\\mongoose-6.8\\mongoose.c	/^void _exit(int status) {$/;"	f	typeref:typename:void
+_fstat	3pp\\mongoose-6.8\\mongoose.c	/^int _fstat(int fd, struct stat *s) {$/;"	f	typeref:typename:int
+_getpid	3pp\\mongoose-6.8\\mongoose.c	/^int _getpid() {$/;"	f	typeref:typename:int
+_gettimeofday_r	3pp\\mongoose-6.8\\mongoose.c	/^int _gettimeofday_r(struct _reent *r, struct timeval *tp, void *tz) {$/;"	f	typeref:typename:int
+_isatty	3pp\\mongoose-6.8\\mongoose.c	/^int _isatty(int fd) {$/;"	f	typeref:typename:int
+_kill	3pp\\mongoose-6.8\\mongoose.c	/^int _kill(int pid, int sig) {$/;"	f	typeref:typename:int
+_not_implemented	3pp\\mongoose-6.8\\mongoose.c	/^void _not_implemented(const char *what) {$/;"	f	typeref:typename:void
+_off_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef size_t _off_t;$/;"	t	typeref:typename:size_t
+_stat	3pp\\mongoose-6.8\\mongoose.c	/^int _stat(const char *pathname, struct stat *st) {$/;"	f	typeref:typename:int
+_wstati64	3pp\\mongoose-6.8\\mongoose.c	/^int _wstati64(const wchar_t *path, cs_stat_t *st) {$/;"	f	typeref:typename:int
+arg	3pp\\mongoose-6.8\\mongoose.c	/^  void *arg;$/;"	m	struct:mg_q_msg	typeref:typename:void *	file:
+asprintf	3pp\\mongoose-6.8\\mongoose.c	/^int asprintf(char **strp, const char *fmt, ...) {$/;"	f	typeref:typename:int
+auth_domain	3pp\\mongoose-6.8\\mongoose.c	/^  char *auth_domain;         \/* owned *\/$/;"	m	struct:mg_http_endpoint	typeref:typename:char *	file:
+auth_file	3pp\\mongoose-6.8\\mongoose.c	/^  char *auth_file;           \/* owned *\/$/;"	m	struct:mg_http_endpoint	typeref:typename:char *	file:
+blk	3pp\\mongoose-6.8\\mongoose.c	/^#define blk(/;"	d	file:
+blk0	3pp\\mongoose-6.8\\mongoose.c	/^static uint32_t blk0(union char64long16 *block, int i) {$/;"	f	typeref:typename:uint32_t	file:
+body	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_str body;$/;"	m	struct:mg_tun_frame	typeref:struct:mg_str	file:
+body_len	3pp\\mongoose-6.8\\mongoose.c	/^  int64_t body_len; \/* How many bytes of chunked body was reassembled. *\/$/;"	m	struct:mg_http_proto_data_chuncked	typeref:typename:int64_t	file:
+boundary	3pp\\mongoose-6.8\\mongoose.c	/^  const char *boundary;$/;"	m	struct:mg_http_multipart_stream	typeref:typename:const char *	file:
+boundary_len	3pp\\mongoose-6.8\\mongoose.c	/^  int boundary_len;$/;"	m	struct:mg_http_multipart_stream	typeref:typename:int	file:
+buf	3pp\\mongoose-6.8\\mongoose.c	/^  char buf[MG_CGI_ENVIRONMENT_SIZE];       \/* Environment buffer *\/$/;"	m	struct:mg_cgi_env_block	typeref:typename:char[]	file:
+byteReverse	3pp\\mongoose-6.8\\mongoose.c	/^static void byteReverse(unsigned char *buf, unsigned longs) {$/;"	f	typeref:typename:void	file:
+c	3pp\\mongoose-6.8\\mongoose.c	/^  unsigned char c[64];$/;"	m	union:char64long16	typeref:typename:unsigned char[64]	file:
+c_itoa	3pp\\mongoose-6.8\\mongoose.c	/^static int c_itoa(char *buf, size_t buf_size, int64_t num, int base, int flags,$/;"	f	typeref:typename:int	file:
+c_snprintf	3pp\\mongoose-6.8\\mongoose.c	/^int c_snprintf(char *buf, size_t buf_size, const char *fmt, ...) {$/;"	f	typeref:typename:int
+c_strnlen	3pp\\mongoose-6.8\\mongoose.c	/^size_t c_strnlen(const char *s, size_t maxlen) {$/;"	f	typeref:typename:size_t
+c_strnstr	3pp\\mongoose-6.8\\mongoose.c	/^const char *c_strnstr(const char *s, const char *find, size_t slen) {$/;"	f	typeref:typename:const char *
+c_vsnprintf	3pp\\mongoose-6.8\\mongoose.c	/^int c_vsnprintf(char *buf, size_t buf_size, const char *fmt, va_list ap) {$/;"	f	typeref:typename:int
+ca_cert	3pp\\mongoose-6.8\\mongoose.c	/^  mbedtls_x509_crt *ca_cert;$/;"	m	struct:mg_ssl_if_ctx	typeref:typename:mbedtls_x509_crt *	file:
+callback	3pp\\mongoose-6.8\\mongoose.c	/^  mg_event_handler_t callback;$/;"	m	struct:ctl_msg	typeref:typename:mg_event_handler_t	file:
+callback	3pp\\mongoose-6.8\\mongoose.c	/^  mg_resolve_callback_t callback;$/;"	m	struct:mg_resolve_async_request	typeref:typename:mg_resolve_callback_t	file:
+cb	3pp\\mongoose-6.8\\mongoose.c	/^  void (*cb)(struct mg_mgr *mgr, void *arg);$/;"	m	struct:mg_q_msg	typeref:typename:void (*)(struct mg_mgr * mgr,void * arg)	file:
+cert	3pp\\mongoose-6.8\\mongoose.c	/^  mbedtls_x509_crt *cert;$/;"	m	struct:mg_ssl_if_ctx	typeref:typename:mbedtls_x509_crt *	file:
+cgi	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_http_proto_data_cgi cgi;$/;"	m	struct:mg_http_proto_data	typeref:struct:mg_http_proto_data_cgi	file:
+cgi_nc	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_connection *cgi_nc;$/;"	m	struct:mg_http_proto_data_cgi	typeref:struct:mg_connection *	file:
+char64long16	3pp\\mongoose-6.8\\mongoose.c	/^union char64long16 {$/;"	u	file:
+chunk	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_http_proto_data_chuncked chunk;$/;"	m	struct:mg_http_proto_data	typeref:struct:mg_http_proto_data_chuncked	file:
+cipher_suites	3pp\\mongoose-6.8\\mongoose.c	/^  struct mbuf cipher_suites;$/;"	m	struct:mg_ssl_if_ctx	typeref:struct:mbuf	file:
+cl	3pp\\mongoose-6.8\\mongoose.c	/^  int64_t cl;    \/* Content-Length. How many bytes to send. *\/$/;"	m	struct:mg_http_proto_data_file	typeref:typename:int64_t	file:
+close	3pp\\mongoose-6.8\\mongoose.c	/^int close(int fd) {$/;"	f	typeref:typename:int
+closedir	3pp\\mongoose-6.8\\mongoose.c	/^int closedir(DIR *d) {$/;"	f	typeref:typename:int
+closedir	3pp\\mongoose-6.8\\mongoose.c	/^int closedir(DIR *dir) {$/;"	f	typeref:typename:int
+closesocket	3pp\\mongoose-6.8\\mongoose.h	/^#define closesocket(/;"	d
+coap_add_opt_info	3pp\\mongoose-6.8\\mongoose.c	/^static char *coap_add_opt_info(char *ptr, uint16_t val, size_t len) {$/;"	f	typeref:typename:char *	file:
+coap_add_uint16	3pp\\mongoose-6.8\\mongoose.c	/^static char *coap_add_uint16(char *ptr, uint16_t val) {$/;"	f	typeref:typename:char *	file:
+coap_calculate_packet_size	3pp\\mongoose-6.8\\mongoose.c	/^static uint32_t coap_calculate_packet_size(struct mg_coap_message *cm,$/;"	f	typeref:typename:uint32_t	file:
+coap_get_ext_opt	3pp\\mongoose-6.8\\mongoose.c	/^static int coap_get_ext_opt(char *ptr, struct mbuf *io, uint16_t *opt_info) {$/;"	f	typeref:typename:int	file:
+coap_get_ext_opt_size	3pp\\mongoose-6.8\\mongoose.c	/^static size_t coap_get_ext_opt_size(uint32_t value) {$/;"	f	typeref:typename:size_t	file:
+coap_get_options	3pp\\mongoose-6.8\\mongoose.c	/^static char *coap_get_options(char *ptr, struct mbuf *io,$/;"	f	typeref:typename:char *	file:
+coap_get_token	3pp\\mongoose-6.8\\mongoose.c	/^static char *coap_get_token(char *ptr, struct mbuf *io,$/;"	f	typeref:typename:char *	file:
+coap_handler	3pp\\mongoose-6.8\\mongoose.c	/^static void coap_handler(struct mg_connection *nc, int ev,$/;"	f	typeref:typename:void	file:
+coap_parse_header	3pp\\mongoose-6.8\\mongoose.c	/^static char *coap_parse_header(char *ptr, struct mbuf *io,$/;"	f	typeref:typename:char *	file:
+coap_split_opt	3pp\\mongoose-6.8\\mongoose.c	/^static int coap_split_opt(uint32_t value, uint8_t *base, uint16_t *ext) {$/;"	f	typeref:typename:int	file:
+conf	3pp\\mongoose-6.8\\mongoose.c	/^  mbedtls_ssl_config *conf;$/;"	m	struct:mg_ssl_if_ctx	typeref:typename:mbedtls_ssl_config *	file:
+conn	src\\http.hpp	/^        struct mg_connection *conn;$/;"	m	class:http::Server	typeref:struct:mg_connection *
+count	3pp\\mongoose-6.8\\mongoose.c	/^  int count;$/;"	m	struct:sntp_data	typeref:typename:int	file:
+cs_base64_decode	3pp\\mongoose-6.8\\mongoose.c	/^int cs_base64_decode(const unsigned char *s, int len, char *dst, int *dec_len) {$/;"	f	typeref:typename:int
+cs_base64_emit_chunk	3pp\\mongoose-6.8\\mongoose.c	/^static void cs_base64_emit_chunk(struct cs_base64_ctx *ctx) {$/;"	f	typeref:typename:void	file:
+cs_base64_emit_code	3pp\\mongoose-6.8\\mongoose.c	/^static void cs_base64_emit_code(struct cs_base64_ctx *ctx, int v) {$/;"	f	typeref:typename:void	file:
+cs_base64_encode	3pp\\mongoose-6.8\\mongoose.c	/^void cs_base64_encode(const unsigned char *src, int src_len, char *dst) {$/;"	f	typeref:typename:void
+cs_base64_finish	3pp\\mongoose-6.8\\mongoose.c	/^void cs_base64_finish(struct cs_base64_ctx *ctx) {$/;"	f	typeref:typename:void
+cs_base64_init	3pp\\mongoose-6.8\\mongoose.c	/^void cs_base64_init(struct cs_base64_ctx *ctx, cs_base64_putc_t b64_putc,$/;"	f	typeref:typename:void
+cs_base64_update	3pp\\mongoose-6.8\\mongoose.c	/^void cs_base64_update(struct cs_base64_ctx *ctx, const char *str, size_t len) {$/;"	f	typeref:typename:void
+cs_dirent_dummy	3pp\\mongoose-6.8\\mongoose.c	/^typedef int cs_dirent_dummy;$/;"	t	typeref:typename:int	file:
+cs_fprint_base64	3pp\\mongoose-6.8\\mongoose.c	/^void cs_fprint_base64(FILE *f, const unsigned char *src, int src_len) {$/;"	f	typeref:typename:void
+cs_from_hex	3pp\\mongoose-6.8\\mongoose.c	/^void cs_from_hex(char *to, const char *p, size_t len) {$/;"	f	typeref:typename:void
+cs_hmac_sha1	3pp\\mongoose-6.8\\mongoose.c	/^void cs_hmac_sha1(const unsigned char *key, size_t keylen,$/;"	f	typeref:typename:void
+cs_log_level	3pp\\mongoose-6.8\\mongoose.c	/^enum cs_log_level {$/;"	g	file:
+cs_log_print_prefix	3pp\\mongoose-6.8\\mongoose.c	/^void cs_log_print_prefix(enum cs_log_level level, const char *func) {$/;"	f	typeref:typename:void
+cs_log_printf	3pp\\mongoose-6.8\\mongoose.c	/^void cs_log_printf(const char *fmt, ...) {$/;"	f	typeref:typename:void
+cs_log_set_file	3pp\\mongoose-6.8\\mongoose.c	/^void cs_log_set_file(FILE *file) {$/;"	f	typeref:typename:void
+cs_log_set_level	3pp\\mongoose-6.8\\mongoose.c	/^void cs_log_set_level(enum cs_log_level level) {$/;"	f	typeref:typename:void
+cs_md5	3pp\\mongoose-6.8\\mongoose.c	/^void cs_md5(char buf[33], ...) {$/;"	f	typeref:typename:void
+cs_md5_final	3pp\\mongoose-6.8\\mongoose.c	/^void cs_md5_final(unsigned char digest[16], cs_md5_ctx *ctx) {$/;"	f	typeref:typename:void
+cs_md5_init	3pp\\mongoose-6.8\\mongoose.c	/^void cs_md5_init(cs_md5_ctx *ctx) {$/;"	f	typeref:typename:void
+cs_md5_transform	3pp\\mongoose-6.8\\mongoose.c	/^static void cs_md5_transform(uint32_t buf[4], uint32_t const in[16]) {$/;"	f	typeref:typename:void	file:
+cs_md5_update	3pp\\mongoose-6.8\\mongoose.c	/^void cs_md5_update(cs_md5_ctx *ctx, const unsigned char *buf, size_t len) {$/;"	f	typeref:typename:void
+cs_sha1_final	3pp\\mongoose-6.8\\mongoose.c	/^void cs_sha1_final(unsigned char digest[20], cs_sha1_ctx *context) {$/;"	f	typeref:typename:void
+cs_sha1_init	3pp\\mongoose-6.8\\mongoose.c	/^void cs_sha1_init(cs_sha1_ctx *context) {$/;"	f	typeref:typename:void
+cs_sha1_transform	3pp\\mongoose-6.8\\mongoose.c	/^void cs_sha1_transform(uint32_t state[5], const unsigned char buffer[64]) {$/;"	f	typeref:typename:void
+cs_sha1_update	3pp\\mongoose-6.8\\mongoose.c	/^void cs_sha1_update(cs_sha1_ctx *context, const unsigned char *data,$/;"	f	typeref:typename:void
+cs_stat_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef struct _stati64 cs_stat_t;$/;"	t	typeref:struct:_stati64
+cs_stat_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef struct stat cs_stat_t;$/;"	t	typeref:struct:stat
+cs_time	3pp\\mongoose-6.8\\mongoose.c	/^double cs_time(void) {$/;"	f	typeref:typename:double
+cs_to64	3pp\\mongoose-6.8\\mongoose.c	/^int64_t cs_to64(const char *s) {$/;"	f	typeref:typename:int64_t
+cs_to_hex	3pp\\mongoose-6.8\\mongoose.c	/^void cs_to_hex(char *to, const unsigned char *p, size_t len) {$/;"	f	typeref:typename:void
+ctl_msg	3pp\\mongoose-6.8\\mongoose.c	/^struct ctl_msg {$/;"	s	file:
+d	3pp\\mongoose-6.8\\mongoose.c	/^  DIR d;$/;"	m	struct:win32_dir	typeref:typename:DIR	file:
+d_ino	3pp\\mongoose-6.8\\mongoose.c	/^  int d_ino;$/;"	m	struct:dirent	typeref:typename:int	file:
+d_name	3pp\\mongoose-6.8\\mongoose.c	/^  char d_name[256];$/;"	m	struct:dirent	typeref:typename:char[256]	file:
+d_name	3pp\\mongoose-6.8\\mongoose.c	/^  char d_name[MAX_PATH];$/;"	m	struct:dirent	typeref:typename:char[]	file:
+data	3pp\\mongoose-6.8\\mongoose.c	/^  const void *data;$/;"	m	struct:mg_lwip_tcp_write_ctx	typeref:typename:const void *	file:
+data	3pp\\mongoose-6.8\\mongoose.c	/^  void *data;$/;"	m	struct:mg_resolve_async_request	typeref:typename:void *	file:
+default_addr	src\\http.cpp	/^static const char *default_addr = "80";$/;"	v	typeref:typename:const char *	file:
+dirent	3pp\\mongoose-6.8\\mongoose.c	/^struct dirent {$/;"	s	file:
+disp	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_connection *disp;$/;"	m	struct:mg_tun_client	typeref:struct:mg_connection *	file:
+disp_url	3pp\\mongoose-6.8\\mongoose.c	/^  const char *disp_url;$/;"	m	struct:mg_tun_client	typeref:typename:const char *	file:
+dns_handler	3pp\\mongoose-6.8\\mongoose.c	/^static void dns_handler(struct mg_connection *nc, int ev,$/;"	f	typeref:typename:void	file:
+do_ssi_exec	3pp\\mongoose-6.8\\mongoose.c	/^static void do_ssi_exec(struct mg_connection *nc, char *tag) {$/;"	f	typeref:typename:void	file:
+drop_dir	3pp\\mongoose-6.8\\mongoose.c	/^static const char *drop_dir(const char *fname, bool *is_slfs) {$/;"	f	typeref:typename:const char *	file:
+dummy	3pp\\mongoose-6.8\\mongoose.c	/^typedef struct { int dummy; } DIR;$/;"	m	struct:__anonfd0a45780108	typeref:typename:int	file:
+endpoint_handler	3pp\\mongoose-6.8\\mongoose.c	/^  mg_event_handler_t endpoint_handler;$/;"	m	struct:mg_http_proto_data	typeref:typename:mg_event_handler_t	file:
+endpoints	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_http_endpoint *endpoints;$/;"	m	struct:mg_http_proto_data	typeref:struct:mg_http_endpoint *	file:
+err	3pp\\mongoose-6.8\\mongoose.c	/^  enum mg_resolve_err err;$/;"	m	struct:mg_resolve_async_request	typeref:enum:mg_resolve_err	file:
+err	3pp\\mongoose-6.8\\mongoose.c	/^  err_t err;$/;"	m	struct:mg_lwip_conn_state	typeref:typename:err_t	file:
+ev_handler	src\\http.cpp	/^static void ev_handler(struct mg_connection *connection, int event, void *message) {$/;"	f	typeref:typename:void	file:
+event_handler	src\\http.hpp	/^    typedef void (*event_handler)(struct mg_connection*, int, void*);$/;"	t	namespace:http	typeref:typename:void (*)(struct mg_connection *,int,void *)
+ext_len	3pp\\mongoose-6.8\\mongoose.c	/^  size_t ext_len;$/;"	m	struct:__anonfd0a45780308	typeref:typename:size_t	file:
+extension	3pp\\mongoose-6.8\\mongoose.c	/^  const char *extension;$/;"	m	struct:__anonfd0a45780308	typeref:typename:const char *	file:
+fd_type	3pp\\mongoose-6.8\\mongoose.c	/^enum fd_type {$/;"	g	file:
+fd_type	3pp\\mongoose-6.8\\mongoose.c	/^static int fd_type(int fd) {$/;"	f	typeref:typename:int	file:
+fh	3pp\\mongoose-6.8\\mongoose.c	/^  _i32 fh;$/;"	m	struct:sl_fd_info	typeref:typename:_i32	file:
+file	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_http_proto_data_file file;$/;"	m	struct:mg_http_proto_data	typeref:struct:mg_http_proto_data_file	file:
+file_name	3pp\\mongoose-6.8\\mongoose.c	/^  const char *file_name;$/;"	m	struct:mg_http_multipart_stream	typeref:typename:const char *	file:
+file_upload_state	3pp\\mongoose-6.8\\mongoose.c	/^struct file_upload_state {$/;"	s	file:
+fileno	3pp\\mongoose-6.8\\mongoose.h	/^#define fileno /;"	d
+fileno	3pp\\mongoose-6.8\\mongoose.h	/^#define fileno(/;"	d
+flags	3pp\\mongoose-6.8\\mongoose.c	/^  uint16_t flags;$/;"	m	struct:mg_dns_header	typeref:typename:uint16_t	file:
+flags	3pp\\mongoose-6.8\\mongoose.c	/^  uint8_t flags;$/;"	m	struct:mg_tun_frame	typeref:typename:uint8_t	file:
+fourbit	3pp\\mongoose-6.8\\mongoose.c	/^static int fourbit(int ch) {$/;"	f	typeref:typename:int	file:
+fp	3pp\\mongoose-6.8\\mongoose.c	/^  FILE *fp;      \/* Opened file. *\/$/;"	m	struct:mg_http_proto_data_file	typeref:typename:FILE *	file:
+fp	3pp\\mongoose-6.8\\mongoose.c	/^  FILE *fp;$/;"	m	struct:file_upload_state	typeref:typename:FILE *	file:
+fprint_str	3pp\\mongoose-6.8\\mongoose.c	/^void fprint_str(FILE *fp, const char *str) {$/;"	f	typeref:typename:void
+from_b64	3pp\\mongoose-6.8\\mongoose.c	/^static unsigned char from_b64(unsigned char ch) {$/;"	f	typeref:typename:unsigned char	file:
+fs_slfs_close	3pp\\mongoose-6.8\\mongoose.c	/^int fs_slfs_close(int fd) {$/;"	f	typeref:typename:int
+fs_slfs_fstat	3pp\\mongoose-6.8\\mongoose.c	/^int fs_slfs_fstat(int fd, struct stat *s) {$/;"	f	typeref:typename:int
+fs_slfs_lseek	3pp\\mongoose-6.8\\mongoose.c	/^off_t fs_slfs_lseek(int fd, off_t offset, int whence) {$/;"	f	typeref:typename:off_t
+fs_slfs_open	3pp\\mongoose-6.8\\mongoose.c	/^int fs_slfs_open(const char *pathname, int flags, mode_t mode) {$/;"	f	typeref:typename:int
+fs_slfs_read	3pp\\mongoose-6.8\\mongoose.c	/^ssize_t fs_slfs_read(int fd, void *buf, size_t count) {$/;"	f	typeref:typename:ssize_t
+fs_slfs_rename	3pp\\mongoose-6.8\\mongoose.c	/^int fs_slfs_rename(const char *from, const char *to) {$/;"	f	typeref:typename:int
+fs_slfs_set_new_file_size	3pp\\mongoose-6.8\\mongoose.c	/^void fs_slfs_set_new_file_size(const char *name, size_t size) {$/;"	f	typeref:typename:void
+fs_slfs_stat	3pp\\mongoose-6.8\\mongoose.c	/^int fs_slfs_stat(const char *pathname, struct stat *s) {$/;"	f	typeref:typename:int
+fs_slfs_unlink	3pp\\mongoose-6.8\\mongoose.c	/^int fs_slfs_unlink(const char *pathname) {$/;"	f	typeref:typename:int
+fs_slfs_write	3pp\\mongoose-6.8\\mongoose.c	/^ssize_t fs_slfs_write(int fd, const void *buf, size_t count) {$/;"	f	typeref:typename:ssize_t
+fseeko	3pp\\mongoose-6.8\\mongoose.h	/^#define fseeko(/;"	d
+gettimeofday	3pp\\mongoose-6.8\\mongoose.c	/^int gettimeofday(struct timeval *tp, void *tzp) {$/;"	f	typeref:typename:int
+getu16	3pp\\mongoose-6.8\\mongoose.c	/^static uint16_t getu16(const char *p) {$/;"	f	typeref:typename:uint16_t	file:
+hPipe	3pp\\mongoose-6.8\\mongoose.c	/^  HANDLE hPipe;$/;"	m	struct:mg_threadparam	typeref:typename:HANDLE	file:
+hander	3pp\\mongoose-6.8\\mongoose.c	/^  mg_event_handler_t hander;$/;"	m	struct:sntp_data	typeref:typename:mg_event_handler_t	file:
+handle	3pp\\mongoose-6.8\\mongoose.c	/^  HANDLE handle;$/;"	m	struct:win32_dir	typeref:typename:HANDLE	file:
+handler	3pp\\mongoose-6.8\\mongoose.c	/^  mg_event_handler_t handler;$/;"	m	struct:mg_http_endpoint	typeref:typename:mg_event_handler_t	file:
+http	src\\http.hpp	/^namespace http {$/;"	n
+http_options	src\\http.cpp	/^static struct mg_serve_http_opts http_options;$/;"	v	typeref:struct:mg_serve_http_opts	file:
+identity_len	3pp\\mongoose-6.8\\mongoose.c	/^  size_t identity_len;$/;"	m	struct:mg_ssl_if_ctx	typeref:typename:size_t	file:
+iface	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_iface *iface;$/;"	m	struct:mg_tun_client	typeref:struct:mg_iface *	file:
+in_addr_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef uint32_t in_addr_t;$/;"	t	typeref:typename:uint32_t
+inet_ntoa	3pp\\mongoose-6.8\\mongoose.c	/^char *inet_ntoa(struct in_addr in) {$/;"	f	typeref:typename:char *
+inet_ntoa	3pp\\mongoose-6.8\\mongoose.c	/^char *inet_ntoa(struct in_addr n) {$/;"	f	typeref:typename:char *
+inet_ntop	3pp\\mongoose-6.8\\mongoose.c	/^const char *inet_ntop(int af, const void *src, char *dst, socklen_t size) {$/;"	f	typeref:typename:const char *
+inet_pton	3pp\\mongoose-6.8\\mongoose.c	/^int inet_pton(int af, const char *src, void *dst) {$/;"	f	typeref:typename:int
+info	3pp\\mongoose-6.8\\mongoose.c	/^  WIN32_FIND_DATAW info;$/;"	m	struct:win32_dir	typeref:typename:WIN32_FIND_DATAW	file:
+int16_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef short int16_t;$/;"	t	typeref:typename:short
+int32_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef int int32_t;$/;"	t	typeref:typename:int
+int64_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef __int64 int64_t;$/;"	t	typeref:typename:__int64
+int8_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef signed char int8_t;$/;"	t	typeref:typename:signed char
+intptr_t	3pp\\mongoose-6.8\\mongoose.c	/^#define intptr_t /;"	d	file:
+intptr_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef long intptr_t;$/;"	t	typeref:typename:long
+ip	3pp\\mongoose-6.8\\mongoose.c	/^  ip_addr_t *ip;$/;"	m	struct:udp_sendto_ctx	typeref:typename:ip_addr_t *	file:
+ip_2_ip4	3pp\\mongoose-6.8\\mongoose.c	/^#define ip_2_ip4(/;"	d	file:
+isbyte	3pp\\mongoose-6.8\\mongoose.c	/^static int isbyte(int n) {$/;"	f	typeref:typename:int	file:
+keepalive	3pp\\mongoose-6.8\\mongoose.c	/^  int keepalive; \/* Keep connection open after sending. *\/$/;"	m	struct:mg_http_proto_data_file	typeref:typename:int	file:
+key	3pp\\mongoose-6.8\\mongoose.c	/^  mbedtls_pk_context *key;$/;"	m	struct:mg_ssl_if_ctx	typeref:typename:mbedtls_pk_context *	file:
+kr_recv	3pp\\mongoose-6.8\\mongoose.c	/^ssize_t kr_recv(int fd, void *buf, size_t len) {$/;"	f	typeref:typename:ssize_t
+kr_send	3pp\\mongoose-6.8\\mongoose.c	/^ssize_t kr_send(int fd, const void *buf, size_t len) {$/;"	f	typeref:typename:ssize_t
+l	3pp\\mongoose-6.8\\mongoose.c	/^  uint32_t l[16];$/;"	m	union:char64long16	typeref:typename:uint32_t[16]	file:
+last_ssl_write_size	3pp\\mongoose-6.8\\mongoose.c	/^  int last_ssl_write_size;$/;"	m	struct:mg_lwip_conn_state	typeref:typename:int	file:
+last_stream_id	3pp\\mongoose-6.8\\mongoose.c	/^  uint32_t last_stream_id; \/* stream id of most recently accepted connection *\/$/;"	m	struct:mg_tun_client	typeref:typename:uint32_t	file:
+last_time	3pp\\mongoose-6.8\\mongoose.c	/^  time_t last_time;$/;"	m	struct:mg_resolve_async_request	typeref:typename:time_t	file:
+lc	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_connection *lc;$/;"	m	struct:mg_lwip_conn_state	typeref:struct:mg_connection *	file:
+len	3pp\\mongoose-6.8\\mongoose.c	/^  int len;                                 \/* Space taken *\/$/;"	m	struct:mg_cgi_env_block	typeref:typename:int	file:
+len	3pp\\mongoose-6.8\\mongoose.c	/^  size_t len;$/;"	m	struct:tcp_recved_ctx	typeref:typename:size_t	file:
+len	3pp\\mongoose-6.8\\mongoose.c	/^  uint16_t len;$/;"	m	struct:mg_lwip_tcp_write_ctx	typeref:typename:uint16_t	file:
+lfn	3pp\\mongoose-6.8\\mongoose.c	/^  char *lfn;$/;"	m	struct:file_upload_state	typeref:typename:char *	file:
+linked_conn	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_connection *linked_conn;$/;"	m	struct:mg_reverse_proxy_data	typeref:struct:mg_connection *	file:
+listener	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_connection *listener;$/;"	m	struct:mg_tun_client	typeref:struct:mg_connection *	file:
+lowercase	3pp\\mongoose-6.8\\mongoose.c	/^static int lowercase(const char *s) {$/;"	f	typeref:typename:int	file:
+lseek	3pp\\mongoose-6.8\\mongoose.c	/^off_t lseek(int fd, off_t offset, int whence) {$/;"	f	typeref:typename:off_t
+main	src\\main.cpp	/^int main(int argc, char *argv[]) {$/;"	f	typeref:typename:int
+manager	src\\http.hpp	/^        struct mg_mgr manager;$/;"	m	class:http::Server	typeref:struct:mg_mgr
+mask	3pp\\mongoose-6.8\\mongoose.c	/^  uint32_t mask;$/;"	m	struct:ws_mask_ctx	typeref:typename:uint32_t	file:
+max_retries	3pp\\mongoose-6.8\\mongoose.c	/^  int max_retries;$/;"	m	struct:mg_resolve_async_request	typeref:typename:int	file:
+max_sleep	src\\http.hpp	/^        int max_sleep;$/;"	m	class:http::Server	typeref:typename:int
+mbuf_append	3pp\\mongoose-6.8\\mongoose.c	/^size_t mbuf_append(struct mbuf *a, const void *buf, size_t len) {$/;"	f	typeref:typename:size_t
+mbuf_free	3pp\\mongoose-6.8\\mongoose.c	/^void mbuf_free(struct mbuf *mbuf) {$/;"	f	typeref:typename:void
+mbuf_init	3pp\\mongoose-6.8\\mongoose.c	/^void mbuf_init(struct mbuf *mbuf, size_t initial_size) {$/;"	f	typeref:typename:void
+mbuf_insert	3pp\\mongoose-6.8\\mongoose.c	/^size_t mbuf_insert(struct mbuf *a, size_t off, const void *buf, size_t len) {$/;"	f	typeref:typename:size_t
+mbuf_remove	3pp\\mongoose-6.8\\mongoose.c	/^void mbuf_remove(struct mbuf *mb, size_t n) {$/;"	f	typeref:typename:void
+mbuf_resize	3pp\\mongoose-6.8\\mongoose.c	/^void mbuf_resize(struct mbuf *a, size_t new_size) {$/;"	f	typeref:typename:void
+mbuf_trim	3pp\\mongoose-6.8\\mongoose.c	/^void mbuf_trim(struct mbuf *mbuf) {$/;"	f	typeref:typename:void
+message	3pp\\mongoose-6.8\\mongoose.c	/^  char message[MG_CTL_MSG_MESSAGE_SIZE];$/;"	m	struct:ctl_msg	typeref:typename:char[]	file:
+mg_abs_path	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_abs_path(const char *utf8_path, char *abs_path, size_t len) {$/;"	f	typeref:typename:void	file:
+mg_accept_conn	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_accept_conn(struct mg_connection *lc) {$/;"	f	typeref:typename:int	file:
+mg_add_conn	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_add_conn(struct mg_mgr *mgr, struct mg_connection *c) {$/;"	f	typeref:typename:MG_INTERNAL void
+mg_add_sock	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_add_sock(struct mg_mgr *s, sock_t sock,$/;"	f	typeref:struct:mg_connection *
+mg_add_sock_opt	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_add_sock_opt(struct mg_mgr *s, sock_t sock,$/;"	f	typeref:struct:mg_connection *
+mg_add_to_set	3pp\\mongoose-6.8\\mongoose.c	/^void mg_add_to_set(sock_t sock, fd_set *set, sock_t *max_fd) {$/;"	f	typeref:typename:void
+mg_addenv	3pp\\mongoose-6.8\\mongoose.c	/^static char *mg_addenv(struct mg_cgi_env_block *block, const char *fmt, ...) {$/;"	f	typeref:typename:char *	file:
+mg_addenv2	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_addenv2(struct mg_cgi_env_block *blk, const char *name) {$/;"	f	typeref:typename:void	file:
+mg_asprintf	3pp\\mongoose-6.8\\mongoose.c	/^int mg_asprintf(char **buf, size_t size, const char *fmt, ...) {$/;"	f	typeref:typename:int
+mg_assemble_uri	3pp\\mongoose-6.8\\mongoose.c	/^int mg_assemble_uri(const struct mg_str *scheme, const struct mg_str *user_info,$/;"	f	typeref:typename:int
+mg_avprintf	3pp\\mongoose-6.8\\mongoose.c	/^int mg_avprintf(char **buf, size_t size, const char *fmt, va_list ap) {$/;"	f	typeref:typename:int
+mg_base64_decode	3pp\\mongoose-6.8\\mongoose.c	/^int mg_base64_decode(const unsigned char *s, int len, char *dst) {$/;"	f	typeref:typename:int
+mg_base64_encode	3pp\\mongoose-6.8\\mongoose.c	/^void mg_base64_encode(const unsigned char *src, int src_len, char *dst) {$/;"	f	typeref:typename:void
+mg_basic_auth_header	3pp\\mongoose-6.8\\mongoose.c	/^void mg_basic_auth_header(const struct mg_str user, const struct mg_str pass,$/;"	f	typeref:typename:void
+mg_bind	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_bind(struct mg_mgr *srv, const char *address,$/;"	f	typeref:struct:mg_connection *
+mg_bind_opt	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_bind_opt(struct mg_mgr *mgr, const char *address,$/;"	f	typeref:struct:mg_connection *
+mg_broadcast	3pp\\mongoose-6.8\\mongoose.c	/^void mg_broadcast(struct mg_mgr *mgr, mg_event_handler_t cb, void *data,$/;"	f	typeref:typename:void
+mg_calculate_delay	3pp\\mongoose-6.8\\mongoose.c	/^static uint64_t mg_calculate_delay(uint64_t t1, uint64_t t2, uint64_t t3) {$/;"	f	typeref:typename:uint64_t	file:
+mg_call	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_call(struct mg_connection *nc,$/;"	f	typeref:typename:MG_INTERNAL void
+mg_casecmp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_casecmp(const char *s1, const char *s2) {$/;"	f	typeref:typename:int
+mg_cgi_env_block	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_cgi_env_block {$/;"	s	file:
+mg_cgi_ev_handler	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_cgi_ev_handler(struct mg_connection *cgi_nc, int ev,$/;"	f	typeref:typename:void	file:
+mg_check_ip_acl	3pp\\mongoose-6.8\\mongoose.c	/^int mg_check_ip_acl(const char *acl, uint32_t remote_ip) {$/;"	f	typeref:typename:int
+mg_check_nonce	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_check_nonce(const char *nonce) {$/;"	f	typeref:typename:int	file:
+mg_close_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_close_conn(struct mg_connection *conn) {$/;"	f	typeref:typename:void
+mg_coap_add_option	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_coap_option *mg_coap_add_option(struct mg_coap_message *cm,$/;"	f	typeref:struct:mg_coap_option *
+mg_coap_compose	3pp\\mongoose-6.8\\mongoose.c	/^uint32_t mg_coap_compose(struct mg_coap_message *cm, struct mbuf *io) {$/;"	f	typeref:typename:uint32_t
+mg_coap_free_options	3pp\\mongoose-6.8\\mongoose.c	/^void mg_coap_free_options(struct mg_coap_message *cm) {$/;"	f	typeref:typename:void
+mg_coap_parse	3pp\\mongoose-6.8\\mongoose.c	/^uint32_t mg_coap_parse(struct mbuf *io, struct mg_coap_message *cm) {$/;"	f	typeref:typename:uint32_t
+mg_coap_send_ack	3pp\\mongoose-6.8\\mongoose.c	/^uint32_t mg_coap_send_ack(struct mg_connection *nc, uint16_t msg_id) {$/;"	f	typeref:typename:uint32_t
+mg_coap_send_message	3pp\\mongoose-6.8\\mongoose.c	/^uint32_t mg_coap_send_message(struct mg_connection *nc,$/;"	f	typeref:typename:uint32_t
+mg_conn_addr_to_str	3pp\\mongoose-6.8\\mongoose.c	/^void mg_conn_addr_to_str(struct mg_connection *nc, char *buf, size_t len,$/;"	f	typeref:typename:void
+mg_connect	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_connect(struct mg_mgr *mgr, const char *address,$/;"	f	typeref:struct:mg_connection *
+mg_connect_http	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_connect_http($/;"	f	typeref:struct:mg_connection *
+mg_connect_http_base	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_connect_http_base($/;"	f	typeref:struct:mg_connection *
+mg_connect_http_opt	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_connect_http_opt($/;"	f	typeref:struct:mg_connection *
+mg_connect_opt	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_connect_opt(struct mg_mgr *mgr, const char *address,$/;"	f	typeref:struct:mg_connection *
+mg_connect_ws	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_connect_ws($/;"	f	typeref:struct:mg_connection *
+mg_connect_ws_opt	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_connect_ws_opt($/;"	f	typeref:struct:mg_connection *
+mg_create_connection	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL struct mg_connection *mg_create_connection($/;"	f	typeref:typename:MG_INTERNAL struct mg_connection *
+mg_create_connection_base	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL struct mg_connection *mg_create_connection_base($/;"	f	typeref:typename:MG_INTERNAL struct mg_connection *
+mg_create_itermediate_directories	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_create_itermediate_directories(const char *path) {$/;"	f	typeref:typename:int	file:
+mg_default_iface_vtable	3pp\\mongoose-6.8\\mongoose.c	/^const struct mg_iface_vtable mg_default_iface_vtable = MG_LWIP_IFACE_VTABLE;$/;"	v	typeref:typename:const struct mg_iface_vtable
+mg_default_iface_vtable	3pp\\mongoose-6.8\\mongoose.c	/^const struct mg_iface_vtable mg_default_iface_vtable = MG_PIC32_IFACE_VTABLE;$/;"	v	typeref:typename:const struct mg_iface_vtable
+mg_default_iface_vtable	3pp\\mongoose-6.8\\mongoose.c	/^const struct mg_iface_vtable mg_default_iface_vtable = MG_SL_IFACE_VTABLE;$/;"	v	typeref:typename:const struct mg_iface_vtable
+mg_default_iface_vtable	3pp\\mongoose-6.8\\mongoose.c	/^const struct mg_iface_vtable mg_default_iface_vtable = MG_SOCKET_IFACE_VTABLE;$/;"	v	typeref:typename:const struct mg_iface_vtable
+mg_deliver_websocket_data	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_deliver_websocket_data(struct mg_connection *nc) {$/;"	f	typeref:typename:int	file:
+mg_destroy_conn	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_destroy_conn(struct mg_connection *conn, int destroy_if) {$/;"	f	typeref:typename:void	file:
+mg_dns_copy_questions	3pp\\mongoose-6.8\\mongoose.c	/^int mg_dns_copy_questions(struct mbuf *io, struct mg_dns_message *msg) {$/;"	f	typeref:typename:int
+mg_dns_create_reply	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_dns_reply mg_dns_create_reply(struct mbuf *io,$/;"	f	typeref:struct:mg_dns_reply
+mg_dns_encode_name	3pp\\mongoose-6.8\\mongoose.c	/^int mg_dns_encode_name(struct mbuf *io, const char *name, size_t len) {$/;"	f	typeref:typename:int
+mg_dns_encode_record	3pp\\mongoose-6.8\\mongoose.c	/^int mg_dns_encode_record(struct mbuf *io, struct mg_dns_resource_record *rr,$/;"	f	typeref:typename:int
+mg_dns_header	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_dns_header {$/;"	s	file:
+mg_dns_insert_header	3pp\\mongoose-6.8\\mongoose.c	/^int mg_dns_insert_header(struct mbuf *io, size_t pos,$/;"	f	typeref:typename:int
+mg_dns_next_record	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_dns_resource_record *mg_dns_next_record($/;"	f	typeref:struct:mg_dns_resource_record *
+mg_dns_parse_record_data	3pp\\mongoose-6.8\\mongoose.c	/^int mg_dns_parse_record_data(struct mg_dns_message *msg,$/;"	f	typeref:typename:int
+mg_dns_reply_record	3pp\\mongoose-6.8\\mongoose.c	/^int mg_dns_reply_record(struct mg_dns_reply *reply,$/;"	f	typeref:typename:int
+mg_dns_send_reply	3pp\\mongoose-6.8\\mongoose.c	/^void mg_dns_send_reply(struct mg_connection *nc, struct mg_dns_reply *r) {$/;"	f	typeref:typename:void
+mg_dns_tid	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_dns_tid = 0xa0;$/;"	v	typeref:typename:int	file:
+mg_dns_uncompress_name	3pp\\mongoose-6.8\\mongoose.c	/^size_t mg_dns_uncompress_name(struct mg_dns_message *msg, struct mg_str *name,$/;"	f	typeref:typename:size_t
+mg_do_connect	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL struct mg_connection *mg_do_connect(struct mg_connection *nc,$/;"	f	typeref:typename:MG_INTERNAL struct mg_connection *
+mg_do_ssi_include	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_do_ssi_include(struct mg_connection *nc, struct http_message *hm,$/;"	f	typeref:typename:void	file:
+mg_enable_javascript	3pp\\mongoose-6.8\\mongoose.c	/^enum v7_err mg_enable_javascript(struct mg_mgr *m, struct v7 *v7,$/;"	f	typeref:enum:v7_err
+mg_escape	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_escape(const char *src, char *dst, size_t dst_len) {$/;"	f	typeref:typename:void	file:
+mg_ev_mgr_lwip_data	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_ev_mgr_lwip_data {$/;"	s	file:
+mg_ev_mgr_lwip_process_signals	3pp\\mongoose-6.8\\mongoose.c	/^void mg_ev_mgr_lwip_process_signals(struct mg_mgr *mgr) {$/;"	f	typeref:typename:void
+mg_ev_mgr_lwip_signal	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_ev_mgr_lwip_signal {$/;"	s	file:
+mg_file_upload_handler	3pp\\mongoose-6.8\\mongoose.c	/^void mg_file_upload_handler(struct mg_connection *nc, int ev, void *ev_data,$/;"	f	typeref:typename:void
+mg_find_iface	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_iface *mg_find_iface(struct mg_mgr *mgr,$/;"	f	typeref:struct:mg_iface *
+mg_find_index_file	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_find_index_file(const char *path, const char *list,$/;"	f	typeref:typename:MG_INTERNAL void
+mg_fopen	3pp\\mongoose-6.8\\mongoose.c	/^FILE *mg_fopen(const char *path, const char *mode) {$/;"	f	typeref:typename:FILE *
+mg_forward	3pp\\mongoose-6.8\\mongoose.c	/^void mg_forward(struct mg_connection *from, struct mg_connection *to) {$/;"	f	typeref:typename:void
+mg_fread	3pp\\mongoose-6.8\\mongoose.c	/^size_t mg_fread(void *ptr, size_t size, size_t count, FILE *f) {$/;"	f	typeref:typename:size_t
+mg_fwrite	3pp\\mongoose-6.8\\mongoose.c	/^size_t mg_fwrite(const void *ptr, size_t size, size_t count, FILE *f) {$/;"	f	typeref:typename:size_t
+mg_get_errno	3pp\\mongoose-6.8\\mongoose.c	/^DO_NOT_WARN_UNUSED MG_INTERNAL int mg_get_errno(void) {$/;"	f	typeref:typename:DO_NOT_WARN_UNUSED MG_INTERNAL int
+mg_get_http_basic_auth	3pp\\mongoose-6.8\\mongoose.c	/^int mg_get_http_basic_auth(struct http_message *hm, char *user, size_t user_len,$/;"	f	typeref:typename:int
+mg_get_http_header	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_str *mg_get_http_header(struct http_message *hm, const char *name) {$/;"	f	typeref:struct:mg_str *
+mg_get_http_var	3pp\\mongoose-6.8\\mongoose.c	/^int mg_get_http_var(const struct mg_str *buf, const char *name, char *dst,$/;"	f	typeref:typename:int
+mg_get_ip_address_of_nameserver	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_get_ip_address_of_nameserver(char *name, size_t name_len) {$/;"	f	typeref:typename:int	file:
+mg_get_line_len	3pp\\mongoose-6.8\\mongoose.c	/^static size_t mg_get_line_len(const char *buf, size_t buf_len) {$/;"	f	typeref:typename:size_t	file:
+mg_get_mime_type	3pp\\mongoose-6.8\\mongoose.c	/^static struct mg_str mg_get_mime_type(const char *path, const char *dflt,$/;"	f	typeref:struct:mg_str	file:
+mg_get_month_index	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_get_month_index(const char *s) {$/;"	f	typeref:typename:int	file:
+mg_get_ntp_ts	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_get_ntp_ts(const char *ntp, uint64_t *val) {$/;"	f	typeref:typename:void	file:
+mg_get_sec	3pp\\mongoose-6.8\\mongoose.c	/^static uint64_t mg_get_sec(uint64_t val) {$/;"	f	typeref:typename:uint64_t	file:
+mg_get_usec	3pp\\mongoose-6.8\\mongoose.c	/^static uint64_t mg_get_usec(uint64_t val) {$/;"	f	typeref:typename:uint64_t	file:
+mg_gmt_time_string	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_gmt_time_string(char *buf, size_t buf_len, time_t *t) {$/;"	f	typeref:typename:void	file:
+mg_handle_cgi	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_handle_cgi(struct mg_connection *nc, const char *prog,$/;"	f	typeref:typename:MG_INTERNAL void
+mg_handle_chunked	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL size_t mg_handle_chunked(struct mg_connection *nc,$/;"	f	typeref:typename:MG_INTERNAL size_t
+mg_handle_delete	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_handle_delete(struct mg_connection *nc,$/;"	f	typeref:typename:MG_INTERNAL void
+mg_handle_incoming_websocket_frame	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_handle_incoming_websocket_frame(struct mg_connection *nc,$/;"	f	typeref:typename:void	file:
+mg_handle_lock	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_handle_lock(struct mg_connection *nc, const char *path) {$/;"	f	typeref:typename:MG_INTERNAL void
+mg_handle_mkcol	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_handle_mkcol(struct mg_connection *nc, const char *path,$/;"	f	typeref:typename:MG_INTERNAL void
+mg_handle_move	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_handle_move(struct mg_connection *c,$/;"	f	typeref:typename:MG_INTERNAL void
+mg_handle_propfind	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_handle_propfind(struct mg_connection *nc, const char *path,$/;"	f	typeref:typename:MG_INTERNAL void
+mg_handle_put	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_handle_put(struct mg_connection *nc, const char *path,$/;"	f	typeref:typename:MG_INTERNAL void
+mg_handle_recv	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_handle_recv(struct mg_connection *nc) {$/;"	f	typeref:typename:void	file:
+mg_handle_send	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_handle_send(struct mg_connection *nc) {$/;"	f	typeref:typename:void	file:
+mg_handle_ssi_request	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_handle_ssi_request(struct mg_connection *nc,$/;"	f	typeref:typename:MG_INTERNAL void
+mg_handle_tcp_read	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_handle_tcp_read(struct mg_connection *conn) {$/;"	f	typeref:typename:void	file:
+mg_handle_udp_read	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_handle_udp_read(struct mg_connection *nc) {$/;"	f	typeref:typename:void	file:
+mg_hash_md5_v	3pp\\mongoose-6.8\\mongoose.c	/^void mg_hash_md5_v(size_t num_msgs, const uint8_t *msgs[],$/;"	f	typeref:typename:void
+mg_hash_sha1_v	3pp\\mongoose-6.8\\mongoose.c	/^void mg_hash_sha1_v(size_t num_msgs, const uint8_t *msgs[],$/;"	f	typeref:typename:void
+mg_hexdump	3pp\\mongoose-6.8\\mongoose.c	/^int mg_hexdump(const void *buf, int len, char *dst, int dst_len) {$/;"	f	typeref:typename:int
+mg_hexdump_connection	3pp\\mongoose-6.8\\mongoose.c	/^void mg_hexdump_connection(struct mg_connection *nc, const char *path,$/;"	f	typeref:typename:void
+mg_hexdump_n	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_hexdump_n(const void *buf, int len, char *dst, int dst_len,$/;"	f	typeref:typename:int	file:
+mg_hexdumpf	3pp\\mongoose-6.8\\mongoose.c	/^void mg_hexdumpf(FILE *fp, const void *buf, int len) {$/;"	f	typeref:typename:void
+mg_http_call_endpoint_handler	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_http_call_endpoint_handler(struct mg_connection *nc, int ev,$/;"	f	typeref:typename:void	file:
+mg_http_check_digest_auth	3pp\\mongoose-6.8\\mongoose.c	/^int mg_http_check_digest_auth(struct http_message *hm, const char *auth_domain,$/;"	f	typeref:typename:int
+mg_http_conn_destructor	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_http_conn_destructor(void *proto_data) {$/;"	f	typeref:typename:void	file:
+mg_http_construct_etag	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_http_construct_etag(char *buf, size_t buf_len,$/;"	f	typeref:typename:void	file:
+mg_http_create_digest_auth_header	3pp\\mongoose-6.8\\mongoose.c	/^int mg_http_create_digest_auth_header(char *buf, size_t buf_len,$/;"	f	typeref:typename:int
+mg_http_endpoint	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_http_endpoint {$/;"	s	file:
+mg_http_free_proto_data_cgi	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_http_free_proto_data_cgi(struct mg_http_proto_data_cgi *d) {$/;"	f	typeref:typename:MG_INTERNAL void
+mg_http_free_proto_data_endpoints	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_http_free_proto_data_endpoints(struct mg_http_endpoint **ep) {$/;"	f	typeref:typename:void	file:
+mg_http_free_proto_data_file	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_http_free_proto_data_file(struct mg_http_proto_data_file *d) {$/;"	f	typeref:typename:void	file:
+mg_http_free_proto_data_mp_stream	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_http_free_proto_data_mp_stream($/;"	f	typeref:typename:void	file:
+mg_http_free_reverse_proxy_data	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_http_free_reverse_proxy_data(struct mg_reverse_proxy_data *rpd) {$/;"	f	typeref:typename:void	file:
+mg_http_get_endpoint_handler	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_http_endpoint *mg_http_get_endpoint_handler(struct mg_connection *nc,$/;"	f	typeref:struct:mg_http_endpoint *
+mg_http_get_proto_data	3pp\\mongoose-6.8\\mongoose.c	/^static struct mg_http_proto_data *mg_http_get_proto_data($/;"	f	typeref:struct:mg_http_proto_data *	file:
+mg_http_get_request_len	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_http_get_request_len(const char *s, int buf_len) {$/;"	f	typeref:typename:int	file:
+mg_http_handle_forwarding	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_http_handle_forwarding(struct mg_connection *nc,$/;"	f	typeref:typename:int	file:
+mg_http_handler	3pp\\mongoose-6.8\\mongoose.c	/^void mg_http_handler(struct mg_connection *nc, int ev,$/;"	f	typeref:typename:void
+mg_http_handler2	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_http_handler2(struct mg_connection *nc, int ev,$/;"	f	typeref:typename:void	file:
+mg_http_is_authorized	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_http_is_authorized(struct http_message *hm, struct mg_str path,$/;"	f	typeref:typename:int	file:
+mg_http_is_authorized	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_http_is_authorized(struct http_message *hm,$/;"	f	typeref:typename:int	file:
+mg_http_multipart_begin	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_http_multipart_begin(struct mg_connection *nc,$/;"	f	typeref:typename:void	file:
+mg_http_multipart_call_handler	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_http_multipart_call_handler(struct mg_connection *c, int ev,$/;"	f	typeref:typename:void	file:
+mg_http_multipart_continue	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_http_multipart_continue(struct mg_connection *c) {$/;"	f	typeref:typename:void	file:
+mg_http_multipart_continue_wait_for_chunk	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_http_multipart_continue_wait_for_chunk(struct mg_connection *c) {$/;"	f	typeref:typename:int	file:
+mg_http_multipart_finalize	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_http_multipart_finalize(struct mg_connection *c) {$/;"	f	typeref:typename:int	file:
+mg_http_multipart_got_chunk	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_http_multipart_got_chunk(struct mg_connection *c) {$/;"	f	typeref:typename:int	file:
+mg_http_multipart_process_boundary	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_http_multipart_process_boundary(struct mg_connection *c) {$/;"	f	typeref:typename:int	file:
+mg_http_multipart_stream	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_http_multipart_stream {$/;"	s	file:
+mg_http_multipart_stream_state	3pp\\mongoose-6.8\\mongoose.c	/^enum mg_http_multipart_stream_state {$/;"	g	file:
+mg_http_multipart_wait_for_boundary	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_http_multipart_wait_for_boundary(struct mg_connection *c) {$/;"	f	typeref:typename:int	file:
+mg_http_parse_chunk	3pp\\mongoose-6.8\\mongoose.c	/^static size_t mg_http_parse_chunk(char *buf, size_t len, char **chunk_data,$/;"	f	typeref:typename:size_t	file:
+mg_http_parse_header	3pp\\mongoose-6.8\\mongoose.c	/^int mg_http_parse_header(struct mg_str *hdr, const char *var_name, char *buf,$/;"	f	typeref:typename:int
+mg_http_parse_headers	3pp\\mongoose-6.8\\mongoose.c	/^static const char *mg_http_parse_headers(const char *s, const char *end,$/;"	f	typeref:typename:const char *	file:
+mg_http_parse_range_header	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_http_parse_range_header(const struct mg_str *header, int64_t *a,$/;"	f	typeref:typename:int	file:
+mg_http_proto_data	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_http_proto_data {$/;"	s	file:
+mg_http_proto_data_cgi	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_http_proto_data_cgi {$/;"	s	file:
+mg_http_proto_data_chuncked	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_http_proto_data_chuncked {$/;"	s	file:
+mg_http_proto_data_file	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_http_proto_data_file {$/;"	s	file:
+mg_http_proto_data_type	3pp\\mongoose-6.8\\mongoose.c	/^enum mg_http_proto_data_type { DATA_NONE, DATA_FILE, DATA_PUT };$/;"	g	file:
+mg_http_reverse_proxy	3pp\\mongoose-6.8\\mongoose.c	/^void mg_http_reverse_proxy(struct mg_connection *nc,$/;"	f	typeref:typename:void
+mg_http_send_digest_auth_request	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_http_send_digest_auth_request(struct mg_connection *c,$/;"	f	typeref:typename:void	file:
+mg_http_send_error	3pp\\mongoose-6.8\\mongoose.c	/^void mg_http_send_error(struct mg_connection *nc, int code,$/;"	f	typeref:typename:void
+mg_http_send_options	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_http_send_options(struct mg_connection *nc) {$/;"	f	typeref:typename:void	file:
+mg_http_send_port_based_redirect	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_http_send_port_based_redirect($/;"	f	typeref:typename:int	file:
+mg_http_send_redirect	3pp\\mongoose-6.8\\mongoose.c	/^void mg_http_send_redirect(struct mg_connection *nc, int status_code,$/;"	f	typeref:typename:void
+mg_http_serve_file	3pp\\mongoose-6.8\\mongoose.c	/^void mg_http_serve_file(struct mg_connection *nc, struct http_message *hm,$/;"	f	typeref:typename:void
+mg_http_serve_file2	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_http_serve_file2(struct mg_connection *nc, const char *path,$/;"	f	typeref:typename:void	file:
+mg_http_transfer_file_data	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_http_transfer_file_data(struct mg_connection *nc) {$/;"	f	typeref:typename:void	file:
+mg_if_accept_new_conn	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_if_accept_new_conn(struct mg_connection *lc) {$/;"	f	typeref:struct:mg_connection *
+mg_if_accept_tcp_cb	3pp\\mongoose-6.8\\mongoose.c	/^void mg_if_accept_tcp_cb(struct mg_connection *nc, union socket_address *sa,$/;"	f	typeref:typename:void
+mg_if_connect_cb	3pp\\mongoose-6.8\\mongoose.c	/^void mg_if_connect_cb(struct mg_connection *nc, int err) {$/;"	f	typeref:typename:void
+mg_if_create_iface	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_iface *mg_if_create_iface(const struct mg_iface_vtable *vtable,$/;"	f	typeref:struct:mg_iface *
+mg_if_get_conn_addr	3pp\\mongoose-6.8\\mongoose.c	/^void mg_if_get_conn_addr(struct mg_connection *nc, int remote,$/;"	f	typeref:typename:void
+mg_if_poll	3pp\\mongoose-6.8\\mongoose.c	/^void mg_if_poll(struct mg_connection *nc, time_t now) {$/;"	f	typeref:typename:void
+mg_if_recv_tcp_cb	3pp\\mongoose-6.8\\mongoose.c	/^void mg_if_recv_tcp_cb(struct mg_connection *nc, void *buf, int len, int own) {$/;"	f	typeref:typename:void
+mg_if_recv_udp_cb	3pp\\mongoose-6.8\\mongoose.c	/^void mg_if_recv_udp_cb(struct mg_connection *nc, void *buf, int len,$/;"	f	typeref:typename:void
+mg_if_sent_cb	3pp\\mongoose-6.8\\mongoose.c	/^void mg_if_sent_cb(struct mg_connection *nc, int num_sent) {$/;"	f	typeref:typename:void
+mg_if_timer	3pp\\mongoose-6.8\\mongoose.c	/^void mg_if_timer(struct mg_connection *c, double now) {$/;"	f	typeref:typename:void
+mg_ifaces	3pp\\mongoose-6.8\\mongoose.c	/^const struct mg_iface_vtable *mg_ifaces[] = {&mg_default_iface_vtable,$/;"	v	typeref:typename:const struct mg_iface_vtable * []
+mg_ifaces	3pp\\mongoose-6.8\\mongoose.c	/^const struct mg_iface_vtable *mg_ifaces[] = {&mg_default_iface_vtable};$/;"	v	typeref:typename:const struct mg_iface_vtable * []
+mg_is_big_endian	3pp\\mongoose-6.8\\mongoose.c	/^int mg_is_big_endian(void) {$/;"	f	typeref:typename:int
+mg_is_creation_request	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_is_creation_request(const struct http_message *hm) {$/;"	f	typeref:typename:int	file:
+mg_is_dav_request	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL int mg_is_dav_request(const struct mg_str *s) {$/;"	f	typeref:typename:MG_INTERNAL int
+mg_is_error	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_is_error(int n) {$/;"	f	typeref:typename:int	file:
+mg_is_error	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_is_error(void) {$/;"	f	typeref:typename:int	file:
+mg_is_file_hidden	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_is_file_hidden(const char *path,$/;"	f	typeref:typename:int	file:
+mg_is_not_modified	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL int mg_is_not_modified(struct http_message *hm, cs_stat_t *st) {$/;"	f	typeref:typename:MG_INTERNAL int
+mg_is_ws_first_fragment	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_is_ws_first_fragment(unsigned char flags) {$/;"	f	typeref:typename:int	file:
+mg_is_ws_fragment	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_is_ws_fragment(unsigned char flags) {$/;"	f	typeref:typename:int	file:
+mg_lwip_accept_cb	3pp\\mongoose-6.8\\mongoose.c	/^static err_t mg_lwip_accept_cb(void *arg, struct tcp_pcb *newtpcb, err_t err) {$/;"	f	typeref:typename:err_t	file:
+mg_lwip_accept_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_accept_conn(struct mg_connection *nc, struct tcp_pcb *tpcb) {$/;"	f	typeref:typename:void
+mg_lwip_conn_state	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_lwip_conn_state {$/;"	s	file:
+mg_lwip_get_poll_delay_ms	3pp\\mongoose-6.8\\mongoose.c	/^uint32_t mg_lwip_get_poll_delay_ms(struct mg_mgr *mgr) {$/;"	f	typeref:typename:uint32_t
+mg_lwip_handle_accept	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_handle_accept(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_lwip_handle_recv_tcp	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_lwip_handle_recv_tcp(struct mg_connection *nc) {$/;"	f	typeref:typename:void	file:
+mg_lwip_handle_recv_udp	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_lwip_handle_recv_udp(struct mg_connection *nc) {$/;"	f	typeref:typename:void	file:
+mg_lwip_if_add_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_if_add_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_lwip_if_connect_tcp	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_if_connect_tcp(struct mg_connection *nc,$/;"	f	typeref:typename:void
+mg_lwip_if_connect_tcp_ctx	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_lwip_if_connect_tcp_ctx {$/;"	s	file:
+mg_lwip_if_connect_tcp_tcpip	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_lwip_if_connect_tcp_tcpip(void *arg) {$/;"	f	typeref:typename:void	file:
+mg_lwip_if_connect_udp	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_if_connect_udp(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_lwip_if_connect_udp_tcpip	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_lwip_if_connect_udp_tcpip(void *arg) {$/;"	f	typeref:typename:void	file:
+mg_lwip_if_create_conn	3pp\\mongoose-6.8\\mongoose.c	/^int mg_lwip_if_create_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:int
+mg_lwip_if_destroy_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_if_destroy_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_lwip_if_free	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_if_free(struct mg_iface *iface) {$/;"	f	typeref:typename:void
+mg_lwip_if_get_conn_addr	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_if_get_conn_addr(struct mg_connection *nc, int remote,$/;"	f	typeref:typename:void
+mg_lwip_if_init	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_if_init(struct mg_iface *iface) {$/;"	f	typeref:typename:void
+mg_lwip_if_listen_ctx	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_lwip_if_listen_ctx {$/;"	s	file:
+mg_lwip_if_listen_tcp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_lwip_if_listen_tcp(struct mg_connection *nc, union socket_address *sa) {$/;"	f	typeref:typename:int
+mg_lwip_if_listen_tcp_tcpip	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_lwip_if_listen_tcp_tcpip(void *arg) {$/;"	f	typeref:typename:void	file:
+mg_lwip_if_listen_udp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_lwip_if_listen_udp(struct mg_connection *nc, union socket_address *sa) {$/;"	f	typeref:typename:int
+mg_lwip_if_listen_udp_tcpip	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_lwip_if_listen_udp_tcpip(void *arg) {$/;"	f	typeref:typename:void	file:
+mg_lwip_if_poll	3pp\\mongoose-6.8\\mongoose.c	/^time_t mg_lwip_if_poll(struct mg_iface *iface, int timeout_ms) {$/;"	f	typeref:typename:time_t
+mg_lwip_if_recved	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_if_recved(struct mg_connection *nc, size_t len) {$/;"	f	typeref:typename:void
+mg_lwip_if_remove_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_if_remove_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_lwip_if_sock_set	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_if_sock_set(struct mg_connection *nc, sock_t sock) {$/;"	f	typeref:typename:void
+mg_lwip_if_tcp_send	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_if_tcp_send(struct mg_connection *nc, const void *buf,$/;"	f	typeref:typename:void
+mg_lwip_if_udp_send	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_if_udp_send(struct mg_connection *nc, const void *buf,$/;"	f	typeref:typename:void
+mg_lwip_iface_vtable	3pp\\mongoose-6.8\\mongoose.c	/^const struct mg_iface_vtable mg_lwip_iface_vtable = MG_LWIP_IFACE_VTABLE;$/;"	v	typeref:typename:const struct mg_iface_vtable
+mg_lwip_post_signal	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_post_signal(enum mg_sig_type sig, struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_lwip_recv_common	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_lwip_recv_common(struct mg_connection *nc, struct pbuf *p) {$/;"	f	typeref:typename:void	file:
+mg_lwip_send_more	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_lwip_send_more(struct mg_connection *nc) {$/;"	f	typeref:typename:void	file:
+mg_lwip_set_keepalive_params	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_set_keepalive_params(struct mg_connection *nc, int idle,$/;"	f	typeref:typename:void
+mg_lwip_ssl_do_hs	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_ssl_do_hs(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_lwip_ssl_recv	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_ssl_recv(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_lwip_ssl_send	3pp\\mongoose-6.8\\mongoose.c	/^void mg_lwip_ssl_send(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_lwip_tcp_conn_cb	3pp\\mongoose-6.8\\mongoose.c	/^static err_t mg_lwip_tcp_conn_cb(void *arg, struct tcp_pcb *tpcb, err_t err) {$/;"	f	typeref:typename:err_t	file:
+mg_lwip_tcp_error_cb	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_lwip_tcp_error_cb(void *arg, err_t err) {$/;"	f	typeref:typename:void	file:
+mg_lwip_tcp_recv_cb	3pp\\mongoose-6.8\\mongoose.c	/^static err_t mg_lwip_tcp_recv_cb(void *arg, struct tcp_pcb *tpcb,$/;"	f	typeref:typename:err_t	file:
+mg_lwip_tcp_sent_cb	3pp\\mongoose-6.8\\mongoose.c	/^static err_t mg_lwip_tcp_sent_cb(void *arg, struct tcp_pcb *tpcb,$/;"	f	typeref:typename:err_t	file:
+mg_lwip_tcp_write	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_lwip_tcp_write(struct mg_connection *nc, const void *data,$/;"	f	typeref:typename:int	file:
+mg_lwip_tcp_write_ctx	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_lwip_tcp_write_ctx {$/;"	s	file:
+mg_lwip_tcp_write_tcpip	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_lwip_tcp_write_tcpip(void *arg) {$/;"	f	typeref:typename:void	file:
+mg_lwip_udp_recv_cb	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_lwip_udp_recv_cb(void *arg, struct udp_pcb *pcb, struct pbuf *p,$/;"	f	typeref:typename:void	file:
+mg_lwip_udp_send	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_lwip_udp_send(struct mg_connection *nc, const void *data,$/;"	f	typeref:typename:int	file:
+mg_match_prefix	3pp\\mongoose-6.8\\mongoose.c	/^int mg_match_prefix(const char *pattern, int pattern_len, const char *str) {$/;"	f	typeref:typename:int
+mg_match_prefix_n	3pp\\mongoose-6.8\\mongoose.c	/^int mg_match_prefix_n(const struct mg_str pattern, const struct mg_str str) {$/;"	f	typeref:typename:int
+mg_mbuf_append_base64	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mbuf_append_base64(struct mbuf *mbuf, const void *data, size_t len) {$/;"	f	typeref:typename:void
+mg_mbuf_append_base64_putc	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mbuf_append_base64_putc(char ch, void *user_data) {$/;"	f	typeref:typename:void
+mg_mgr_free	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mgr_free(struct mg_mgr *m) {$/;"	f	typeref:typename:void
+mg_mgr_handle_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mgr_handle_conn(struct mg_connection *nc, int fd_flags, double now) {$/;"	f	typeref:typename:void
+mg_mgr_handle_ctl_sock	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_mgr_handle_ctl_sock(struct mg_mgr *mgr) {$/;"	f	typeref:typename:void	file:
+mg_mgr_init	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mgr_init(struct mg_mgr *m, void *user_data) {$/;"	f	typeref:typename:void
+mg_mgr_init_opt	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mgr_init_opt(struct mg_mgr *m, void *user_data,$/;"	f	typeref:typename:void
+mg_mgr_poll	3pp\\mongoose-6.8\\mongoose.c	/^time_t mg_mgr_poll(struct mg_mgr *m, int timeout_ms) {$/;"	f	typeref:typename:time_t
+mg_mk_str	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_str mg_mk_str(const char *s) {$/;"	f	typeref:struct:mg_str
+mg_mk_str_n	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_str mg_mk_str_n(const char *s, size_t len) {$/;"	f	typeref:struct:mg_str
+mg_mkdir	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_mkdir(const char *path, uint32_t mode) {$/;"	f	typeref:typename:int	file:
+mg_mkmd5resp	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_mkmd5resp(const char *method, size_t method_len, const char *uri,$/;"	f	typeref:typename:void	file:
+mg_mqtt_add_session	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_mqtt_add_session(struct mg_mqtt_session *s) {$/;"	f	typeref:typename:void	file:
+mg_mqtt_broker	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mqtt_broker(struct mg_connection *nc, int ev, void *data) {$/;"	f	typeref:typename:void
+mg_mqtt_broker_handle_connect	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_mqtt_broker_handle_connect(struct mg_mqtt_broker *brk,$/;"	f	typeref:typename:void	file:
+mg_mqtt_broker_handle_publish	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_mqtt_broker_handle_publish(struct mg_mqtt_broker *brk,$/;"	f	typeref:typename:void	file:
+mg_mqtt_broker_handle_subscribe	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_mqtt_broker_handle_subscribe(struct mg_connection *nc,$/;"	f	typeref:typename:void	file:
+mg_mqtt_broker_init	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mqtt_broker_init(struct mg_mqtt_broker *brk, void *user_data) {$/;"	f	typeref:typename:void
+mg_mqtt_close_session	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_mqtt_close_session(struct mg_mqtt_session *s) {$/;"	f	typeref:typename:void	file:
+mg_mqtt_connack	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mqtt_connack(struct mg_connection *nc, uint8_t return_code) {$/;"	f	typeref:typename:void
+mg_mqtt_destroy_session	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_mqtt_destroy_session(struct mg_mqtt_session *s) {$/;"	f	typeref:typename:void	file:
+mg_mqtt_disconnect	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mqtt_disconnect(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_mqtt_match_topic_expression	3pp\\mongoose-6.8\\mongoose.c	/^int mg_mqtt_match_topic_expression(struct mg_str exp, struct mg_str topic) {$/;"	f	typeref:typename:int
+mg_mqtt_next	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_mqtt_session *mg_mqtt_next(struct mg_mqtt_broker *brk,$/;"	f	typeref:struct:mg_mqtt_session *
+mg_mqtt_next_subscribe_topic	3pp\\mongoose-6.8\\mongoose.c	/^int mg_mqtt_next_subscribe_topic(struct mg_mqtt_message *msg,$/;"	f	typeref:typename:int
+mg_mqtt_ping	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mqtt_ping(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_mqtt_pong	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mqtt_pong(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_mqtt_prepend_header	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_mqtt_prepend_header(struct mg_connection *nc, uint8_t cmd,$/;"	f	typeref:typename:void	file:
+mg_mqtt_proto_data_destructor	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_mqtt_proto_data_destructor(void *proto_data) {$/;"	f	typeref:typename:void	file:
+mg_mqtt_puback	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mqtt_puback(struct mg_connection *nc, uint16_t message_id) {$/;"	f	typeref:typename:void
+mg_mqtt_pubcomp	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mqtt_pubcomp(struct mg_connection *nc, uint16_t message_id) {$/;"	f	typeref:typename:void
+mg_mqtt_publish	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mqtt_publish(struct mg_connection *nc, const char *topic,$/;"	f	typeref:typename:void
+mg_mqtt_pubrec	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mqtt_pubrec(struct mg_connection *nc, uint16_t message_id) {$/;"	f	typeref:typename:void
+mg_mqtt_pubrel	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mqtt_pubrel(struct mg_connection *nc, uint16_t message_id) {$/;"	f	typeref:typename:void
+mg_mqtt_remove_session	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_mqtt_remove_session(struct mg_mqtt_session *s) {$/;"	f	typeref:typename:void	file:
+mg_mqtt_session_init	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_mqtt_session_init(struct mg_mqtt_broker *brk,$/;"	f	typeref:typename:void	file:
+mg_mqtt_suback	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mqtt_suback(struct mg_connection *nc, uint8_t *qoss, size_t qoss_len,$/;"	f	typeref:typename:void
+mg_mqtt_subscribe	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mqtt_subscribe(struct mg_connection *nc,$/;"	f	typeref:typename:void
+mg_mqtt_unsuback	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mqtt_unsuback(struct mg_connection *nc, uint16_t message_id) {$/;"	f	typeref:typename:void
+mg_mqtt_unsubscribe	3pp\\mongoose-6.8\\mongoose.c	/^void mg_mqtt_unsubscribe(struct mg_connection *nc, char **topics,$/;"	f	typeref:typename:void
+mg_mqtt_vmatch_topic_expression	3pp\\mongoose-6.8\\mongoose.c	/^int mg_mqtt_vmatch_topic_expression(const char *exp, struct mg_str topic) {$/;"	f	typeref:typename:int
+mg_ncasecmp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_ncasecmp(const char *s1, const char *s2, size_t len) {$/;"	f	typeref:typename:int
+mg_next	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_next(struct mg_mgr *s, struct mg_connection *conn) {$/;"	f	typeref:struct:mg_connection *
+mg_next_comma_list_entry	3pp\\mongoose-6.8\\mongoose.c	/^const char *mg_next_comma_list_entry(const char *list, struct mg_str *val,$/;"	f	typeref:typename:const char *
+mg_normalize_uri_path	3pp\\mongoose-6.8\\mongoose.c	/^int mg_normalize_uri_path(const struct mg_str *in, struct mg_str *out) {$/;"	f	typeref:typename:int
+mg_ntp_to_tv	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_ntp_to_tv(uint64_t val, struct timeval *tv) {$/;"	f	typeref:typename:void	file:
+mg_num_ifaces	3pp\\mongoose-6.8\\mongoose.c	/^int mg_num_ifaces = (int) (sizeof(mg_ifaces) \/ sizeof(mg_ifaces[0]));$/;"	v	typeref:typename:int
+mg_num_leap_years	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_num_leap_years(int year) {$/;"	f	typeref:typename:int	file:
+mg_open	3pp\\mongoose-6.8\\mongoose.c	/^int mg_open(const char *path, int flag, int mode) { \/* LCOV_EXCL_LINE *\/$/;"	f	typeref:typename:int
+mg_open_listening_socket	3pp\\mongoose-6.8\\mongoose.c	/^static sock_t mg_open_listening_socket(union socket_address *sa, int type,$/;"	f	typeref:typename:sock_t	file:
+mg_parse_address	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL int mg_parse_address(const char *str, union socket_address *sa,$/;"	f	typeref:typename:MG_INTERNAL int
+mg_parse_date_string	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL time_t mg_parse_date_string(const char *datetime) {$/;"	f	typeref:typename:MG_INTERNAL time_t
+mg_parse_dns	3pp\\mongoose-6.8\\mongoose.c	/^int mg_parse_dns(const char *buf, int len, struct mg_dns_message *msg) {$/;"	f	typeref:typename:int
+mg_parse_dns_resource_record	3pp\\mongoose-6.8\\mongoose.c	/^static unsigned char *mg_parse_dns_resource_record($/;"	f	typeref:typename:unsigned char *	file:
+mg_parse_http	3pp\\mongoose-6.8\\mongoose.c	/^int mg_parse_http(const char *s, int n, struct http_message *hm, int is_req) {$/;"	f	typeref:typename:int
+mg_parse_http_basic_auth	3pp\\mongoose-6.8\\mongoose.c	/^int mg_parse_http_basic_auth(struct mg_str *hdr, char *user, size_t user_len,$/;"	f	typeref:typename:int
+mg_parse_multipart	3pp\\mongoose-6.8\\mongoose.c	/^size_t mg_parse_multipart(const char *buf, size_t buf_len, char *var_name,$/;"	f	typeref:typename:size_t
+mg_parse_uri	3pp\\mongoose-6.8\\mongoose.c	/^int mg_parse_uri(const struct mg_str uri, struct mg_str *scheme,$/;"	f	typeref:typename:int
+mg_pic32_if_add_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_pic32_if_add_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_pic32_if_connect_tcp	3pp\\mongoose-6.8\\mongoose.c	/^void mg_pic32_if_connect_tcp(struct mg_connection *nc,$/;"	f	typeref:typename:void
+mg_pic32_if_connect_udp	3pp\\mongoose-6.8\\mongoose.c	/^void mg_pic32_if_connect_udp(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_pic32_if_create_conn	3pp\\mongoose-6.8\\mongoose.c	/^int mg_pic32_if_create_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:int
+mg_pic32_if_destroy_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_pic32_if_destroy_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_pic32_if_free	3pp\\mongoose-6.8\\mongoose.c	/^void mg_pic32_if_free(struct mg_iface *iface) {$/;"	f	typeref:typename:void
+mg_pic32_if_get_conn_addr	3pp\\mongoose-6.8\\mongoose.c	/^void mg_pic32_if_get_conn_addr(struct mg_connection *nc, int remote,$/;"	f	typeref:typename:void
+mg_pic32_if_init	3pp\\mongoose-6.8\\mongoose.c	/^void mg_pic32_if_init(struct mg_iface *iface) {$/;"	f	typeref:typename:void
+mg_pic32_if_listen_tcp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_pic32_if_listen_tcp(struct mg_connection *nc, union socket_address *sa) {$/;"	f	typeref:typename:int
+mg_pic32_if_listen_udp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_pic32_if_listen_udp(struct mg_connection *nc, union socket_address *sa) {$/;"	f	typeref:typename:int
+mg_pic32_if_poll	3pp\\mongoose-6.8\\mongoose.c	/^time_t mg_pic32_if_poll(struct mg_iface *iface, int timeout_ms) {$/;"	f	typeref:typename:time_t
+mg_pic32_if_recved	3pp\\mongoose-6.8\\mongoose.c	/^void mg_pic32_if_recved(struct mg_connection *nc, size_t len) {$/;"	f	typeref:typename:void
+mg_pic32_if_remove_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_pic32_if_remove_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_pic32_if_sock_set	3pp\\mongoose-6.8\\mongoose.c	/^void mg_pic32_if_sock_set(struct mg_connection *nc, sock_t sock) {$/;"	f	typeref:typename:void
+mg_pic32_if_tcp_send	3pp\\mongoose-6.8\\mongoose.c	/^void mg_pic32_if_tcp_send(struct mg_connection *nc, const void *buf,$/;"	f	typeref:typename:void
+mg_pic32_if_udp_send	3pp\\mongoose-6.8\\mongoose.c	/^void mg_pic32_if_udp_send(struct mg_connection *nc, const void *buf,$/;"	f	typeref:typename:void
+mg_pic32_iface_vtable	3pp\\mongoose-6.8\\mongoose.c	/^const struct mg_iface_vtable mg_pic32_iface_vtable = MG_PIC32_IFACE_VTABLE;$/;"	v	typeref:typename:const struct mg_iface_vtable
+mg_prepare_cgi_environment	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_prepare_cgi_environment(struct mg_connection *nc,$/;"	f	typeref:typename:void	file:
+mg_print_dir_entry	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_print_dir_entry(struct mg_connection *nc, const char *file_name,$/;"	f	typeref:typename:void	file:
+mg_print_props	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_print_props(struct mg_connection *nc, const char *name,$/;"	f	typeref:typename:void	file:
+mg_printf	3pp\\mongoose-6.8\\mongoose.c	/^int mg_printf(struct mg_connection *conn, const char *fmt, ...) {$/;"	f	typeref:typename:int
+mg_printf_html_escape	3pp\\mongoose-6.8\\mongoose.c	/^void mg_printf_html_escape(struct mg_connection *nc, const char *fmt, ...) {$/;"	f	typeref:typename:void
+mg_printf_http_chunk	3pp\\mongoose-6.8\\mongoose.c	/^void mg_printf_http_chunk(struct mg_connection *nc, const char *fmt, ...) {$/;"	f	typeref:typename:void
+mg_printf_websocket_frame	3pp\\mongoose-6.8\\mongoose.c	/^void mg_printf_websocket_frame(struct mg_connection *nc, int op,$/;"	f	typeref:typename:void
+mg_pull_from_stdout	3pp\\mongoose-6.8\\mongoose.c	/^static void *mg_pull_from_stdout(void *arg) {$/;"	f	typeref:typename:void *	file:
+mg_push_to_stdin	3pp\\mongoose-6.8\\mongoose.c	/^static void *mg_push_to_stdin(void *arg) {$/;"	f	typeref:typename:void *	file:
+mg_q_msg	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_q_msg {$/;"	s	file:
+mg_q_msg_type	3pp\\mongoose-6.8\\mongoose.c	/^enum mg_q_msg_type {$/;"	g	file:
+mg_recv_common	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_recv_common(struct mg_connection *nc, void *buf, int len,$/;"	f	typeref:typename:MG_INTERNAL void
+mg_recvfrom	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_recvfrom(struct mg_connection *nc, union socket_address *sa,$/;"	f	typeref:typename:int	file:
+mg_register_http_endpoint	3pp\\mongoose-6.8\\mongoose.c	/^void mg_register_http_endpoint(struct mg_connection *nc, const char *uri_path,$/;"	f	typeref:typename:void
+mg_register_http_endpoint_opt	3pp\\mongoose-6.8\\mongoose.c	/^void mg_register_http_endpoint_opt(struct mg_connection *nc,$/;"	f	typeref:typename:void
+mg_remove_conn	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_remove_conn(struct mg_connection *conn) {$/;"	f	typeref:typename:MG_INTERNAL void
+mg_remove_directory	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_remove_directory(const struct mg_serve_http_opts *opts,$/;"	f	typeref:typename:int	file:
+mg_resolve	3pp\\mongoose-6.8\\mongoose.c	/^int mg_resolve(const char *host, char *buf, size_t n) {$/;"	f	typeref:typename:int
+mg_resolve2	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_resolve2(const char *host, struct in_addr *ina) {$/;"	f	typeref:typename:int	file:
+mg_resolve_async	3pp\\mongoose-6.8\\mongoose.c	/^int mg_resolve_async(struct mg_mgr *mgr, const char *name, int query,$/;"	f	typeref:typename:int
+mg_resolve_async_eh	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_resolve_async_eh(struct mg_connection *nc, int ev,$/;"	f	typeref:typename:void	file:
+mg_resolve_async_opt	3pp\\mongoose-6.8\\mongoose.c	/^int mg_resolve_async_opt(struct mg_mgr *mgr, const char *name, int query,$/;"	f	typeref:typename:int
+mg_resolve_async_request	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_resolve_async_request {$/;"	s	file:
+mg_resolve_from_hosts_file	3pp\\mongoose-6.8\\mongoose.c	/^int mg_resolve_from_hosts_file(const char *name, union socket_address *usa) {$/;"	f	typeref:typename:int
+mg_reverse_proxy_data	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_reverse_proxy_data {$/;"	s	file:
+mg_reverse_proxy_handler	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_reverse_proxy_handler(struct mg_connection *nc, int ev,$/;"	f	typeref:typename:void	file:
+mg_run_in_task	3pp\\mongoose-6.8\\mongoose.c	/^void mg_run_in_task(void (*cb)(struct mg_mgr *mgr, void *arg), void *cb_arg) {$/;"	f	typeref:typename:void
+mg_s_cipher_list	3pp\\mongoose-6.8\\mongoose.c	/^static const char mg_s_cipher_list[] =$/;"	v	typeref:typename:const char[]	file:
+mg_s_cipher_list	3pp\\mongoose-6.8\\mongoose.c	/^static const int mg_s_cipher_list[] = {$/;"	v	typeref:typename:const int[]	file:
+mg_s_default_dh_params	3pp\\mongoose-6.8\\mongoose.c	/^static const char mg_s_default_dh_params[] =$/;"	v	typeref:typename:const char[]	file:
+mg_scan_directory	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_scan_directory(struct mg_connection *nc, const char *dir,$/;"	f	typeref:typename:void	file:
+mg_send	3pp\\mongoose-6.8\\mongoose.c	/^void mg_send(struct mg_connection *nc, const void *buf, int len) {$/;"	f	typeref:typename:void
+mg_send_directory_listing	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_send_directory_listing(struct mg_connection *nc, const char *dir,$/;"	f	typeref:typename:void	file:
+mg_send_dns_query	3pp\\mongoose-6.8\\mongoose.c	/^void mg_send_dns_query(struct mg_connection *nc, const char *name,$/;"	f	typeref:typename:void
+mg_send_file_data	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_send_file_data(struct mg_connection *nc, FILE *fp) {$/;"	f	typeref:typename:void	file:
+mg_send_head	3pp\\mongoose-6.8\\mongoose.c	/^void mg_send_head(struct mg_connection *c, int status_code,$/;"	f	typeref:typename:void
+mg_send_http_chunk	3pp\\mongoose-6.8\\mongoose.c	/^void mg_send_http_chunk(struct mg_connection *nc, const char *buf, size_t len) {$/;"	f	typeref:typename:void
+mg_send_http_file	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_send_http_file(struct mg_connection *nc, char *path,$/;"	f	typeref:typename:MG_INTERNAL void
+mg_send_js	3pp\\mongoose-6.8\\mongoose.c	/^static enum v7_err mg_send_js(struct v7 *v7, v7_val_t *res) {$/;"	f	typeref:enum:v7_err	file:
+mg_send_mqtt_handshake	3pp\\mongoose-6.8\\mongoose.c	/^void mg_send_mqtt_handshake(struct mg_connection *nc, const char *client_id) {$/;"	f	typeref:typename:void
+mg_send_mqtt_handshake_opt	3pp\\mongoose-6.8\\mongoose.c	/^void mg_send_mqtt_handshake_opt(struct mg_connection *nc, const char *client_id,$/;"	f	typeref:typename:void
+mg_send_mqtt_short_command	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_send_mqtt_short_command(struct mg_connection *nc, uint8_t cmd,$/;"	f	typeref:typename:void	file:
+mg_send_response_line	3pp\\mongoose-6.8\\mongoose.c	/^void mg_send_response_line(struct mg_connection *nc, int status_code,$/;"	f	typeref:typename:void
+mg_send_response_line_s	3pp\\mongoose-6.8\\mongoose.c	/^void mg_send_response_line_s(struct mg_connection *nc, int status_code,$/;"	f	typeref:typename:void
+mg_send_ssi_file	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_send_ssi_file(struct mg_connection *nc, struct http_message *hm,$/;"	f	typeref:typename:void	file:
+mg_send_websocket_frame	3pp\\mongoose-6.8\\mongoose.c	/^void mg_send_websocket_frame(struct mg_connection *nc, int op, const void *data,$/;"	f	typeref:typename:void
+mg_send_websocket_framev	3pp\\mongoose-6.8\\mongoose.c	/^void mg_send_websocket_framev(struct mg_connection *nc, int op,$/;"	f	typeref:typename:void
+mg_send_websocket_handshake	3pp\\mongoose-6.8\\mongoose.c	/^void mg_send_websocket_handshake(struct mg_connection *nc, const char *path,$/;"	f	typeref:typename:void
+mg_send_websocket_handshake2	3pp\\mongoose-6.8\\mongoose.c	/^void mg_send_websocket_handshake2(struct mg_connection *nc, const char *path,$/;"	f	typeref:typename:void
+mg_send_websocket_handshake3	3pp\\mongoose-6.8\\mongoose.c	/^void mg_send_websocket_handshake3(struct mg_connection *nc, const char *path,$/;"	f	typeref:typename:void
+mg_send_websocket_handshake3v	3pp\\mongoose-6.8\\mongoose.c	/^void mg_send_websocket_handshake3v(struct mg_connection *nc,$/;"	f	typeref:typename:void
+mg_send_ws_header	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_send_ws_header(struct mg_connection *nc, int op, size_t len,$/;"	f	typeref:typename:void	file:
+mg_serve_http	3pp\\mongoose-6.8\\mongoose.c	/^void mg_serve_http(struct mg_connection *nc, struct http_message *hm,$/;"	f	typeref:typename:void
+mg_set_cipher_list	3pp\\mongoose-6.8\\mongoose.c	/^static enum mg_ssl_if_result mg_set_cipher_list(SSL_CTX *ctx, const char *cl) {$/;"	f	typeref:enum:mg_ssl_if_result	file:
+mg_set_cipher_list	3pp\\mongoose-6.8\\mongoose.c	/^static enum mg_ssl_if_result mg_set_cipher_list(struct mg_ssl_if_ctx *ctx,$/;"	f	typeref:enum:mg_ssl_if_result	file:
+mg_set_close_on_exec	3pp\\mongoose-6.8\\mongoose.c	/^void mg_set_close_on_exec(sock_t sock) {$/;"	f	typeref:typename:void
+mg_set_nameserver	3pp\\mongoose-6.8\\mongoose.c	/^void mg_set_nameserver(struct mg_mgr *mgr, const char *nameserver) {$/;"	f	typeref:typename:void
+mg_set_non_blocking_mode	3pp\\mongoose-6.8\\mongoose.c	/^void mg_set_non_blocking_mode(sock_t sock) {$/;"	f	typeref:typename:void
+mg_set_protocol_coap	3pp\\mongoose-6.8\\mongoose.c	/^int mg_set_protocol_coap(struct mg_connection *nc) {$/;"	f	typeref:typename:int
+mg_set_protocol_dns	3pp\\mongoose-6.8\\mongoose.c	/^void mg_set_protocol_dns(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_set_protocol_http_websocket	3pp\\mongoose-6.8\\mongoose.c	/^void mg_set_protocol_http_websocket(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_set_protocol_mqtt	3pp\\mongoose-6.8\\mongoose.c	/^void mg_set_protocol_mqtt(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_set_protocol_sntp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_set_protocol_sntp(struct mg_connection *c) {$/;"	f	typeref:typename:int
+mg_set_ssl	3pp\\mongoose-6.8\\mongoose.c	/^const char *mg_set_ssl(struct mg_connection *nc, const char *cert,$/;"	f	typeref:typename:const char *
+mg_set_timer	3pp\\mongoose-6.8\\mongoose.c	/^double mg_set_timer(struct mg_connection *c, double timestamp) {$/;"	f	typeref:typename:double
+mg_sig_type	3pp\\mongoose-6.8\\mongoose.c	/^enum mg_sig_type {$/;"	g	file:
+mg_simplelink_iface_vtable	3pp\\mongoose-6.8\\mongoose.c	/^const struct mg_iface_vtable mg_simplelink_iface_vtable = MG_SL_IFACE_VTABLE;$/;"	v	typeref:typename:const struct mg_iface_vtable
+mg_skip	3pp\\mongoose-6.8\\mongoose.c	/^const char *mg_skip(const char *s, const char *end, const char *delims,$/;"	f	typeref:typename:const char *
+mg_sl_if_add_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sl_if_add_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_sl_if_connect_tcp	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sl_if_connect_tcp(struct mg_connection *nc,$/;"	f	typeref:typename:void
+mg_sl_if_connect_udp	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sl_if_connect_udp(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_sl_if_create_conn	3pp\\mongoose-6.8\\mongoose.c	/^int mg_sl_if_create_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:int
+mg_sl_if_destroy_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sl_if_destroy_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_sl_if_free	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sl_if_free(struct mg_iface *iface) {$/;"	f	typeref:typename:void
+mg_sl_if_get_conn_addr	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sl_if_get_conn_addr(struct mg_connection *nc, int remote,$/;"	f	typeref:typename:void
+mg_sl_if_init	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sl_if_init(struct mg_iface *iface) {$/;"	f	typeref:typename:void
+mg_sl_if_listen_tcp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_sl_if_listen_tcp(struct mg_connection *nc, union socket_address *sa) {$/;"	f	typeref:typename:int
+mg_sl_if_listen_udp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_sl_if_listen_udp(struct mg_connection *nc, union socket_address *sa) {$/;"	f	typeref:typename:int
+mg_sl_if_poll	3pp\\mongoose-6.8\\mongoose.c	/^time_t mg_sl_if_poll(struct mg_iface *iface, int timeout_ms) {$/;"	f	typeref:typename:time_t
+mg_sl_if_recved	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sl_if_recved(struct mg_connection *nc, size_t len) {$/;"	f	typeref:typename:void
+mg_sl_if_remove_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sl_if_remove_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_sl_if_sock_set	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sl_if_sock_set(struct mg_connection *nc, sock_t sock) {$/;"	f	typeref:typename:void
+mg_sl_if_tcp_send	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sl_if_tcp_send(struct mg_connection *nc, const void *buf, size_t len) {$/;"	f	typeref:typename:void
+mg_sl_if_udp_send	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sl_if_udp_send(struct mg_connection *nc, const void *buf, size_t len) {$/;"	f	typeref:typename:void
+mg_sntp_connect	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_sntp_connect(struct mg_mgr *mgr,$/;"	f	typeref:struct:mg_connection *
+mg_sntp_get_time	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_sntp_get_time(struct mg_mgr *mgr,$/;"	f	typeref:struct:mg_connection *
+mg_sntp_handler	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_sntp_handler(struct mg_connection *c, int ev,$/;"	f	typeref:typename:void	file:
+mg_sntp_parse_reply	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL int mg_sntp_parse_reply(const char *buf, int len,$/;"	f	typeref:typename:MG_INTERNAL int
+mg_sntp_send_request	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sntp_send_request(struct mg_connection *c) {$/;"	f	typeref:typename:void
+mg_sntp_util_ev_handler	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_sntp_util_ev_handler(struct mg_connection *c, int ev,$/;"	f	typeref:typename:void	file:
+mg_sock_addr_to_str	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sock_addr_to_str(const union socket_address *sa, char *buf, size_t len,$/;"	f	typeref:typename:void
+mg_sock_get_addr	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_sock_get_addr(sock_t sock, int remote,$/;"	f	typeref:typename:void	file:
+mg_sock_set	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sock_set(struct mg_connection *nc, sock_t sock) {$/;"	f	typeref:typename:void
+mg_sock_to_str	3pp\\mongoose-6.8\\mongoose.c	/^void mg_sock_to_str(sock_t sock, char *buf, size_t len, int flags) {$/;"	f	typeref:typename:void
+mg_socket_if_add_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_socket_if_add_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_socket_if_connect_tcp	3pp\\mongoose-6.8\\mongoose.c	/^void mg_socket_if_connect_tcp(struct mg_connection *nc,$/;"	f	typeref:typename:void
+mg_socket_if_connect_udp	3pp\\mongoose-6.8\\mongoose.c	/^void mg_socket_if_connect_udp(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_socket_if_create_conn	3pp\\mongoose-6.8\\mongoose.c	/^int mg_socket_if_create_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:int
+mg_socket_if_destroy_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_socket_if_destroy_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_socket_if_free	3pp\\mongoose-6.8\\mongoose.c	/^void mg_socket_if_free(struct mg_iface *iface) {$/;"	f	typeref:typename:void
+mg_socket_if_get_conn_addr	3pp\\mongoose-6.8\\mongoose.c	/^void mg_socket_if_get_conn_addr(struct mg_connection *nc, int remote,$/;"	f	typeref:typename:void
+mg_socket_if_init	3pp\\mongoose-6.8\\mongoose.c	/^void mg_socket_if_init(struct mg_iface *iface) {$/;"	f	typeref:typename:void
+mg_socket_if_listen_tcp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_socket_if_listen_tcp(struct mg_connection *nc,$/;"	f	typeref:typename:int
+mg_socket_if_listen_udp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_socket_if_listen_udp(struct mg_connection *nc,$/;"	f	typeref:typename:int
+mg_socket_if_poll	3pp\\mongoose-6.8\\mongoose.c	/^time_t mg_socket_if_poll(struct mg_iface *iface, int timeout_ms) {$/;"	f	typeref:typename:time_t
+mg_socket_if_recved	3pp\\mongoose-6.8\\mongoose.c	/^void mg_socket_if_recved(struct mg_connection *nc, size_t len) {$/;"	f	typeref:typename:void
+mg_socket_if_remove_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_socket_if_remove_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_socket_if_sock_set	3pp\\mongoose-6.8\\mongoose.c	/^void mg_socket_if_sock_set(struct mg_connection *nc, sock_t sock) {$/;"	f	typeref:typename:void
+mg_socket_if_tcp_send	3pp\\mongoose-6.8\\mongoose.c	/^void mg_socket_if_tcp_send(struct mg_connection *nc, const void *buf,$/;"	f	typeref:typename:void
+mg_socket_if_udp_send	3pp\\mongoose-6.8\\mongoose.c	/^void mg_socket_if_udp_send(struct mg_connection *nc, const void *buf,$/;"	f	typeref:typename:void
+mg_socket_iface_vtable	3pp\\mongoose-6.8\\mongoose.c	/^const struct mg_iface_vtable mg_socket_iface_vtable = MG_SOCKET_IFACE_VTABLE;$/;"	v	typeref:typename:const struct mg_iface_vtable
+mg_socketpair	3pp\\mongoose-6.8\\mongoose.c	/^int mg_socketpair(sock_t sp[2], int sock_type) {$/;"	f	typeref:typename:int
+mg_socketpair_accept	3pp\\mongoose-6.8\\mongoose.c	/^mg_socketpair_accept(sock_t sock, union socket_address *sa, socklen_t sa_len) {$/;"	f	typeref:typename:MG_INTERNAL sock_t
+mg_socketpair_close	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_socketpair_close(sock_t *sock) {$/;"	f	typeref:typename:MG_INTERNAL void
+mg_spawn_stdio_thread	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_spawn_stdio_thread(sock_t sock, HANDLE hPipe,$/;"	f	typeref:typename:void	file:
+mg_ssl_begin	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_ssl_begin(struct mg_connection *nc) {$/;"	f	typeref:typename:void	file:
+mg_ssl_if_conn_accept	3pp\\mongoose-6.8\\mongoose.c	/^enum mg_ssl_if_result mg_ssl_if_conn_accept(struct mg_connection *nc,$/;"	f	typeref:enum:mg_ssl_if_result
+mg_ssl_if_conn_close_notify	3pp\\mongoose-6.8\\mongoose.c	/^void mg_ssl_if_conn_close_notify(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_ssl_if_conn_free	3pp\\mongoose-6.8\\mongoose.c	/^void mg_ssl_if_conn_free(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_ssl_if_conn_init	3pp\\mongoose-6.8\\mongoose.c	/^enum mg_ssl_if_result mg_ssl_if_conn_init($/;"	f	typeref:enum:mg_ssl_if_result
+mg_ssl_if_ctx	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_ssl_if_ctx {$/;"	s	file:
+mg_ssl_if_handshake	3pp\\mongoose-6.8\\mongoose.c	/^enum mg_ssl_if_result mg_ssl_if_handshake(struct mg_connection *nc) {$/;"	f	typeref:enum:mg_ssl_if_result
+mg_ssl_if_init	3pp\\mongoose-6.8\\mongoose.c	/^void mg_ssl_if_init() {$/;"	f	typeref:typename:void
+mg_ssl_if_mbed_err	3pp\\mongoose-6.8\\mongoose.c	/^static enum mg_ssl_if_result mg_ssl_if_mbed_err(struct mg_connection *nc,$/;"	f	typeref:enum:mg_ssl_if_result	file:
+mg_ssl_if_mbed_free_certs_and_keys	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_ssl_if_mbed_free_certs_and_keys(struct mg_ssl_if_ctx *ctx) {$/;"	f	typeref:typename:void	file:
+mg_ssl_if_mbed_random	3pp\\mongoose-6.8\\mongoose.c	/^int mg_ssl_if_mbed_random(void *ctx, unsigned char *buf, size_t len) {$/;"	f	typeref:typename:int
+mg_ssl_if_mbed_set_psk	3pp\\mongoose-6.8\\mongoose.c	/^static enum mg_ssl_if_result mg_ssl_if_mbed_set_psk(struct mg_ssl_if_ctx *ctx,$/;"	f	typeref:enum:mg_ssl_if_result	file:
+mg_ssl_if_ossl_psk_cb	3pp\\mongoose-6.8\\mongoose.c	/^static unsigned int mg_ssl_if_ossl_psk_cb(SSL *ssl, const char *hint,$/;"	f	typeref:typename:unsigned int	file:
+mg_ssl_if_ossl_set_psk	3pp\\mongoose-6.8\\mongoose.c	/^static enum mg_ssl_if_result mg_ssl_if_ossl_set_psk(struct mg_ssl_if_ctx *ctx,$/;"	f	typeref:enum:mg_ssl_if_result	file:
+mg_ssl_if_read	3pp\\mongoose-6.8\\mongoose.c	/^int mg_ssl_if_read(struct mg_connection *nc, void *buf, size_t buf_size) {$/;"	f	typeref:typename:int
+mg_ssl_if_ssl_err	3pp\\mongoose-6.8\\mongoose.c	/^static enum mg_ssl_if_result mg_ssl_if_ssl_err(struct mg_connection *nc,$/;"	f	typeref:enum:mg_ssl_if_result	file:
+mg_ssl_if_write	3pp\\mongoose-6.8\\mongoose.c	/^int mg_ssl_if_write(struct mg_connection *nc, const void *data, size_t len) {$/;"	f	typeref:typename:int
+mg_ssl_mbed_log	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_ssl_mbed_log(void *ctx, int level, const char *file, int line,$/;"	f	typeref:typename:void	file:
+mg_start_process	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_start_process(const char *interp, const char *cmd,$/;"	f	typeref:typename:int	file:
+mg_start_task	3pp\\mongoose-6.8\\mongoose.c	/^bool mg_start_task(int priority, int stack_size, mg_init_cb mg_init) {$/;"	f	typeref:typename:bool
+mg_start_thread	3pp\\mongoose-6.8\\mongoose.c	/^void *mg_start_thread(void *(*f)(void *), void *p) {$/;"	f	typeref:typename:void *
+mg_stat	3pp\\mongoose-6.8\\mongoose.c	/^int mg_stat(const char *path, cs_stat_t *st) {$/;"	f	typeref:typename:int
+mg_static_builtin_mime_types	3pp\\mongoose-6.8\\mongoose.c	/^} mg_static_builtin_mime_types[] = {$/;"	v	typeref:typename:const struct __anonfd0a45780308[]
+mg_status_message	3pp\\mongoose-6.8\\mongoose.c	/^const char *mg_status_message(int status_code) {$/;"	f	typeref:typename:const char *
+mg_strcmp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_strcmp(const struct mg_str str1, const struct mg_str str2) {$/;"	f	typeref:typename:int
+mg_strdup	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_str mg_strdup(const struct mg_str s) {$/;"	f	typeref:struct:mg_str
+mg_strdup_common	3pp\\mongoose-6.8\\mongoose.c	/^static struct mg_str mg_strdup_common(const struct mg_str s,$/;"	f	typeref:struct:mg_str	file:
+mg_strdup_nul	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_str mg_strdup_nul(const struct mg_str s) {$/;"	f	typeref:struct:mg_str
+mg_strncmp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_strncmp(const struct mg_str str1, const struct mg_str str2, size_t n) {$/;"	f	typeref:typename:int
+mg_task	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_task(void *arg) {$/;"	f	typeref:typename:void	file:
+mg_threadparam	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_threadparam {$/;"	s	file:
+mg_time	3pp\\mongoose-6.8\\mongoose.c	/^double mg_time(void) {$/;"	f	typeref:typename:double
+mg_tun_bind_opt	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_tun_bind_opt(struct mg_mgr *mgr,$/;"	f	typeref:struct:mg_connection *
+mg_tun_client	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_tun_client {$/;"	s	file:
+mg_tun_client_handler	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_tun_client_handler(struct mg_connection *nc, int ev,$/;"	f	typeref:typename:void	file:
+mg_tun_close_all	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_tun_close_all(struct mg_tun_client *client) {$/;"	f	typeref:typename:void	file:
+mg_tun_create_client	3pp\\mongoose-6.8\\mongoose.c	/^static struct mg_tun_client *mg_tun_create_client(struct mg_mgr *mgr,$/;"	f	typeref:struct:mg_tun_client *	file:
+mg_tun_destroy_client	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_destroy_client(struct mg_tun_client *client) {$/;"	f	typeref:typename:void
+mg_tun_do_bind	3pp\\mongoose-6.8\\mongoose.c	/^static struct mg_connection *mg_tun_do_bind(struct mg_tun_client *client,$/;"	f	typeref:struct:mg_connection *	file:
+mg_tun_do_reconnect	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_tun_do_reconnect(struct mg_tun_client *client) {$/;"	f	typeref:typename:void	file:
+mg_tun_frame	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_tun_frame {$/;"	s	file:
+mg_tun_if_add_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_if_add_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_tun_if_connect_tcp	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_if_connect_tcp(struct mg_connection *nc,$/;"	f	typeref:typename:void
+mg_tun_if_connect_udp	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_if_connect_udp(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_tun_if_create_conn	3pp\\mongoose-6.8\\mongoose.c	/^int mg_tun_if_create_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:int
+mg_tun_if_destroy_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_if_destroy_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_tun_if_find_conn	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_connection *mg_tun_if_find_conn(struct mg_tun_client *client,$/;"	f	typeref:struct:mg_connection *
+mg_tun_if_free	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_if_free(struct mg_iface *iface) {$/;"	f	typeref:typename:void
+mg_tun_if_get_conn_addr	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_if_get_conn_addr(struct mg_connection *nc, int remote,$/;"	f	typeref:typename:void
+mg_tun_if_init	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_if_init(struct mg_iface *iface) {$/;"	f	typeref:typename:void
+mg_tun_if_listen_tcp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_tun_if_listen_tcp(struct mg_connection *nc, union socket_address *sa) {$/;"	f	typeref:typename:int
+mg_tun_if_listen_udp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_tun_if_listen_udp(struct mg_connection *nc, union socket_address *sa) {$/;"	f	typeref:typename:int
+mg_tun_if_poll	3pp\\mongoose-6.8\\mongoose.c	/^time_t mg_tun_if_poll(struct mg_iface *iface, int timeout_ms) {$/;"	f	typeref:typename:time_t
+mg_tun_if_recved	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_if_recved(struct mg_connection *nc, size_t len) {$/;"	f	typeref:typename:void
+mg_tun_if_remove_conn	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_if_remove_conn(struct mg_connection *nc) {$/;"	f	typeref:typename:void
+mg_tun_if_sock_set	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_if_sock_set(struct mg_connection *nc, sock_t sock) {$/;"	f	typeref:typename:void
+mg_tun_if_tcp_send	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_if_tcp_send(struct mg_connection *nc, const void *buf, size_t len) {$/;"	f	typeref:typename:void
+mg_tun_if_udp_send	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_if_udp_send(struct mg_connection *nc, const void *buf, size_t len) {$/;"	f	typeref:typename:void
+mg_tun_iface_vtable	3pp\\mongoose-6.8\\mongoose.c	/^const struct mg_iface_vtable mg_tun_iface_vtable = MG_TUN_IFACE_VTABLE;$/;"	v	typeref:typename:const struct mg_iface_vtable
+mg_tun_init_client	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_tun_init_client(struct mg_tun_client *client, struct mg_mgr *mgr,$/;"	f	typeref:typename:void	file:
+mg_tun_log_frame	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_log_frame(struct mg_tun_frame *frame) {$/;"	f	typeref:typename:void
+mg_tun_parse_frame	3pp\\mongoose-6.8\\mongoose.c	/^int mg_tun_parse_frame(void *data, size_t len, struct mg_tun_frame *frame) {$/;"	f	typeref:typename:int
+mg_tun_reconnect	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_tun_reconnect(struct mg_tun_client *client, int timeout) {$/;"	f	typeref:typename:void	file:
+mg_tun_reconnect_ev_handler	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_reconnect_ev_handler(struct mg_connection *nc, int ev,$/;"	f	typeref:typename:void
+mg_tun_send_frame	3pp\\mongoose-6.8\\mongoose.c	/^void mg_tun_send_frame(struct mg_connection *ws, uint32_t stream_id,$/;"	f	typeref:typename:void
+mg_tun_ssl_opts	3pp\\mongoose-6.8\\mongoose.c	/^struct mg_tun_ssl_opts {$/;"	s	file:
+mg_uri_to_local_path	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL int mg_uri_to_local_path(struct http_message *hm,$/;"	f	typeref:typename:MG_INTERNAL int
+mg_url_decode	3pp\\mongoose-6.8\\mongoose.c	/^int mg_url_decode(const char *src, int src_len, char *dst, int dst_len,$/;"	f	typeref:typename:int
+mg_url_encode	3pp\\mongoose-6.8\\mongoose.c	/^static size_t mg_url_encode(const char *src, size_t s_len, char *dst,$/;"	f	typeref:typename:size_t	file:
+mg_use_ca_cert	3pp\\mongoose-6.8\\mongoose.c	/^static enum mg_ssl_if_result mg_use_ca_cert(SSL_CTX *ctx, const char *cert) {$/;"	f	typeref:enum:mg_ssl_if_result	file:
+mg_use_ca_cert	3pp\\mongoose-6.8\\mongoose.c	/^static enum mg_ssl_if_result mg_use_ca_cert(struct mg_ssl_if_ctx *ctx,$/;"	f	typeref:enum:mg_ssl_if_result	file:
+mg_use_cert	3pp\\mongoose-6.8\\mongoose.c	/^static enum mg_ssl_if_result mg_use_cert(SSL_CTX *ctx, const char *cert,$/;"	f	typeref:enum:mg_ssl_if_result	file:
+mg_use_cert	3pp\\mongoose-6.8\\mongoose.c	/^static enum mg_ssl_if_result mg_use_cert(struct mg_ssl_if_ctx *ctx,$/;"	f	typeref:enum:mg_ssl_if_result	file:
+mg_vcasecmp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_vcasecmp(const struct mg_str *str1, const char *str2) {$/;"	f	typeref:typename:int
+mg_vcmp	3pp\\mongoose-6.8\\mongoose.c	/^int mg_vcmp(const struct mg_str *str1, const char *str2) {$/;"	f	typeref:typename:int
+mg_version_header	3pp\\mongoose-6.8\\mongoose.c	/^static const char *mg_version_header = "Mongoose\/" MG_VERSION;$/;"	v	typeref:typename:const char *	file:
+mg_vprintf	3pp\\mongoose-6.8\\mongoose.c	/^int mg_vprintf(struct mg_connection *nc, const char *fmt, va_list ap) {$/;"	f	typeref:typename:int
+mg_wait_until_ready	3pp\\mongoose-6.8\\mongoose.c	/^static int mg_wait_until_ready(sock_t sock, int for_read) {$/;"	f	typeref:typename:int	file:
+mg_write_to_socket	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_write_to_socket(struct mg_connection *nc) {$/;"	f	typeref:typename:void	file:
+mg_ws_handler	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_ws_handler(struct mg_connection *nc, int ev,$/;"	f	typeref:typename:MG_INTERNAL void
+mg_ws_handshake	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL void mg_ws_handshake(struct mg_connection *nc,$/;"	f	typeref:typename:MG_INTERNAL void
+mg_ws_mask_frame	3pp\\mongoose-6.8\\mongoose.c	/^static void mg_ws_mask_frame(struct mbuf *mbuf, struct ws_mask_ctx *ctx) {$/;"	f	typeref:typename:void	file:
+mg_ws_random_mask	3pp\\mongoose-6.8\\mongoose.c	/^static uint32_t mg_ws_random_mask(void) {$/;"	f	typeref:typename:uint32_t	file:
+mgos_lock	3pp\\mongoose-6.8\\mongoose.c	/^#define mgos_lock(/;"	d	file:
+mgos_unlock	3pp\\mongoose-6.8\\mongoose.c	/^#define mgos_unlock(/;"	d	file:
+mgr	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_mgr *mgr;$/;"	m	struct:mg_tun_client	typeref:struct:mg_mgr *	file:
+mime_type	3pp\\mongoose-6.8\\mongoose.c	/^  const char *mime_type;$/;"	m	struct:__anonfd0a45780308	typeref:typename:const char *	file:
+mkdir	3pp\\mongoose-6.8\\mongoose.c	/^int mkdir(const char *path, mode_t mode) {$/;"	f	typeref:typename:int
+mode_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef unsigned int mode_t;$/;"	t	typeref:typename:unsigned int
+mp_stream	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_http_multipart_stream mp_stream;$/;"	m	struct:mg_http_proto_data	typeref:struct:mg_http_multipart_stream	file:
+mqtt_handler	3pp\\mongoose-6.8\\mongoose.c	/^static void mqtt_handler(struct mg_connection *nc, int ev,$/;"	f	typeref:typename:void	file:
+name	3pp\\mongoose-6.8\\mongoose.c	/^  char *name;$/;"	m	struct:sl_file_size_hint	typeref:typename:char *	file:
+name	3pp\\mongoose-6.8\\mongoose.c	/^  char name[1024];$/;"	m	struct:mg_resolve_async_request	typeref:typename:char[1024]	file:
+nc	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_connection *nc;$/;"	m	struct:mg_cgi_env_block	typeref:struct:mg_connection *	file:
+nc	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_connection *nc;$/;"	m	struct:mg_ev_mgr_lwip_signal	typeref:struct:mg_connection *	file:
+nc	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_connection *nc;$/;"	m	struct:mg_lwip_conn_state	typeref:struct:mg_connection *	file:
+nc	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_connection *nc;$/;"	m	struct:mg_lwip_if_connect_tcp_ctx	typeref:struct:mg_connection *	file:
+nc	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_connection *nc;$/;"	m	struct:mg_lwip_if_listen_ctx	typeref:struct:mg_connection *	file:
+nc	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_connection *nc;$/;"	m	struct:mg_lwip_tcp_write_ctx	typeref:struct:mg_connection *	file:
+next	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_http_endpoint *next;$/;"	m	struct:mg_http_endpoint	typeref:struct:mg_http_endpoint *	file:
+num_answers	3pp\\mongoose-6.8\\mongoose.c	/^  uint16_t num_answers;$/;"	m	struct:mg_dns_header	typeref:typename:uint16_t	file:
+num_authority_prs	3pp\\mongoose-6.8\\mongoose.c	/^  uint16_t num_authority_prs;$/;"	m	struct:mg_dns_header	typeref:typename:uint16_t	file:
+num_other_prs	3pp\\mongoose-6.8\\mongoose.c	/^  uint16_t num_other_prs;$/;"	m	struct:mg_dns_header	typeref:typename:uint16_t	file:
+num_questions	3pp\\mongoose-6.8\\mongoose.c	/^  uint16_t num_questions;$/;"	m	struct:mg_dns_header	typeref:typename:uint16_t	file:
+num_recd	3pp\\mongoose-6.8\\mongoose.c	/^  size_t num_recd;$/;"	m	struct:file_upload_state	typeref:typename:size_t	file:
+num_sent	3pp\\mongoose-6.8\\mongoose.c	/^  size_t num_sent; \/* Number of acknowledged bytes to be reported to the core *\/$/;"	m	struct:mg_lwip_conn_state	typeref:typename:size_t	file:
+nvars	3pp\\mongoose-6.8\\mongoose.c	/^  int nvars;                               \/* Number of variables in envp[] *\/$/;"	m	struct:mg_cgi_env_block	typeref:typename:int	file:
+open	3pp\\mongoose-6.8\\mongoose.c	/^int open(const char *filename, int oflag, int pmode) {$/;"	f	typeref:typename:int
+open	3pp\\mongoose-6.8\\mongoose.c	/^int open(const char *pathname, unsigned flags, int mode) {$/;"	f	typeref:typename:int
+opendir	3pp\\mongoose-6.8\\mongoose.c	/^DIR *opendir(const char *dir_name) {$/;"	f	typeref:typename:DIR *
+opendir	3pp\\mongoose-6.8\\mongoose.c	/^DIR *opendir(const char *name) {$/;"	f	typeref:typename:DIR *
+p	3pp\\mongoose-6.8\\mongoose.c	/^  struct pbuf *p;$/;"	m	struct:udp_sendto_ctx	typeref:struct:pbuf *	file:
+parse_mqtt	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL int parse_mqtt(struct mbuf *io, struct mg_mqtt_message *mm) {$/;"	f	typeref:typename:MG_INTERNAL int
+parse_net	3pp\\mongoose-6.8\\mongoose.c	/^static int parse_net(const char *spec, uint32_t *net, uint32_t *mask) {$/;"	f	typeref:typename:int	file:
+parse_uri_component	3pp\\mongoose-6.8\\mongoose.c	/^static void parse_uri_component(const char **p, const char *end,$/;"	f	typeref:typename:void	file:
+pcb	3pp\\mongoose-6.8\\mongoose.c	/^  } pcb;$/;"	m	struct:mg_lwip_conn_state	typeref:union:mg_lwip_conn_state::__anonfd0a4578040a	file:
+pclose	3pp\\mongoose-6.8\\mongoose.h	/^#define pclose(/;"	d
+pem_to_der	3pp\\mongoose-6.8\\mongoose.c	/^bool pem_to_der(const char *pem_file, const char *der_file) {$/;"	f	typeref:typename:bool
+pid_t	3pp\\mongoose-6.8\\mongoose.h	/^#define pid_t /;"	d
+popen	3pp\\mongoose-6.8\\mongoose.h	/^#define popen(/;"	d
+port	3pp\\mongoose-6.8\\mongoose.c	/^  uint16_t port;$/;"	m	struct:udp_sendto_ctx	typeref:typename:uint16_t	file:
+pos	3pp\\mongoose-6.8\\mongoose.c	/^  _off_t pos;$/;"	m	struct:sl_fd_info	typeref:typename:_off_t	file:
+pos	3pp\\mongoose-6.8\\mongoose.c	/^  size_t pos; \/* zero means unmasked *\/$/;"	m	struct:ws_mask_ctx	typeref:typename:size_t	file:
+prev_io_len	3pp\\mongoose-6.8\\mongoose.c	/^  int prev_io_len;$/;"	m	struct:mg_http_multipart_stream	typeref:typename:int	file:
+processing_part	3pp\\mongoose-6.8\\mongoose.c	/^  int processing_part;$/;"	m	struct:mg_http_multipart_stream	typeref:typename:int	file:
+psk	3pp\\mongoose-6.8\\mongoose.c	/^  struct mbuf psk;$/;"	m	struct:mg_ssl_if_ctx	typeref:struct:mbuf	file:
+query	3pp\\mongoose-6.8\\mongoose.c	/^  int query;$/;"	m	struct:mg_resolve_async_request	typeref:typename:int	file:
+read	3pp\\mongoose-6.8\\mongoose.c	/^int read(int fd, char *buf, unsigned count) {$/;"	f	typeref:typename:int
+readdir	3pp\\mongoose-6.8\\mongoose.c	/^struct dirent *readdir(DIR *d) {$/;"	f	typeref:struct:dirent *
+readdir	3pp\\mongoose-6.8\\mongoose.c	/^struct dirent *readdir(DIR *dir) {$/;"	f	typeref:struct:dirent *
+reconnect	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_connection *reconnect;$/;"	m	struct:mg_tun_client	typeref:struct:mg_connection *	file:
+recv_avail_size	3pp\\mongoose-6.8\\mongoose.c	/^MG_INTERNAL size_t recv_avail_size(struct mg_connection *conn, size_t max) {$/;"	f	typeref:typename:MG_INTERNAL size_t
+recv_pending	3pp\\mongoose-6.8\\mongoose.c	/^  int recv_pending;$/;"	m	struct:mg_lwip_conn_state	typeref:typename:int	file:
+rename	3pp\\mongoose-6.8\\mongoose.c	/^int rename(const char *frompath, const char *topath) {$/;"	f	typeref:typename:int
+resolve_cb	3pp\\mongoose-6.8\\mongoose.c	/^static void resolve_cb(struct mg_dns_message *msg, void *data,$/;"	f	typeref:typename:void	file:
+result	3pp\\mongoose-6.8\\mongoose.c	/^  struct dirent result;$/;"	m	struct:win32_dir	typeref:struct:dirent	file:
+ret	3pp\\mongoose-6.8\\mongoose.c	/^  int ret;$/;"	m	struct:mg_lwip_if_listen_ctx	typeref:typename:int	file:
+ret	3pp\\mongoose-6.8\\mongoose.c	/^  int ret;$/;"	m	struct:mg_lwip_tcp_write_ctx	typeref:typename:int	file:
+ret	3pp\\mongoose-6.8\\mongoose.c	/^  int ret;$/;"	m	struct:udp_sendto_ctx	typeref:typename:int	file:
+retries	3pp\\mongoose-6.8\\mongoose.c	/^  int retries;$/;"	m	struct:mg_resolve_async_request	typeref:typename:int	file:
+reverse_proxy_data	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_reverse_proxy_data reverse_proxy_data;$/;"	m	struct:mg_http_proto_data	typeref:struct:mg_reverse_proxy_data	file:
+rmdir	3pp\\mongoose-6.8\\mongoose.c	/^int rmdir(const char *path) {$/;"	f	typeref:typename:int
+rmdir	3pp\\mongoose-6.8\\mongoose.h	/^#define rmdir /;"	d
+rol	3pp\\mongoose-6.8\\mongoose.c	/^#define rol(/;"	d	file:
+rx_chain	3pp\\mongoose-6.8\\mongoose.c	/^  struct pbuf *rx_chain; \/* Chain of incoming data segments. *\/$/;"	m	struct:mg_lwip_conn_state	typeref:struct:pbuf *	file:
+rx_offset	3pp\\mongoose-6.8\\mongoose.c	/^  size_t rx_offset; \/* Offset within the first pbuf (if partially consumed) *\/$/;"	m	struct:mg_lwip_conn_state	typeref:typename:size_t	file:
+s	3pp\\mongoose-6.8\\mongoose.c	/^  sock_t s;$/;"	m	struct:mg_threadparam	typeref:typename:sock_t	file:
+s_mg_q	3pp\\mongoose-6.8\\mongoose.c	/^static OsiMsgQ_t s_mg_q;$/;"	v	typeref:typename:OsiMsgQ_t	file:
+s_sl_fds	3pp\\mongoose-6.8\\mongoose.c	/^static struct sl_fd_info s_sl_fds[MAX_OPEN_SLFS_FILES];$/;"	v	typeref:struct:sl_fd_info[]	file:
+s_sl_file_size_hints	3pp\\mongoose-6.8\\mongoose.c	/^static struct sl_file_size_hint s_sl_file_size_hints[MAX_OPEN_SLFS_FILES];$/;"	v	typeref:struct:sl_file_size_hint[]	file:
+sa	3pp\\mongoose-6.8\\mongoose.c	/^  const union socket_address *sa;$/;"	m	struct:mg_lwip_if_connect_tcp_ctx	typeref:typename:const union socket_address *	file:
+sa	3pp\\mongoose-6.8\\mongoose.c	/^  union socket_address *sa;$/;"	m	struct:mg_lwip_if_listen_ctx	typeref:union:socket_address *	file:
+scanto	3pp\\mongoose-6.8\\mongoose.c	/^static const char *scanto(const char *p, struct mg_str *s) {$/;"	f	typeref:typename:const char *	file:
+sent	3pp\\mongoose-6.8\\mongoose.c	/^  int64_t sent;  \/* How many bytes have been already sent. *\/$/;"	m	struct:mg_http_proto_data_file	typeref:typename:int64_t	file:
+serve_dir	src\\http.hpp	/^        const char *serve_dir;$/;"	m	class:http::Server	typeref:typename:const char *
+set_errno	3pp\\mongoose-6.8\\mongoose.c	/^int set_errno(int e) {$/;"	f	typeref:typename:int
+set_serve_dir	src\\http.cpp	/^void Server::set_serve_dir(const char *dir) {$/;"	f	class:Server	typeref:typename:void
+set_serve_dir	src\\http.cpp	/^void Server::set_serve_dir(const char *dir, bool is_listing) {$/;"	f	class:Server	typeref:typename:void
+set_sleep_time	src\\http.cpp	/^void Server::set_sleep_time(int ms) {$/;"	f	class:Server	typeref:typename:void
+settimeofday	3pp\\mongoose-6.8\\mongoose.c	/^int settimeofday(const struct timeval *tv, const struct timezone *tz) {$/;"	f	typeref:typename:int
+sig	3pp\\mongoose-6.8\\mongoose.c	/^  int sig;$/;"	m	struct:mg_ev_mgr_lwip_signal	typeref:typename:int	file:
+sig_queue	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_ev_mgr_lwip_signal sig_queue[MG_SIG_QUEUE_LEN];$/;"	m	struct:mg_ev_mgr_lwip_data	typeref:struct:mg_ev_mgr_lwip_signal[]	file:
+sig_queue_len	3pp\\mongoose-6.8\\mongoose.c	/^  int sig_queue_len;$/;"	m	struct:mg_ev_mgr_lwip_data	typeref:typename:int	file:
+size	3pp\\mongoose-6.8\\mongoose.c	/^  size_t size;$/;"	m	struct:sl_fd_info	typeref:typename:size_t	file:
+size	3pp\\mongoose-6.8\\mongoose.c	/^  size_t size;$/;"	m	struct:sl_file_size_hint	typeref:typename:size_t	file:
+sl_fd_info	3pp\\mongoose-6.8\\mongoose.c	/^struct sl_fd_info {$/;"	s	file:
+sl_file_size_hint	3pp\\mongoose-6.8\\mongoose.c	/^struct sl_file_size_hint {$/;"	s	file:
+sl_fs_init	3pp\\mongoose-6.8\\mongoose.c	/^int sl_fs_init(void) {$/;"	f	typeref:typename:int
+sl_fs_to_errno	3pp\\mongoose-6.8\\mongoose.c	/^static int sl_fs_to_errno(_i32 r) {$/;"	f	typeref:typename:int	file:
+sl_pem2der	3pp\\mongoose-6.8\\mongoose.c	/^static char *sl_pem2der(const char *pem_file) {$/;"	f	typeref:typename:char *	file:
+sl_restart_cb	3pp\\mongoose-6.8\\mongoose.c	/^void sl_restart_cb(struct mg_mgr *mgr) {$/;"	f	typeref:typename:void
+sl_set_ssl_opts	3pp\\mongoose-6.8\\mongoose.c	/^int sl_set_ssl_opts(struct mg_connection *nc) {$/;"	f	typeref:typename:int
+sleep	3pp\\mongoose-6.8\\mongoose.h	/^#define sleep(/;"	d
+snprintf	3pp\\mongoose-6.8\\mongoose.h	/^#define snprintf /;"	d
+sntp_data	3pp\\mongoose-6.8\\mongoose.c	/^struct sntp_data {$/;"	s	file:
+sock_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef SOCKET sock_t;$/;"	t	typeref:typename:SOCKET
+sock_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef int sock_t;$/;"	t	typeref:typename:int
+socklen_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef int socklen_t;$/;"	t	typeref:typename:int
+ssize_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef long ssize_t;$/;"	t	typeref:typename:long
+ssl	3pp\\mongoose-6.8\\mongoose.c	/^  SSL *ssl;$/;"	m	struct:mg_ssl_if_ctx	typeref:typename:SSL *	file:
+ssl	3pp\\mongoose-6.8\\mongoose.c	/^  mbedtls_ssl_context *ssl;$/;"	m	struct:mg_ssl_if_ctx	typeref:typename:mbedtls_ssl_context *	file:
+ssl	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_tun_ssl_opts ssl;$/;"	m	struct:mg_tun_client	typeref:struct:mg_tun_ssl_opts	file:
+ssl_ca_cert	3pp\\mongoose-6.8\\mongoose.c	/^  char *ssl_ca_cert;$/;"	m	struct:mg_ssl_if_ctx	typeref:typename:char *	file:
+ssl_ca_cert	3pp\\mongoose-6.8\\mongoose.c	/^  const char *ssl_ca_cert;$/;"	m	struct:mg_tun_ssl_opts	typeref:typename:const char *	file:
+ssl_cert	3pp\\mongoose-6.8\\mongoose.c	/^  char *ssl_cert;$/;"	m	struct:mg_ssl_if_ctx	typeref:typename:char *	file:
+ssl_cert	3pp\\mongoose-6.8\\mongoose.c	/^  const char *ssl_cert;$/;"	m	struct:mg_tun_ssl_opts	typeref:typename:const char *	file:
+ssl_ctx	3pp\\mongoose-6.8\\mongoose.c	/^  SSL_CTX *ssl_ctx;$/;"	m	struct:mg_ssl_if_ctx	typeref:typename:SSL_CTX *	file:
+ssl_key	3pp\\mongoose-6.8\\mongoose.c	/^  char *ssl_key;$/;"	m	struct:mg_ssl_if_ctx	typeref:typename:char *	file:
+ssl_key	3pp\\mongoose-6.8\\mongoose.c	/^  const char *ssl_key;$/;"	m	struct:mg_tun_ssl_opts	typeref:typename:const char *	file:
+ssl_server_name	3pp\\mongoose-6.8\\mongoose.c	/^  char *ssl_server_name;$/;"	m	struct:mg_ssl_if_ctx	typeref:typename:char *	file:
+ssl_socket_recv	3pp\\mongoose-6.8\\mongoose.c	/^int ssl_socket_recv(void *ctx, unsigned char *buf, size_t len) {$/;"	f	typeref:typename:int
+ssl_socket_recv	3pp\\mongoose-6.8\\mongoose.c	/^static int ssl_socket_recv(void *ctx, unsigned char *buf, size_t len) {$/;"	f	typeref:typename:int	file:
+ssl_socket_send	3pp\\mongoose-6.8\\mongoose.c	/^int ssl_socket_send(void *ctx, const unsigned char *buf, size_t len) {$/;"	f	typeref:typename:int
+ssl_socket_send	3pp\\mongoose-6.8\\mongoose.c	/^static int ssl_socket_send(void *ctx, const unsigned char *buf, size_t len) {$/;"	f	typeref:typename:int	file:
+st_ino	3pp\\mongoose-6.8\\mongoose.h	/^  int st_ino;$/;"	m	struct:stat	typeref:typename:int
+st_mode	3pp\\mongoose-6.8\\mongoose.h	/^  mode_t st_mode;$/;"	m	struct:stat	typeref:typename:mode_t
+st_mtime	3pp\\mongoose-6.8\\mongoose.h	/^  time_t st_mtime;$/;"	m	struct:stat	typeref:typename:time_t
+st_nlink	3pp\\mongoose-6.8\\mongoose.h	/^  int st_nlink;$/;"	m	struct:stat	typeref:typename:int
+st_size	3pp\\mongoose-6.8\\mongoose.h	/^  off_t st_size;$/;"	m	struct:stat	typeref:typename:off_t
+start	src\\http.cpp	/^void Server::start() {$/;"	f	class:Server	typeref:typename:void
+start_index	3pp\\mongoose-6.8\\mongoose.c	/^  int start_index;$/;"	m	struct:mg_ev_mgr_lwip_data	typeref:typename:int	file:
+stat	3pp\\mongoose-6.8\\mongoose.h	/^#define stat(/;"	d
+stat	3pp\\mongoose-6.8\\mongoose.h	/^struct stat {$/;"	s
+state	3pp\\mongoose-6.8\\mongoose.c	/^  enum mg_http_multipart_stream_state state;$/;"	m	struct:mg_http_multipart_stream	typeref:enum:mg_http_multipart_stream_state	file:
+str_util_lowercase	3pp\\mongoose-6.8\\mongoose.c	/^static int str_util_lowercase(const char *s) {$/;"	f	typeref:typename:int	file:
+strdup	3pp\\mongoose-6.8\\mongoose.c	/^char *strdup(const char *src) {$/;"	f	typeref:typename:char *
+strdup	3pp\\mongoose-6.8\\mongoose.h	/^#define strdup /;"	d
+stream_id	3pp\\mongoose-6.8\\mongoose.c	/^  uint32_t stream_id; \/* opaque stream identifier *\/$/;"	m	struct:mg_tun_frame	typeref:typename:uint32_t	file:
+strerror	3pp\\mongoose-6.8\\mongoose.c	/^const char *strerror(int err) {$/;"	f	typeref:typename:const char *
+tcp	3pp\\mongoose-6.8\\mongoose.c	/^    struct tcp_pcb *tcp;$/;"	m	union:mg_lwip_conn_state::__anonfd0a4578040a	typeref:struct:tcp_pcb *	file:
+tcp_close_tcpip	3pp\\mongoose-6.8\\mongoose.c	/^static void tcp_close_tcpip(void *arg) {$/;"	f	typeref:typename:void	file:
+tcp_output_tcpip	3pp\\mongoose-6.8\\mongoose.c	/^static void tcp_output_tcpip(void *arg) {$/;"	f	typeref:typename:void	file:
+tcp_recved_ctx	3pp\\mongoose-6.8\\mongoose.c	/^struct tcp_recved_ctx {$/;"	s	file:
+tcp_recved_tcpip	3pp\\mongoose-6.8\\mongoose.c	/^void tcp_recved_tcpip(void *arg) {$/;"	f	typeref:typename:void
+tcpip_callback	3pp\\mongoose-6.8\\mongoose.c	/^#define tcpip_callback(/;"	d	file:
+tcpip_callback_fn	3pp\\mongoose-6.8\\mongoose.c	/^typedef void (*tcpip_callback_fn)(void *arg);$/;"	t	typeref:typename:void (*)(void * arg)	file:
+timeout	3pp\\mongoose-6.8\\mongoose.c	/^  time_t timeout;$/;"	m	struct:mg_resolve_async_request	typeref:typename:time_t	file:
+timeval	3pp\\mongoose-6.8\\mongoose.h	/^#define timeval /;"	d
+to64	3pp\\mongoose-6.8\\mongoose.h	/^#define to64(/;"	d
+to_wchar	3pp\\mongoose-6.8\\mongoose.c	/^int to_wchar(const char *path, wchar_t *wbuf, size_t wbuf_len) {$/;"	f	typeref:typename:int
+tpcb	3pp\\mongoose-6.8\\mongoose.c	/^  struct tcp_pcb *tpcb;$/;"	m	struct:tcp_recved_ctx	typeref:struct:tcp_pcb *	file:
+transaction_id	3pp\\mongoose-6.8\\mongoose.c	/^  uint16_t transaction_id;$/;"	m	struct:mg_dns_header	typeref:typename:uint16_t	file:
+type	3pp\\mongoose-6.8\\mongoose.c	/^  enum mg_http_proto_data_type type;$/;"	m	struct:mg_http_proto_data_file	typeref:enum:mg_http_proto_data_type	file:
+type	3pp\\mongoose-6.8\\mongoose.c	/^  enum mg_q_msg_type type;$/;"	m	struct:mg_q_msg	typeref:enum:mg_q_msg_type	file:
+type	3pp\\mongoose-6.8\\mongoose.c	/^  uint8_t type;$/;"	m	struct:mg_tun_frame	typeref:typename:uint8_t	file:
+udp	3pp\\mongoose-6.8\\mongoose.c	/^    struct udp_pcb *udp;$/;"	m	union:mg_lwip_conn_state::__anonfd0a4578040a	typeref:struct:udp_pcb *	file:
+udp_remove_tcpip	3pp\\mongoose-6.8\\mongoose.c	/^static void udp_remove_tcpip(void *arg) {$/;"	f	typeref:typename:void	file:
+udp_sendto_ctx	3pp\\mongoose-6.8\\mongoose.c	/^struct udp_sendto_ctx {$/;"	s	file:
+udp_sendto_tcpip	3pp\\mongoose-6.8\\mongoose.c	/^static void udp_sendto_tcpip(void *arg) {$/;"	f	typeref:typename:void	file:
+uint16_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef unsigned short uint16_t;$/;"	t	typeref:typename:unsigned short
+uint32_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef unsigned int uint32_t;$/;"	t	typeref:typename:unsigned int
+uint64_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef unsigned __int64 uint64_t;$/;"	t	typeref:typename:unsigned __int64
+uint8_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef unsigned char uint8_t;$/;"	t	typeref:typename:unsigned char
+uintptr_t	3pp\\mongoose-6.8\\mongoose.h	/^typedef unsigned long uintptr_t;$/;"	t	typeref:typename:unsigned long
+unlink	3pp\\mongoose-6.8\\mongoose.c	/^int unlink(const char *pathname) {$/;"	f	typeref:typename:int
+upcb	3pp\\mongoose-6.8\\mongoose.c	/^  struct udp_pcb *upcb;$/;"	m	struct:udp_sendto_ctx	typeref:struct:udp_pcb *	file:
+uri_pattern	3pp\\mongoose-6.8\\mongoose.c	/^  struct mg_str uri_pattern; \/* owned *\/$/;"	m	struct:mg_http_endpoint	typeref:struct:mg_str	file:
+user_data	3pp\\mongoose-6.8\\mongoose.c	/^  void *user_data;$/;"	m	struct:mg_http_endpoint	typeref:typename:void *	file:
+user_data	3pp\\mongoose-6.8\\mongoose.c	/^  void *user_data;$/;"	m	struct:mg_http_multipart_stream	typeref:typename:void *	file:
+va_copy	3pp\\mongoose-6.8\\mongoose.h	/^#define va_copy /;"	d
+va_copy	3pp\\mongoose-6.8\\mongoose.h	/^#define va_copy(/;"	d
+var_name	3pp\\mongoose-6.8\\mongoose.c	/^  const char *var_name;$/;"	m	struct:mg_http_multipart_stream	typeref:typename:const char *	file:
+vars	3pp\\mongoose-6.8\\mongoose.c	/^  const char *vars[MG_MAX_CGI_ENVIR_VARS]; \/* char *envp[] *\/$/;"	m	struct:mg_cgi_env_block	typeref:typename:const char * []	file:
+vsnprintf	3pp\\mongoose-6.8\\mongoose.h	/^#define vsnprintf /;"	d
+win32_dir	3pp\\mongoose-6.8\\mongoose.c	/^struct win32_dir {$/;"	s	file:
+write	3pp\\mongoose-6.8\\mongoose.c	/^int write(int fd, const char *buf, unsigned count) {$/;"	f	typeref:typename:int
+ws_mask_ctx	3pp\\mongoose-6.8\\mongoose.c	/^struct ws_mask_ctx {$/;"	s	file:
+~Server	src\\http.cpp	/^Server::~Server() {$/;"	f	class:Server

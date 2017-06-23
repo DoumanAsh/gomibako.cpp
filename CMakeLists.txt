@@ -21,12 +21,6 @@ set_gcc_flags_if("-Wall -Wextra -O2")
 set_gcc_flags_if("-D_WIN32_WINNT=0x0600")
 
 ###########################
-# Boost
-##########################
-set(Boost_USE_STATIC_LIBS ON)
-lazy_find_boost(System)
-
-###########################
 # Mongoose
 ##########################
 file(GLOB mongoose_SRC "3pp/mongoose-6.8/*.c")
@@ -47,6 +41,8 @@ add_custom_target(
     cppcheck
     COMMAND cppcheck
     --enable=all
+    -I "${CMAKE_CURRENT_SOURCE_DIR}/3pp/mongoose-6.8/"
+    -I "${CMAKE_CURRENT_SOURCE_DIR}/src/"
     ${gomibako_SRC}
 )
 
