@@ -4,13 +4,30 @@
 
 using namespace http;
 
-static void ev_handler(struct mg_connection *connection, int event, void *message) {
-    const auto self = static_cast<Server*>(connection->mgr->user_data); //Stores pointer to Server class in user data on init.
-    const auto http_options = self->get_http_options();
+static inline void handle_http_request(struct mg_connection *connection, void *message) {
+    const auto self = static_cast<Server*>(connection->mgr->user_data);
+    const auto http_msg = static_cast<struct http_message*>(message);
 
+    const auto routes = self->get_routes();
+
+    for (auto &route : routes) {
+        if (mg_vcmp(&http_msg->uri, route.first) == 0) {
+            route.second(connection, http_msg);
+            return;
+        }
+    }
+
+    const auto def_route = self->get_default_route();
+
+    if (def_route != nullptr) {
+        def_route(connection, http_msg);
+    }
+}
+
+static void ev_handler(struct mg_connection *connection, int event, void *message) {
     switch (event) {
         case MG_EV_HTTP_REQUEST:
-            mg_serve_http(connection, (struct http_message*)message, *http_options);
+            handle_http_request(connection, message);
             break;
         default:
             break;
@@ -30,6 +47,7 @@ Server::Server(const char* addr) : max_sleep(1000), http_options({0}) {
     }
 
     mg_set_protocol_http_websocket(this->conn);
+    this->http_options.enable_directory_listing = "no";
 }
 
 Server::~Server() {
@@ -37,9 +55,7 @@ Server::~Server() {
 }
 
 void Server::start() {
-    for (;;) {
-        mg_mgr_poll(&this->manager, 1000);
-    }
+    for (;;) mg_mgr_poll(&this->manager, 1000);
 }
 
 void Server::set_sleep_time(int ms) {
@@ -57,4 +73,20 @@ void Server::set_serve_dir(const char *dir, bool is_listing) {
 
 const struct mg_serve_http_opts* Server::get_http_options() const {
     return &this->http_options;
+}
+
+void Server::add_route(const char* path, http_route_hander handler) {
+    this->routes.emplace_back(path, handler);
+}
+
+const std::vector<http_route>& Server::get_routes() const {
+    return this->routes;
+}
+
+void Server::add_default_route(http_route_hander handler) {
+    this->default_route = handler;
+}
+
+const http_route_hander Server::get_default_route() const {
+    return this->default_route;
 }

@@ -4,13 +4,12 @@ extern "C" {
 #include "mongoose.h"
 }
 
-#include <map>
+#include <utility>
+#include <vector>
 
 namespace http {
-    /**
-     * Event handler function type
-     */
-    typedef void (*event_handler)(struct mg_connection*, int, void*);
+    typedef void (*http_route_hander)(struct mg_connection*, struct http_message*);
+    typedef std::pair<const char*, http_route_hander> http_route;
 
     /**
      * Class wrapper over mongoose http server
@@ -60,12 +59,39 @@ namespace http {
          */
         const struct mg_serve_http_opts* get_http_options() const;
 
+        /**
+         * Adds route to server.
+         * @param[in] path Path to call handler on.
+         * @param[in] handler Function to invoke on match.
+         */
+        void add_route(const char* path, http_route_hander handler);
+
+        /**
+         * @return Registered routes.
+         */
+        const std::vector<http_route>& get_routes() const;
+
+        /**
+         * Adds route to server that is invoked when no other matched.
+         *
+         * Suitable for 404.
+         * @param[in] handler Function to invoke.
+         */
+        void add_default_route(http_route_hander handler);
+
+        /**
+         * @return Default router function.
+         */
+        const http_route_hander get_default_route() const;
+
         private:
         struct mg_mgr manager;
         struct mg_connection *conn;
-
         struct mg_serve_http_opts http_options;
+
         int max_sleep;
         const char *serve_dir;
+        std::vector<http_route> routes;
+        http_route_hander default_route;
     };
 }

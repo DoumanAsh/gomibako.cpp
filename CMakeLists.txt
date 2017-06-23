@@ -20,6 +20,9 @@ set_gcc_flags_if("-Wall -Wextra -O2")
 # For MinGW we assume that minimum runtime is Vista
 set_gcc_flags_if("-D_WIN32_WINNT=0x0600")
 
+set_msvc_flags_if("/DMG_ENABLE_MQTT=0 /DMG_ENABLE_COAP=0 /DMG_ENABLE_HTTP_WEBSOCKET=0")
+set_gcc_flags_if("-DMG_ENABLE_MQTT=0 -DMG_ENABLE_COAP=0 -DMG_ENABLE_HTTP_WEBSOCKET=0")
+
 ###########################
 # Mongoose
 ##########################
@@ -41,6 +44,7 @@ add_custom_target(
     cppcheck
     COMMAND cppcheck
     --enable=all
+    --force
     -I "${CMAKE_CURRENT_SOURCE_DIR}/3pp/mongoose-6.8/"
     -I "${CMAKE_CURRENT_SOURCE_DIR}/src/"
     ${gomibako_SRC}
