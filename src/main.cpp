@@ -15,8 +15,6 @@ static void handle_404(http::Response& msg, struct http_message* message) {
           << http::header_end
           << body;
     input >> msg.start();
-
-    msg.end();
 }
 
 int main(int argc, char *argv[]) {

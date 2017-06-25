@@ -28,6 +28,9 @@ namespace http {
              */
             explicit Response(struct mg_connection *conn, int status, int64_t len);
 
+            ///Destructor that sets message to go into network
+            virtual ~Response();
+
             friend std::istream& operator>>(std::istream&, Response&);
 
             /**
@@ -36,9 +39,6 @@ namespace http {
              * @return this.
              */
             Response& start();
-
-            ///Finish building message and send it out.
-            void end();
 
             ///Response status code. Default 500.
             int status_code;

@@ -27,6 +27,6 @@ Response& Response::start() {
     return *this;
 }
 
-void Response::end() {
+Response::~Response() {
     this->conn->flags |= MG_F_SEND_AND_CLOSE;
 }
