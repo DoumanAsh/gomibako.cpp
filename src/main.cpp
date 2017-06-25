@@ -1,15 +1,22 @@
-#include <iostream>
+#include <string>
+#include <sstream>
 
 #include "http.hpp"
 
-static void handle_404(struct mg_connection *connection, struct http_message* message) {
+static void handle_404(http::Response& msg, struct http_message* message) {
     (void)message;
 
-    const char msg[] = "<h1>Not found</h1>";
-    mg_send_head(connection, 404, sizeof(msg) - 1, "Content-Type: text/html");
-    mg_printf(connection, "%s", msg);
-    //TODO: write wrapper function.
-    connection->flags |= MG_F_SEND_AND_CLOSE;
+    const char body[] = "<h1>Not found</h1>";
+    msg.status_code = 404;
+    msg.len = sizeof(body) - 1;
+
+    std::stringstream input;
+    input << "Content-Type: text/html" << http::header_end
+          << http::header_end
+          << body;
+    input >> msg.start();
+
+    msg.end();
 }
 
 int main(int argc, char *argv[]) {

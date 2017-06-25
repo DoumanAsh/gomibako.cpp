@@ -33,7 +33,7 @@ include_directories("3pp/mongoose-6.8")
 ###########################
 # Gomibako exe
 ##########################
-file(GLOB gomibako_SRC "src/*.cpp")
+file(GLOB_RECURSE gomibako_SRC "src/*.cpp")
 add_executable(gomibako ${gomibako_SRC})
 target_link_libraries(gomibako ${Boost_LIBRARIES} mongoose)
 

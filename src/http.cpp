@@ -12,7 +12,8 @@ static inline void handle_http_request(struct mg_connection *connection, void *m
 
     for (auto &route : routes) {
         if (mg_vcmp(&http_msg->uri, route.first) == 0) {
-            route.second(connection, http_msg);
+            Response msg(connection);
+            route.second(msg, http_msg);
             return;
         }
     }
@@ -20,7 +21,8 @@ static inline void handle_http_request(struct mg_connection *connection, void *m
     const auto def_route = self->get_default_route();
 
     if (def_route != nullptr) {
-        def_route(connection, http_msg);
+        Response msg(connection);
+        def_route(msg, http_msg);
     }
 }
 
