@@ -3,7 +3,7 @@
 #include "message.hpp"
 using namespace http;
 
-Request::Request(struct http_message *msg) : inner(msg) {}
+Request::Request(struct http_message *msg, struct mg_connection*) : inner(msg), conn(conn) {}
 
 const char* Request::body() const {
     return this->inner->body.p;
@@ -19,6 +19,14 @@ const char* Request::uri() const {
 
 const char* Request::query_string() const {
     return this->inner->query_string.p;
+}
+
+std::string Request::remote_ip() const {
+    char buffer[46];
+
+    mg_conn_addr_to_str(this->conn, buffer, sizeof(buffer), MG_SOCK_STRINGIFY_IP);
+
+    return std::string(buffer);
 }
 
 std::istream& http::operator>>(std::istream &stream, Response &self) {

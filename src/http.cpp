@@ -8,7 +8,7 @@ static inline void handle_http_request(struct mg_connection *connection, void *m
     const auto self = static_cast<Server*>(connection->mgr->user_data);
 
     const auto raw_request = static_cast<struct http_message*>(message);
-    const auto request = Request(raw_request);
+    const auto request = Request(raw_request, connection);
     const auto routes = self->get_routes();
 
     for (const auto &route : routes) {

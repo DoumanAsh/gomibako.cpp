@@ -5,6 +5,7 @@ extern "C" {
 }
 
 #include <iostream>
+#include <string>
 #include <cstdint>
 
 namespace http {
@@ -14,7 +15,7 @@ namespace http {
     class Request {
         public:
             ///Initializes request by wrapping mongoose http_message.
-            Request(struct http_message*);
+            Request(struct http_message*, struct mg_connection*);
 
             ///Retrieves request's body.
             const char* body() const;
@@ -27,8 +28,12 @@ namespace http {
 
             ///Retrieves request's query string.
             const char* query_string() const;
+
+            ///Retrieves IP from which request came.
+            std::string remote_ip() const;
         private:
             struct http_message *inner;
+            struct mg_connection *conn;
     };
 
     class Response {
