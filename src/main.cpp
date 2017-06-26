@@ -3,8 +3,8 @@
 
 #include "http.hpp"
 
-static void handle_404(http::Response& msg, struct http_message* message) {
-    (void)message;
+static void handle_404(http::Response& msg, const http::Request& req) {
+    (void)req;
 
     const char body[] = "<h1>Not found</h1>";
     msg.status_code = 404;

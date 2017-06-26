@@ -10,7 +10,7 @@ extern "C" {
 #include "http/message.hpp"
 
 namespace http {
-    typedef void (*http_route_hander)(Response&, struct http_message*);
+    typedef void (*http_route_hander)(Response&, const Request&);
     typedef std::pair<const char*, http_route_hander> http_route;
 
     /**

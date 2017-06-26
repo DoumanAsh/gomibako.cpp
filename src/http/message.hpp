@@ -11,6 +11,26 @@ namespace http {
     ///Finishes headers part by appending newline separator.
     constexpr char* header_end = "\r\n";
 
+    class Request {
+        public:
+            ///Initializes request by wrapping mongoose http_message.
+            Request(struct http_message*);
+
+            ///Retrieves request's body.
+            const char* body() const;
+
+            ///Retrieves request's method: GET, PUT and etc.
+            const char* method() const;
+
+            ///Retrieves URI on which request came.
+            const char* uri() const;
+
+            ///Retrieves request's query string.
+            const char* query_string() const;
+        private:
+            struct http_message *inner;
+    };
+
     class Response {
         public:
             ///Initializes default message with HTTP code 500.

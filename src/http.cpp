@@ -6,14 +6,15 @@ using namespace http;
 
 static inline void handle_http_request(struct mg_connection *connection, void *message) {
     const auto self = static_cast<Server*>(connection->mgr->user_data);
-    const auto http_msg = static_cast<struct http_message*>(message);
 
+    const auto raw_request = static_cast<struct http_message*>(message);
+    const auto request = Request(raw_request);
     const auto routes = self->get_routes();
 
-    for (auto &route : routes) {
-        if (mg_vcmp(&http_msg->uri, route.first) == 0) {
+    for (const auto &route : routes) {
+        if (mg_vcmp(&raw_request->uri, route.first) == 0) {
             Response msg(connection);
-            route.second(msg, http_msg);
+            route.second(msg, request);
             return;
         }
     }
@@ -22,7 +23,7 @@ static inline void handle_http_request(struct mg_connection *connection, void *m
 
     if (def_route != nullptr) {
         Response msg(connection);
-        def_route(msg, http_msg);
+        def_route(msg, request);
     }
 }
 

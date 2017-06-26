@@ -3,6 +3,24 @@
 #include "message.hpp"
 using namespace http;
 
+Request::Request(struct http_message *msg) : inner(msg) {}
+
+const char* Request::body() const {
+    return this->inner->body.p;
+}
+
+const char* Request::method() const {
+    return this->inner->method.p;
+}
+
+const char* Request::uri() const {
+    return this->inner->uri.p;
+}
+
+const char* Request::query_string() const {
+    return this->inner->query_string.p;
+}
+
 std::istream& http::operator>>(std::istream &stream, Response &self) {
     char buffer[1024];
 
