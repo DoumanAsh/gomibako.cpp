@@ -3,7 +3,7 @@
 #include "message.hpp"
 using namespace http;
 
-Request::Request(struct http_message *msg, struct mg_connection*) : inner(msg), conn(conn) {}
+Request::Request(struct http_message *msg, struct mg_connection *conn) : inner(msg), conn(conn) {}
 
 const char* Request::body() const {
     return this->inner->body.p;

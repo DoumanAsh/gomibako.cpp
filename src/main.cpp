@@ -19,10 +19,17 @@ static void handle_404(http::Response& response, const http::Request& req) {
 
 static void route_ip(http::Response& response, const http::Request& req) {
     response.status_code = 200;
-    //TODO: investigate crash in mongoose when attempting to get remote IP.
     const auto remote_ip = req.remote_ip();
 
-    std::cout << remote_ip << std::endl;
+    response.status_code = 200;
+    response.len = remote_ip.size();
+
+    std::stringstream input;
+    input << "Content-Type: text/plain" << http::header_end
+          <<http::header_end
+          << remote_ip;
+
+    input >> response.start();
 }
 
 int main(int argc, char *argv[]) {
