@@ -26,8 +26,29 @@ static void route_ip(http::Response& response, const http::Request& req) {
 
     std::stringstream input;
     input << "Content-Type: text/plain" << http::header_end
-          <<http::header_end
+          << http::header_end
           << remote_ip;
+
+    input >> response.start();
+}
+
+static void route_headers(http::Response& response, const http::Request& req) {
+    response.status_code = 200;
+    auto headers = req.headers();
+
+    std::stringstream input;
+
+    std::stringstream content;
+
+    for (auto header = headers.next(); header.has_value(); header = headers.next()) {
+        //TODO: it seems headers pointers are just slices without null char.
+        //      Need to re-work this part otherwise you're getting trash.
+        content << (*header).first << ": " << (*header).second << "\r\n";
+    }
+
+    response.len = content.tellp();
+
+    input << "Content-Type: text/plain" << http::header_end << http::header_end << content.str();
 
     input >> response.start();
 }
@@ -37,6 +58,7 @@ int main(int argc, char *argv[]) {
 
     server.add_default_route(handle_404);
     server.add_route("/ip", route_ip);
+    server.add_route("/headers", route_headers);
     server.start();
 
     return 0;

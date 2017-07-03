@@ -15,7 +15,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 ###########################
 # Compiler flags
 ##########################
-set_msvc_flags_if("/W4 /EHsc /O2")
+set_msvc_flags_if("/W4 /EHsc /O2 /std:c++latest")
 set_gcc_flags_if("-Wall -Wextra -O2")
 # For MinGW we assume that minimum runtime is Vista
 set_gcc_flags_if("-D_WIN32_WINNT=0x0600")

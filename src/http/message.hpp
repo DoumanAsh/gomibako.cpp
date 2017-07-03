@@ -4,6 +4,8 @@ extern "C" {
 #include "mongoose.h"
 }
 
+#include <optional>
+#include <utility>
 #include <iostream>
 #include <string>
 #include <cstdint>
@@ -11,6 +13,29 @@ extern "C" {
 namespace http {
     ///Finishes headers part by appending newline separator.
     constexpr char* header_end = "\r\n";
+
+    typedef std::pair<const char*, const char*> header;
+
+    class Headers: public std::iterator<std::random_access_iterator_tag, header> {
+        private:
+            size_t idx;
+            struct mg_str* names;
+            struct mg_str* values;
+
+        public:
+            Headers(struct mg_str* names, struct mg_str* values);
+            Headers(const Headers&);
+
+            /**
+             * Retrieves header by name.
+             * @returns optional with header, if it is present.
+             */
+            std::optional<header> get(const char* name);
+            ///Returns next element.
+            std::optional<header> next();
+            ///Returns previous element.
+            std::optional<header> prev();
+    };
 
     class Request {
         public:
@@ -28,6 +53,14 @@ namespace http {
 
             ///Retrieves request's query string.
             const char* query_string() const;
+
+            ///@returns Content of header.
+            ///@param[in] name Name of header to retrieve.
+            ///@retval NULL if no such header.
+            const char* header(const char* name) const;
+
+            ///@returns Headers pseudo iterator.
+            Headers headers() const;
 
             ///Retrieves IP from which request came.
             std::string remote_ip() const;

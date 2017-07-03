@@ -3,6 +3,48 @@
 #include "message.hpp"
 using namespace http;
 
+//Headers
+Headers::Headers(struct mg_str* names, struct mg_str* values) : idx(0), names(names), values(values) {}
+Headers::Headers(const Headers& it) : idx(it.idx), names(it.names), values(it.values) {}
+
+std::optional<header> Headers::get(const char* name) {
+    size_t name_len = strlen(name);
+
+    for (size_t i = 0; this->names[i].len > 0; i++) {
+        if (this->names[i].len == name_len && !mg_ncasecmp(this->names[i].p, name, name_len)) {
+            return std::make_pair(this->names[i].p, this->values[i].p);
+        }
+    }
+
+    return std::nullopt;
+}
+
+std::optional<http::header> Headers::next() {
+    auto name = this->names[this->idx], value = this->values[this->idx];
+
+    if (name.len > 0 && name.p != NULL) {
+        this->idx += 1;
+        return std::make_pair(name.p, value.p);
+    }
+    else {
+        return std::nullopt;
+    }
+}
+
+std::optional<http::header> Headers::prev() {
+    auto name = this->names[this->idx], value = this->values[this->idx];
+
+    if (name.len > 0 && name.p != NULL) {
+        if (this->idx > 0) this->idx--;
+
+        return std::make_pair(name.p, value.p);
+    }
+    else {
+        return std::nullopt;
+    }
+}
+
+//Request
 Request::Request(struct http_message *msg, struct mg_connection *conn) : inner(msg), conn(conn) {}
 
 const char* Request::body() const {
@@ -21,6 +63,12 @@ const char* Request::query_string() const {
     return this->inner->query_string.p;
 }
 
+const char* Request::header(const char* name) const {
+    const auto header = mg_get_http_header(this->inner, name);
+
+    return header == NULL ? nullptr : header->p;
+}
+
 std::string Request::remote_ip() const {
     char buffer[46];
 
@@ -29,6 +77,11 @@ std::string Request::remote_ip() const {
     return std::string(buffer);
 }
 
+Headers Request::headers() const {
+    return Headers(this->inner->header_names, this->inner->header_values);
+}
+
+//Response
 std::istream& http::operator>>(std::istream &stream, Response &self) {
     char buffer[1024];
 
