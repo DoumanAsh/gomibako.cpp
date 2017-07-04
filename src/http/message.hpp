@@ -14,9 +14,9 @@ namespace http {
     ///Finishes headers part by appending newline separator.
     constexpr char* header_end = "\r\n";
 
-    typedef std::pair<const char*, const char*> header;
+    typedef std::pair<std::string, std::string> header;
 
-    class Headers: public std::iterator<std::random_access_iterator_tag, header> {
+    class Headers {
         private:
             size_t idx;
             struct mg_str* names;

@@ -41,8 +41,6 @@ static void route_headers(http::Response& response, const http::Request& req) {
     std::stringstream content;
 
     for (auto header = headers.next(); header.has_value(); header = headers.next()) {
-        //TODO: it seems headers pointers are just slices without null char.
-        //      Need to re-work this part otherwise you're getting trash.
         content << (*header).first << ": " << (*header).second << "\r\n";
     }
 

@@ -12,7 +12,7 @@ std::optional<header> Headers::get(const char* name) {
 
     for (size_t i = 0; this->names[i].len > 0; i++) {
         if (this->names[i].len == name_len && !mg_ncasecmp(this->names[i].p, name, name_len)) {
-            return std::make_pair(this->names[i].p, this->values[i].p);
+            return std::make_pair(std::string(this->names[i].p, this->names[i].len), std::string(this->values[i].p, this->values[i].len));
         }
     }
 
@@ -24,7 +24,8 @@ std::optional<http::header> Headers::next() {
 
     if (name.len > 0 && name.p != NULL) {
         this->idx += 1;
-        return std::make_pair(name.p, value.p);
+
+        return std::make_pair(std::string(name.p, name.len), std::string(value.p, value.len));
     }
     else {
         return std::nullopt;
@@ -37,7 +38,7 @@ std::optional<http::header> Headers::prev() {
     if (name.len > 0 && name.p != NULL) {
         if (this->idx > 0) this->idx--;
 
-        return std::make_pair(name.p, value.p);
+        return std::make_pair(std::string(name.p, name.len), std::string(value.p, value.len));
     }
     else {
         return std::nullopt;
