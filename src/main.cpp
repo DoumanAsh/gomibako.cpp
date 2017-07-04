@@ -51,12 +51,34 @@ static void route_headers(http::Response& response, const http::Request& req) {
     input >> response.start();
 }
 
+static void route_user_agent(http::Response& response, const http::Request& req) {
+    response.status_code = 200;
+    auto user_agent = req.headers().get("user-agent");
+
+    std::stringstream input;
+    input << "Content-Type: text/plain" << http::header_end
+          << http::header_end;
+
+    if (user_agent.has_value()) {
+        response.len = (*user_agent).second.size();
+        input << (*user_agent).second;
+    }
+    else {
+        const char* unknown = "unknown";
+        response.len = sizeof(unknown) - 1;
+        input << unknown;
+    }
+
+    input >> response.start();
+}
+
 int main(int argc, char *argv[]) {
     http::Server server;
 
     server.add_default_route(handle_404);
     server.add_route("/ip", route_ip);
     server.add_route("/headers", route_headers);
+    server.add_route("/user-agent", route_user_agent);
     server.start();
 
     return 0;
