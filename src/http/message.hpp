@@ -11,6 +11,20 @@ extern "C" {
 #include <cstdint>
 
 namespace http {
+    enum class Method {
+        GET,
+        HEAD,
+        POST,
+        PUT,
+        DEL,
+        CONNECT,
+        OPTIONS,
+        TRACE,
+        PATCH
+    };
+
+    const char* method_to(Method);
+
     ///Finishes headers part by appending newline separator.
     constexpr char* header_end = "\r\n";
 
@@ -46,7 +60,7 @@ namespace http {
             const char* body() const;
 
             ///Retrieves request's method: GET, PUT and etc.
-            const char* method() const;
+            Method method() const;
 
             ///Retrieves URI on which request came.
             const char* uri() const;

@@ -3,6 +3,18 @@
 
 #include "http.hpp"
 
+static void handle_bad_method(http::Response& response) {
+    const char body[] = "<h1>Method not allowed</h1>";
+    response.status_code = 405;
+    response.len = sizeof(body) - 1;
+
+    std::stringstream input;
+    input << "Content-Type: text/html" << http::header_end
+          << http::header_end
+          << body;
+    input >> response.start();
+}
+
 static void handle_404(http::Response& response, const http::Request& req) {
     (void)req;
 
@@ -18,6 +30,8 @@ static void handle_404(http::Response& response, const http::Request& req) {
 }
 
 static void route_ip(http::Response& response, const http::Request& req) {
+    if (req.method() != http::Method::GET) return handle_bad_method(response);
+
     response.status_code = 200;
     const auto remote_ip = req.remote_ip();
 
@@ -33,6 +47,8 @@ static void route_ip(http::Response& response, const http::Request& req) {
 }
 
 static void route_headers(http::Response& response, const http::Request& req) {
+    if (req.method() != http::Method::GET) return handle_bad_method(response);
+
     response.status_code = 200;
     auto headers = req.headers();
 
@@ -52,6 +68,8 @@ static void route_headers(http::Response& response, const http::Request& req) {
 }
 
 static void route_user_agent(http::Response& response, const http::Request& req) {
+    if (req.method() != http::Method::GET) return handle_bad_method(response);
+
     response.status_code = 200;
     auto user_agent = req.headers().get("user-agent");
 

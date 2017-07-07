@@ -1,7 +1,23 @@
 #include <inttypes.h>
+#include <stdexcept>
 
 #include "message.hpp"
 using namespace http;
+
+const char* method_to(Method method) {
+    switch (method) {
+        case Method::GET: return "GET";
+        case Method::HEAD: return "HEAD";
+        case Method::POST: return "POST";
+        case Method::PUT: return "PUT";
+        case Method::DEL: return "DELETE";
+        case Method::CONNECT: return "CONNECT";
+        case Method::OPTIONS: return "OPTIONS";
+        case Method::TRACE: return "TRACE";
+    }
+
+    return "UNKNOWN";
+}
 
 //Headers
 Headers::Headers(struct mg_str* names, struct mg_str* values) : idx(0), names(names), values(values) {}
@@ -52,8 +68,20 @@ const char* Request::body() const {
     return this->inner->body.p;
 }
 
-const char* Request::method() const {
-    return this->inner->method.p;
+Method Request::method() const {
+#define IS_METHOD(_method) (mg_vcmp(&this->inner->method, _method) == 0)
+    if (IS_METHOD("GET")) return Method::GET;
+    else if (IS_METHOD("HEAD")) return Method::HEAD;
+    else if (IS_METHOD("POST")) return Method::POST;
+    else if (IS_METHOD("PUT")) return Method::PUT;
+    else if (IS_METHOD("DELETE")) return Method::DEL;
+    else if (IS_METHOD("CONNECT")) return Method::CONNECT;
+    else if (IS_METHOD("OPTIONS")) return Method::OPTIONS;
+    else if (IS_METHOD("TRACE")) return Method::TRACE;
+
+    //unreachable normally
+    throw std::runtime_error("Unknown method!");
+#undef IS_METHOD
 }
 
 const char* Request::uri() const {
