@@ -15,13 +15,17 @@ project(Gomibako LANGUAGES CXX)
 # Compiler flags
 ##########################
 if (WIN32)
-    # For MinGW we assume that minimum runtime is Vista
-    set_gcc_flags_if("-D_WIN32_WINNT=0x0600")
+    # We assume that minimum runtime is Vista
+    add_definitions(-D_WIN32_WINNT=0x0600)
 
     # Enforces WinAPI to use unicode version of functions
     add_definitions(-DUNICODE)
     add_definitions(-D_UNICODE)
 endif()
+
+remove_msvc_default_warning_level()
+set_msvc_flags_if("/W4 /std:c++latest /source-charset:utf-8")
+set_gcc_flags_if("-Wall -Wextra")
 
 ###########################
 # Output dir
@@ -34,11 +38,9 @@ set_output_dir("${CMAKE_BINARY_DIR}/dist")
 lazy_find_boost(system)
 
 ###########################
-# Project wide compiler flags
+# 3pp
 ##########################
-remove_msvc_default_warning_level()
-set_msvc_flags_if("/W4 /std:c++latest /source-charset:utf-8")
-set_gcc_flags_if("-Wall -Wextra")
+add_subdirectory("3pp/")
 
 ###########################
 # SRC
@@ -62,7 +64,8 @@ add_custom_target(
     --enable=all
     --force
     -I "${CMAKE_CURRENT_SOURCE_DIR}/src/"
-    -I "${Boost_INCLUDE_DIRS}"
+    -I ${3PP_INCLUDES}
+    -I ${Boost_INCLUDE_DIRS}
     --suppress=unusedFunction:*:*
     ${CMAKE_CURRENT_SOURCE_DIR}/src/
 )

@@ -10,3 +10,4 @@ install_manifest.txt
 CTestTestfile.cmake
 
 tags
+.vs
