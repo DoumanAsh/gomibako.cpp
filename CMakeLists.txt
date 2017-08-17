@@ -62,6 +62,7 @@ add_custom_target(
     cppcheck
     COMMAND cppcheck
     --enable=all
+    -q
     --force
     -I "${CMAKE_CURRENT_SOURCE_DIR}/src/"
     -I ${3PP_INCLUDES}
