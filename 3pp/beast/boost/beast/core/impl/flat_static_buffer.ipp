@@ -36,12 +36,11 @@ data() const ->
 }
 
 inline
-auto
+void
 flat_static_buffer_base::
-mutable_data() ->
-    mutable_data_type
+reset()
 {
-    return {in_, dist(in_, out_)};
+    reset_impl();
 }
 
 inline
@@ -59,6 +58,16 @@ flat_static_buffer_base::
 reset(void* p, std::size_t n)
 {
     reset_impl(p, n);
+}
+
+template<class>
+void
+flat_static_buffer_base::
+reset_impl()
+{
+    in_ = begin_;
+    out_ = begin_;
+    last_ = begin_;
 }
 
 template<class>

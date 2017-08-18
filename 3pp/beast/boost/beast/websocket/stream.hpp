@@ -154,7 +154,7 @@ class stream
         detail::prepared_key key;       // current stateful mask key
         std::uint64_t size;             // total size of current message so far
         std::uint64_t remain;           // message frame bytes left in current frame
-        detail::frame_streambuf fb;     // to write control frames
+        detail::frame_buffer fb;        // to write control frames (during reads)
         detail::utf8_checker utf8;      // to validate utf8
 
         // A small, circular buffer to read frame headers.
@@ -200,6 +200,8 @@ class stream
         // The buffer is allocated or reallocated at the beginning of
         // sending a message.
         std::unique_ptr<std::uint8_t[]> buf;
+
+        detail::fh_buffer fb;
     };
 
     // State information for the permessage-deflate extension
@@ -228,12 +230,15 @@ class stream
     bool rd_close_;                         // read close frame
     bool wr_close_;                         // sent close frame
     token wr_block_;                        // op currenly writing
+    token rd_block_;                        // op currenly reading
 
     ping_data* ping_data_;                  // where to put the payload
     detail::pausation rd_op_;               // paused read op
     detail::pausation wr_op_;               // paused write op
     detail::pausation ping_op_;             // paused ping op
     detail::pausation close_op_;            // paused close op
+    detail::pausation r_rd_op_;             // paused read op (read)
+    detail::pausation r_close_op_;          // paused close op (read)
     close_reason cr_;                       // set from received close frame
     rd_t rd_;                               // read state
     wr_t wr_;                               // write state
@@ -3761,11 +3766,11 @@ private:
 
     template<class DynamicBuffer>
     void
-    write_close(DynamicBuffer& db, close_reason const& rc);
+    write_close(DynamicBuffer& b, close_reason const& rc);
 
     template<class DynamicBuffer>
     void
-    write_ping(DynamicBuffer& db,
+    write_ping(DynamicBuffer& b,
         detail::opcode op, ping_data const& data);
 
     template<class Decorator>

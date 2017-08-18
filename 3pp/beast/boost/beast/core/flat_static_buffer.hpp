@@ -52,13 +52,7 @@ public:
 
         This buffer sequence is guaranteed to have length 1.
     */
-    using const_buffers_type = boost::asio::const_buffers_1;
-
-    /** The type used to represent the mutable input sequence as a list of buffers.
-
-        This buffer sequence is guaranteed to have length 1.
-    */
-    using mutable_data_type = boost::asio::mutable_buffers_1;
+    using const_buffers_type = boost::asio::mutable_buffers_1;
 
     /** The type used to represent the output sequence as a list of buffers.
 
@@ -107,12 +101,9 @@ public:
     const_buffers_type
     data() const;
 
-    /** Get a list of mutable buffers that represent the input sequence.
-
-        @note These buffers remain valid across subsequent calls to `prepare`.
-    */
-    mutable_data_type
-    mutable_data();
+    /// Set the input and output sequences to size 0
+    void
+    reset();
 
     /** Get a list of buffers that represent the output sequence, with the given size.
 
@@ -147,10 +138,10 @@ protected:
     /** Constructor
 
         The buffer will be in an undefined state. It is necessary
-        for the derived class to call @ref reset in order to
-        initialize the object.
+        for the derived class to call @ref reset with a pointer
+        and size in order to initialize the object.
     */
-    flat_static_buffer_base();
+    flat_static_buffer_base() = default;
 
     /** Reset the pointed-to buffer.
 
@@ -174,6 +165,10 @@ private:
     {
         return static_cast<std::size_t>(last - first);
     }
+
+    template<class = void>
+    void
+    reset_impl();
 
     template<class = void>
     void

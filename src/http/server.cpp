@@ -48,9 +48,9 @@ class HttpListener {
          */
         tcp::socket socket{acceptor.get_io_service()};
 
-        ///5kb for reading incoming data
+        ///4kb for reading incoming data
         ///Allocated on stack
-        using static_buffer_type = boost::beast::flat_static_buffer<5120>;
+        using static_buffer_type = boost::beast::flat_static_buffer<4096>;
 
         //Reading buffer for our async_read
         static_buffer_type read_buffer;
@@ -106,6 +106,14 @@ class HttpListener {
         }
 
         /**
+         * Finalize response by setting default headers.
+         */
+        inline void prepare_response() {
+            this->response->set(http::field::server, "Gomibako");
+            this->response->prepare_payload();
+        }
+
+        /**
          * Sends response with error to client.
          *
          * @param[in] error Error type. It is inserted into response using stream operator.
@@ -117,8 +125,8 @@ class HttpListener {
             this->response->result(status);
             this->response->set(http::field::content_type, "text/plain");
             boost::beast::ostream(this->response->body) << error;
-            this->response->prepare_payload();
 
+            this->prepare_response();
             this->send_response();
         }
 
@@ -156,8 +164,8 @@ class HttpListener {
             this->response->result(http::status::ok);
             this->response->set(http::field::content_type, "text/html");
             boost::beast::ostream(this->response->body) << "<h1>Hello world</h1>\n";
-            this->response->prepare_payload();
 
+            this->prepare_response();
             this->send_response();
         }
 };
