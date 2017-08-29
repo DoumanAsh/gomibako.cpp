@@ -3,15 +3,10 @@
 #include <memory>
 #include <optional>
 
-#include <boost/beast/core.hpp>
-#include <boost/beast/http.hpp>
+#include "beast_common.hpp"
 
 #include "server.hpp"
 #include "../utils/format.hpp"
-
-namespace http {
-    using namespace boost::beast::http;
-}
 
 using namespace http;
 using tcp = boost::asio::ip::tcp;
@@ -58,16 +53,19 @@ class HttpListener {
         //As we need to keep request/response alive as long  as async ops are in place
         //we store them  inside of listener which is supposed to be alive
         //We can use optional to quickly clear stuff using optional->emplace()
-        std::optional<http::request<http::dynamic_body>> request;
+        std::optional<http::dynamic_request> request;
         //TODO: Think about serialization http://www.boost.org/doc/libs/develop/libs/beast/doc/html/beast/using_http/serializer_stream_operations.html
-        std::optional<http::response<http::dynamic_body>> response;
+        std::optional<http::dynamic_response> response;
+
+        Router& router;
 
     public:
         //We don't really have any use without acceptor.
         HttpListener() = delete;
 
-        HttpListener(tcp::acceptor& acceptor) :
-            acceptor(acceptor)
+        HttpListener(tcp::acceptor& acceptor, Router& router) :
+            acceptor(acceptor),
+            router(router)
         {
             this->accept();
         }
@@ -155,22 +153,23 @@ class HttpListener {
          * TODO: Next step is to think of API to provide routing.
          */
         void handle_request() {
-            if (this->request->method() != http::verb::get) {
+            //TODO: Maybe you should hide router behind locks...
+            if (!this->router.is_method_used(this->request->method())) {
                 return this->send_error_response("Bad method", http::status::bad_request);
             }
 
             this->response.emplace();
 
-            this->response->result(http::status::ok);
-            this->response->set(http::field::content_type, "text/html");
-            boost::beast::ostream(this->response->body) << "<h1>Hello world</h1>\n";
+            if (!this->router.dispatch(*this->request, *this->response)) {
+                return this->send_error_response("Not found", http::status::not_found);
+            }
 
             this->prepare_response();
             this->send_response();
         }
 };
 
-Server::Server(config::Config&& config) noexcept : config(std::move(config)) {}
+Server::Server(config::Config&& config, Router&& router) noexcept : config(std::move(config)), router(std::move(router)) {}
 
 void Server::start() {
     //Creates io_service and hints number of threads that can be used.
@@ -183,7 +182,7 @@ void Server::start() {
     tcp::acceptor acceptor{ios, {this->config.address, this->config.port}};
 
     //Consider running few more listeners?
-    HttpListener listener(acceptor);
+    HttpListener listener(acceptor, this->router);
 
     ios.run();
 }
