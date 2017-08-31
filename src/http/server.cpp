@@ -5,6 +5,7 @@
 
 #include "beast_common.hpp"
 
+#include "typed_headers.hpp"
 #include "server.hpp"
 #include "../utils/format.hpp"
 
