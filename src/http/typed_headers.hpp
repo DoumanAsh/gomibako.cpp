@@ -4,7 +4,6 @@
 #include <optional>
 
 #include <boost/beast/http/field.hpp>
-#include <boost/beast/core/string_param.hpp>
 
 namespace http {
     /**
@@ -17,7 +16,7 @@ namespace http {
             ///@returns HTTP header name
             virtual boost::beast::http::field name() const = 0;
             ///@returns HTTP header value
-            virtual boost::beast::string_param&& value() const = 0;
+            virtual std::string value() const = 0;
     };
 
 
@@ -29,7 +28,7 @@ namespace http {
              * @param tag Tag's value.
              * @param weak Whether ETag is weak or not. Default is weak.
              */
-            ETag(std::string tag, bool weak);
+            ETag(const std::string& tag, bool weak);
             /**
              * Parses raw HTTP header ETag and constructs @ref ETag.
              *
@@ -45,6 +44,6 @@ namespace http {
 
             //TypedHeader interface
             boost::beast::http::field name() const override;
-            boost::beast::string_param&& value() const override;
+            std::string value() const override;
     };
 }
