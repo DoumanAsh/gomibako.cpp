@@ -4,12 +4,10 @@
 
 using tcp = boost::asio::ip::tcp;
 
-void hello_wolrd(const http::dynamic_request& request, http::dynamic_response& response) {
-    (void)request;
-
-    response.result(http::status::ok);
-    response.set(http::field::content_type, "text/html");
-    boost::beast::ostream(response.body) << "<h1>Hello world</h1>\n";
+void hello_wolrd(http::Router::Context&& ctx) {
+    ctx.response.result(http::status::ok);
+    ctx.response.set(http::field::content_type, "text/html");
+    boost::beast::ostream(ctx.response.body) << "<h1>Hello world</h1>\n";
 }
 
 int main(int argc, char *argv[]) {

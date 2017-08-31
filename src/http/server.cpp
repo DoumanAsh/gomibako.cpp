@@ -160,7 +160,7 @@ class HttpListener {
 
             this->response.emplace();
 
-            if (!this->router.dispatch(*this->request, *this->response)) {
+            if (!this->router.dispatch(this->socket, *this->request, *this->response)) {
                 return this->send_error_response("Not found", http::status::not_found);
             }
 

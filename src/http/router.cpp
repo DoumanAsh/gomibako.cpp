@@ -3,6 +3,7 @@
 #include "router.hpp"
 
 using namespace http;
+using tcp = boost::asio::ip::tcp;
 
 Router::Router() noexcept {
 }
@@ -18,14 +19,14 @@ Router& Router::add_route(Method method, std::string&& route, router_handler fn)
     return *this;
 }
 
-bool Router::dispatch(const dynamic_request& request, dynamic_response& response) const noexcept {
+bool Router::dispatch(const tcp::socket& socket, const dynamic_request& request, dynamic_response& response) const noexcept {
     const handler_map_t* handlers = this->map_method(request.method());
 
     if (handlers == nullptr) return false;
 
     for (const auto& handler : *handlers) {
         if (handler.first == request.target()) {
-            handler.second(request, response);
+            handler.second(Context{socket, request, response});
             return true;
         }
     }
