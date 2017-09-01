@@ -4,8 +4,9 @@
 
 #include "typed_headers.hpp"
 
-using namespace http;
+using namespace http::header;
 
+//ETag
 ETag::ETag(const std::string& tag, bool weak=false) : tag(tag), weak(weak) {};
 
 std::optional<ETag> ETag::parse(const std::string& raw_header) {
@@ -35,4 +36,35 @@ std::string ETag::value() const {
            << "\"";
 
     return result.str();
+}
+
+//ContentType
+Server::Server(const char* name) noexcept : server(name) {};
+
+boost::beast::http::field Server::name() const {
+    return boost::beast::http::field::server;
+}
+
+std::string Server::value() const {
+    return this->server;
+}
+
+//ContentType
+ContentType::ContentType(const std::string& type) : type(type) {};
+ContentType::ContentType(const char* type) : type(type) {};
+
+ContentType ContentType::json() { return ContentType("application/json"); }
+ContentType ContentType::plain_text() { return ContentType("text/plain"); }
+ContentType ContentType::html() { return ContentType("text/html"); }
+ContentType ContentType::form_url_enc() { return ContentType("application/www-form-url-encoded"); }
+ContentType ContentType::jpeg() { return ContentType("image/jpeg"); }
+ContentType ContentType::png() { return ContentType("image/png"); }
+ContentType ContentType::octet_stream() { return ContentType("application/octet_stream"); }
+
+boost::beast::http::field ContentType::name() const {
+    return boost::beast::http::field::content_type;
+}
+
+std::string ContentType::value() const {
+    return this->type;
 }

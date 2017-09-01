@@ -108,7 +108,7 @@ class HttpListener {
          * Finalize response by setting default headers.
          */
         inline void prepare_response() {
-            this->response->set(http::field::server, "Gomibako");
+            http::header::set(*this->response, http::header::Server("Gomibako"));
             this->response->prepare_payload();
         }
 
@@ -122,7 +122,7 @@ class HttpListener {
         void send_error_response(Error&& error, http::status status = http::status::internal_server_error) {
             this->response.emplace();
             this->response->result(status);
-            this->response->set(http::field::content_type, "text/plain");
+            http::header::set(*this->response, http::header::ContentType::plain_text());
             boost::beast::ostream(this->response->body) << error;
 
             this->prepare_response();
