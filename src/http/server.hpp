@@ -16,7 +16,9 @@ namespace http {
             void start();
 
         private:
+            ///Server's configuration.
             config::Config config;
+            ///Router that is used to dispatch incoming requests.
             Router router;
     };
 }

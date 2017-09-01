@@ -12,14 +12,25 @@
 #include "beast_common.hpp"
 
 namespace http {
+    /**
+     * Alias to boost::beast::http::verb
+     */
     enum class Method {
+        ///HTTP GET
         GET = boost::beast::http::verb::get,
+        ///HTTP HEAD
         HEAD = boost::beast::http::verb::head,
+        ///HTTP POST
         POST = boost::beast::http::verb::post,
+        ///HTTP PUT
         PUT = boost::beast::http::verb::put,
+        ///HTTP DELETE
         DELETE_ = boost::beast::http::verb::delete_,
+        ///HTTP CONNECT
         CONNECT = boost::beast::http::verb::connect,
+        ///HTTP OPTIONS
         OPTIONS = boost::beast::http::verb::options,
+        ///HTTP TRACE
         TRACE = boost::beast::http::verb::trace
     };
 
@@ -36,7 +47,9 @@ namespace http {
             struct Context {
                 ///asio's socket can give access to useful information such as local/remote endpoint.
                 const boost::asio::ip::tcp::socket& socket;
+                ///boost::beast request
                 const dynamic_request& request;
+                ///boost::beast response into which handler writes stuff
                 dynamic_response& response;
 
                 //Since we store references here better to not let it get copied around
@@ -78,18 +91,34 @@ namespace http {
             bool is_method_used(boost::beast::http::verb method) const noexcept;
 
         private:
+            /**
+             * Stores HTTP methods which were inserted into routed.
+             *
+             * It may be useful to pre-check if method is available at all
+             * instead of iterating through all available methods.
+             */
             std::unordered_set<int> avail_methods;
 
+            ///Router's handler map to UR paths type
             typedef std::vector<std::pair<std::string, router_handler>> handler_map_t;
+            ///Map of GET handlers
             handler_map_t get_handlers;
+            ///Map of HEAD handlers
             handler_map_t head_handlers;
+            ///Map of POST handlers
             handler_map_t post_handlers;
+            ///Map of PUT handlers
             handler_map_t put_handlers;
+            ///Map of DELETE handlers
             handler_map_t delete_handlers;
+            ///Map of OPTIONS handlers
             handler_map_t options_handlers;
+            ///Map of TRACE handlers
             handler_map_t trace_handlers;
 
+            ///Retrieves map according to method
             handler_map_t* map_method(boost::beast::http::verb method) noexcept;
+            ///Retrieves const map according to method
             const handler_map_t* map_method(boost::beast::http::verb method) const noexcept;
     };
 }

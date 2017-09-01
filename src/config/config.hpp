@@ -4,6 +4,9 @@
 
 #include <boost/asio/ip/tcp.hpp>
 
+/**
+ * Configuration module
+ */
 namespace config {
     /**
      * Application config.

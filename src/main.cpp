@@ -8,12 +8,18 @@
 
 using tcp = boost::asio::ip::tcp;
 
+/**
+ * Root page
+ */
 void hello_wolrd(http::Router::Context&& ctx) {
     ctx.response.result(http::status::ok);
     http::header::set(ctx.response, http::header::ContentType::html());
     boost::beast::ostream(ctx.response.body) << "<h1>Hello world</h1>\n";
 }
 
+/**
+ * Handler for `/ip` route
+ */
 void handle_ip(http::Router::Context&& ctx) {
     boost::property_tree::ptree content;
     content.put("ip", ctx.socket.remote_endpoint().address().to_string());

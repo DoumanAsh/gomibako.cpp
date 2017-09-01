@@ -2,6 +2,9 @@
 
 #include <boost/system/error_code.hpp>
 
+/**
+ * Misc. utilities module.
+ */
 namespace utils {
     /**
      * Logs Boost error code.

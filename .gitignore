@@ -1,6 +1,7 @@
 build/
 html/
 *.db
+*.tmp
 CMakeCache.txt
 CMakeFiles
 CMakeScripts
