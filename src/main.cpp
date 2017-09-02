@@ -30,6 +30,21 @@ void handle_ip(http::Router::Context&& ctx) {
     boost::property_tree::write_json(body_stream, content, false);
 }
 
+/**
+ * Handler for `/heades` route
+ */
+void handle_headers(http::Router::Context&& ctx) {
+    ctx.response.result(http::status::ok);
+
+    boost::property_tree::ptree content;
+    http::header::set(ctx.response, http::header::ContentType::json());
+    for (const auto& header : ctx.request) {
+        content.put(std::string(header.name_string()), header.value());
+    }
+    auto body_stream = boost::beast::ostream(ctx.response.body);
+    boost::property_tree::write_json(body_stream, content, false);
+}
+
 int main(int, char[]) {
     std::ios_base::sync_with_stdio(false);
 
@@ -39,7 +54,8 @@ int main(int, char[]) {
 
     http::Router router;
     router.add_route(http::Method::GET, "/", hello_wolrd)
-          .add_route(http::Method::GET, "/ip", handle_ip);
+          .add_route(http::Method::GET, "/ip", handle_ip)
+          .add_route(http::Method::GET, "/headers", handle_headers);
 
     http::Server server(std::move(config), std::move(router));
     server.start();
