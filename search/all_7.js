@@ -2,6 +2,7 @@ var searchData=
 [
   ['declval_3c_20t_20_26_20_3e',['declval&lt; T &amp; &gt;',['../namespaceboost_1_1beast_1_1detail.html#a33fc815fd9eff669b2d238535cbc02ef',1,'boost::beast::detail']]],
   ['h',['H',['../structboost_1_1beast_1_1websocket_1_1detail_1_1pausation_1_1exemplar_1_1_h.html',1,'boost::beast::websocket::detail::pausation::exemplar']]],
+  ['handle_5fheaders',['handle_headers',['../main_8cpp.html#ab1db75da21d6107e4d8f70dd2b348891',1,'main.cpp']]],
   ['handle_5fip',['handle_ip',['../main_8cpp.html#a45e1c510e3bed8764152841ae6508f96',1,'main.cpp']]],
   ['handle_5frequest',['handle_request',['../class_http_listener.html#a89146fcbd476eb827acef75a702e2ae3',1,'HttpListener']]],
   ['handler',['handler',['../classboost_1_1beast_1_1handler__ptr.html#accc48f52d52540d8f7687842ddcdc0f0',1,'boost::beast::handler_ptr::handler()'],['../classboost_1_1beast_1_1websocket_1_1stream_1_1read__some__op.html#a4fe4ed34af8b307952d82e073377ed14',1,'boost::beast::websocket::stream::read_some_op::handler()'],['../classboost_1_1beast_1_1websocket_1_1stream_1_1write__some__op.html#adc76d38aa26e221fffc70708bd998b55',1,'boost::beast::websocket::stream::write_some_op::handler()']]],
