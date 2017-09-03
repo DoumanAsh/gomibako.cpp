@@ -4,6 +4,7 @@
 #include <optional>
 #include <type_traits>
 
+#include <boost/beast/core/string.hpp>
 #include <boost/beast/http/field.hpp>
 
 namespace http {
@@ -33,7 +34,7 @@ namespace http {
         class TypedHeader {
             public:
                 ///@returns HTTP header name
-                virtual boost::beast::http::field name() const = 0;
+                virtual boost::beast::string_view name() const = 0;
                 ///@returns HTTP header value
                 virtual std::string value() const = 0;
         };
@@ -64,7 +65,7 @@ namespace http {
                 std::string tag;
 
                 //TypedHeader interface
-                boost::beast::http::field name() const override;
+                boost::beast::string_view name() const override;
                 std::string value() const override;
         };
 
@@ -84,7 +85,7 @@ namespace http {
                 const char* server;
 
                 //TypedHeader interface
-                boost::beast::http::field name() const override;
+                boost::beast::string_view name() const override;
                 std::string value() const override;
         };
 
@@ -120,8 +121,29 @@ namespace http {
                 std::string type;
 
                 //TypedHeader interface
-                boost::beast::http::field name() const override;
+                boost::beast::string_view name() const override;
                 std::string value() const override;
         };
+
+        /**
+         * Content-Type header, defined in RFC7231.
+         */
+        class UserAgent: TypedHeader {
+            public:
+                /**
+                 * Creates @ref UserAgent.
+                 *
+                 * @param name UserAgent's header value.
+                 */
+                explicit UserAgent(const char* name) noexcept;
+
+                ///UserAgent's value
+                const char* agent;
+
+                //TypedHeader interface
+                boost::beast::string_view name() const override;
+                std::string value() const override;
+        };
+
     }
 }

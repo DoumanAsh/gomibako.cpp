@@ -1,10 +1,11 @@
-#include <string_view>
 #include <sstream>
 #include <iostream>
 
 #include "typed_headers.hpp"
 
 using namespace http::header;
+
+#define http_field(_name) boost::beast::http::to_string(boost::beast::http::field::_name)
 
 //ETag
 ETag::ETag(const std::string& tag, bool weak=false) : tag(tag), weak(weak) {};
@@ -24,8 +25,8 @@ std::optional<ETag> ETag::parse(const std::string& raw_header) {
     return ETag(raw_header.substr(left + 1, right - left - 1), weak);
 }
 
-boost::beast::http::field ETag::name() const {
-    return boost::beast::http::field::etag;
+boost::beast::string_view ETag::name() const {
+    return http_field(etag);
 }
 
 std::string ETag::value() const {
@@ -38,11 +39,11 @@ std::string ETag::value() const {
     return result.str();
 }
 
-//ContentType
+//Server
 Server::Server(const char* name) noexcept : server(name) {};
 
-boost::beast::http::field Server::name() const {
-    return boost::beast::http::field::server;
+boost::beast::string_view Server::name() const {
+    return http_field(server);
 }
 
 std::string Server::value() const {
@@ -61,10 +62,21 @@ ContentType ContentType::jpeg() { return ContentType("image/jpeg"); }
 ContentType ContentType::png() { return ContentType("image/png"); }
 ContentType ContentType::octet_stream() { return ContentType("application/octet_stream"); }
 
-boost::beast::http::field ContentType::name() const {
-    return boost::beast::http::field::content_type;
+boost::beast::string_view ContentType::name() const {
+    return http_field(content_type);
 }
 
 std::string ContentType::value() const {
     return this->type;
+}
+
+//UserAgent
+UserAgent::UserAgent(const char* name) noexcept : agent(name) {};
+
+boost::beast::string_view UserAgent::name() const {
+    return http_field(user_agent);
+}
+
+std::string UserAgent::value() const {
+    return this->agent;
 }
