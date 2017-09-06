@@ -97,7 +97,7 @@ class HttpListener {
          */
         void send_response() {
             http::async_write(this->socket, *this->response,
-            [this](boost::system::error_code error) {
+            [this](boost::system::error_code error, std::size_t) {
                 this->socket.shutdown(tcp::socket::shutdown_send, error);
                 this->socket.close(error);
                 this->accept();
@@ -138,7 +138,9 @@ class HttpListener {
             this->request.emplace();
 
             http::async_read(this->socket, this->read_buffer, *this->request,
-            [this](boost::system::error_code error) {
+            [this](boost::system::error_code error, std::size_t) {
+                //Second argument is number of read bytes.
+                //Might be useful in future
                 if (error) {
                     this->send_error_response(std::move(error));
                 }

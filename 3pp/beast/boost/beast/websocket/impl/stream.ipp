@@ -45,8 +45,9 @@ template<class... Args>
 stream<NextLayer>::
 stream(Args&&... args)
     : stream_(std::forward<Args>(args)...)
+    , tok_(1)
 {
-    BOOST_ASSERT(rd_.buf.max_size() >=
+    BOOST_ASSERT(rd_buf_.max_size() >=
         max_control_frame_size);
 }
 
@@ -59,26 +60,26 @@ read_size_hint(
     using beast::detail::clamp;
     std::size_t result;
     BOOST_ASSERT(initial_size > 0);
-    if(! pmd_ || (! rd_.done && ! pmd_->rd_set))
+    if(! pmd_ || (! rd_done_ && ! pmd_->rd_set))
     {
         // current message is uncompressed
 
-        if(rd_.done)
+        if(rd_done_)
         {
             // first message frame
             result = initial_size;
             goto done;
         }
-        else if(rd_.fh.fin)
+        else if(rd_fh_.fin)
         {
             // last message frame
-            BOOST_ASSERT(rd_.remain > 0);
-            result = clamp(rd_.remain);
+            BOOST_ASSERT(rd_remain_ > 0);
+            result = clamp(rd_remain_);
             goto done;
         }
     }
     result = (std::max)(
-        initial_size, clamp(rd_.remain));
+        initial_size, clamp(rd_remain_));
 done:
     BOOST_ASSERT(result != 0);
     return result;
@@ -92,51 +93,12 @@ read_size_hint(DynamicBuffer& buffer) const
 {
     static_assert(is_dynamic_buffer<DynamicBuffer>::value,
         "DynamicBuffer requirements not met");
-#if 1
     auto const initial_size = (std::min)(
         +tcp_frame_size,
         buffer.max_size() - buffer.size());
     if(initial_size == 0)
         return 1; // buffer is full
     return read_size_hint(initial_size);
-
-#else
-    using beast::detail::clamp;
-    std::size_t result;
-    if(! pmd_ || (! rd_.done && ! pmd_->rd_set))
-    {
-        // current message is uncompressed
-
-        if(rd_.done)
-        {
-            // first message frame
-            auto const n = (std::min)(
-                buffer.max_size(),
-                (std::max)(
-                    +tcp_frame_size,
-                    buffer.capacity() - buffer.size()));
-            if(n > 0)
-                return n;
-            return 1;
-        }
-
-        if(rd_.fh.fin)
-        {
-            BOOST_ASSERT(rd_.remain != 0);
-            return (std::min)(
-                buffer.max_size(), clamp(rd_.remain));
-        }
-    }
-    return (std::min)(
-        buffer.max_size() - buffer.size(),
-        (std::max)((std::max)(
-            +tcp_frame_size,
-            clamp(rd_.remain)),
-            buffer.capacity() - buffer.size()));
-done:
-    BOOST_ASSERT(result != 0);
-    return result;
-#endif
 }
 
 template<class NextLayer>
@@ -172,22 +134,21 @@ open(role_type role)
 {
     // VFALCO TODO analyze and remove dupe code in reset()
     role_ = role;
-    failed_ = false;
-    rd_.remain = 0;
-    rd_.cont = false;
-    rd_.done = true;
+    status_ = status::open;
+    rd_remain_ = 0;
+    rd_cont_ = false;
+    rd_done_ = true;
     // Can't clear this because accept uses it
-    //rd_.buf.reset();
-    rd_.fh.fin = false;
+    //rd_buf_.reset();
+    rd_fh_.fin = false;
     rd_close_ = false;
     wr_close_ = false;
     wr_block_.reset();
     rd_block_.reset();
     cr_.code = close_code::none;
-    ping_data_ = nullptr;   // should be nullptr on close anyway
 
-    wr_.cont = false;
-    wr_.buf_size = 0;
+    wr_cont_ = false;
+    wr_buf_size_ = 0;
 
     if(((role_ == role_type::client && pmd_opts_.client_enable) ||
         (role_ == role_type::server && pmd_opts_.server_enable)) &&
@@ -223,7 +184,7 @@ void
 stream<NextLayer>::
 close()
 {
-    wr_.buf.reset();
+    wr_buf_.reset();
     pmd_.reset();
 }
 
@@ -232,45 +193,44 @@ void
 stream<NextLayer>::
 reset()
 {
-    failed_ = false;
-    rd_.remain = 0;
-    rd_.cont = false;
-    rd_.done = true;
-    rd_.buf.consume(rd_.buf.size());
-    rd_.fh.fin = false;
+    BOOST_ASSERT(status_ != status::open);
+    rd_remain_ = 0;
+    rd_cont_ = false;
+    rd_done_ = true;
+    rd_buf_.consume(rd_buf_.size());
+    rd_fh_.fin = false;
     rd_close_ = false;
     wr_close_ = false;
-    wr_.cont = false;
+    wr_cont_ = false;
     wr_block_.reset();
     rd_block_.reset();
     cr_.code = close_code::none;
-    ping_data_ = nullptr;   // should be nullptr on close anyway
 }
 
 // Called before each write frame
 template<class NextLayer>
 void
 stream<NextLayer>::
-wr_begin()
+begin_msg()
 {
-    wr_.autofrag = wr_autofrag_;
-    wr_.compress = static_cast<bool>(pmd_);
+    wr_frag_ = wr_frag_opt_;
+    wr_compress_ = static_cast<bool>(pmd_);
 
     // Maintain the write buffer
-    if( wr_.compress ||
+    if( wr_compress_ ||
         role_ == role_type::client)
     {
-        if(! wr_.buf || wr_.buf_size != wr_buf_size_)
+        if(! wr_buf_ || wr_buf_size_ != wr_buf_opt_)
         {
-            wr_.buf_size = wr_buf_size_;
-            wr_.buf = boost::make_unique_noinit<
-                std::uint8_t[]>(wr_.buf_size);
+            wr_buf_size_ = wr_buf_opt_;
+            wr_buf_ = boost::make_unique_noinit<
+                std::uint8_t[]>(wr_buf_size_);
         }
     }
     else
     {
-        wr_.buf_size = wr_buf_size_;
-        wr_.buf.reset();
+        wr_buf_size_ = wr_buf_opt_;
+        wr_buf_.reset();
     }
 }
 
@@ -335,7 +295,7 @@ parse_fh(
     {
     case detail::opcode::binary:
     case detail::opcode::text:
-        if(rd_.cont)
+        if(rd_cont_)
         {
             // new data frame when continuation expected
             return err(close_code::protocol_error);
@@ -351,7 +311,7 @@ parse_fh(
         break;
 
     case detail::opcode::cont:
-        if(! rd_.cont)
+        if(! rd_cont_)
         {
             // continuation without an active message
             return err(close_code::protocol_error);
@@ -430,7 +390,7 @@ parse_fh(
         BOOST_ASSERT(buffer_size(cb) >= sizeof(tmp));
         cb.consume(buffer_copy(buffer(tmp), cb));
         fh.key = detail::little_uint32_to_native(&tmp[0]);
-        detail::prepare_key(rd_.key, fh.key);
+        detail::prepare_key(rd_key_, fh.key);
     }
     else
     {
@@ -441,23 +401,23 @@ parse_fh(
     {
         if(fh.op != detail::opcode::cont)
         {
-            rd_.size = 0;
-            rd_.op = fh.op;
+            rd_size_ = 0;
+            rd_op_ = fh.op;
         }
         else
         {
-            if(rd_.size > (std::numeric_limits<
+            if(rd_size_ > (std::numeric_limits<
                     std::uint64_t>::max)() - fh.len)
                 return err(close_code::too_big);
         }
         if(! pmd_ || ! pmd_->rd_set)
         {
             if(rd_msg_max_ && beast::detail::sum_exceeds(
-                rd_.size, fh.len, rd_msg_max_))
+                rd_size_, fh.len, rd_msg_max_))
                 return err(close_code::too_big);
         }
-        rd_.cont = ! fh.fin;
-        rd_.remain = fh.len;
+        rd_cont_ = ! fh.fin;
+        rd_remain_ = fh.len;
     }
     b.consume(b.size() - buffer_size(cb));
     code = close_code::none;
@@ -479,9 +439,15 @@ write_close(DynamicBuffer& db, close_reason const& cr)
     fh.rsv3 = false;
     fh.len = cr.code == close_code::none ?
         0 : 2 + cr.reason.size();
-    fh.mask = role_ == role_type::client;
-    if(fh.mask)
-        fh.key = maskgen_();
+    if(role_ == role_type::client)
+    {
+        fh.mask = true;
+        fh.key = wr_gen_();
+    }
+    else
+    {
+        fh.mask = false;
+    }
     detail::write(db, fh);
     if(cr.code != close_code::none)
     {
@@ -528,7 +494,7 @@ write_ping(DynamicBuffer& db,
     fh.len = data.size();
     fh.mask = role_ == role_type::client;
     if(fh.mask)
-        fh.key = maskgen_();
+        fh.key = wr_gen_();
     detail::write(db, fh);
     if(data.empty())
         return;
@@ -562,7 +528,7 @@ build_request(detail::sec_ws_key_type& key,
     req.set(http::field::host, host);
     req.set(http::field::upgrade, "websocket");
     req.set(http::field::connection, "upgrade");
-    detail::make_sec_ws_key(key, maskgen_);
+    detail::make_sec_ws_key(key, wr_gen_);
     req.set(http::field::sec_websocket_key, key);
     req.set(http::field::sec_websocket_version, "13");
     if(pmd_opts_.client_enable)
@@ -626,8 +592,6 @@ build_response(http::request<Body,
         return err("Missing Host");
     if(! req.count(http::field::sec_websocket_key))
         return err("Missing Sec-WebSocket-Key");
-    if(! http::token_list{req[http::field::upgrade]}.exists("websocket"))
-        return err("Missing websocket Upgrade token");
     auto const key = req[http::field::sec_websocket_key];
     if(key.size() > detail::sec_ws_key_type::max_size_n)
         return err("Invalid Sec-WebSocket-Key");
@@ -707,7 +671,43 @@ on_response(response_type const& res,
     open(role_type::client);
 }
 
-//------------------------------------------------------------------------------
+// _Fail the WebSocket Connection_
+template<class NextLayer>
+void
+stream<NextLayer>::
+do_fail(
+    std::uint16_t code,         // if set, send a close frame first
+    error_code ev,              // error code to use upon success
+    error_code& ec)             // set to the error, else set to ev
+{
+    BOOST_ASSERT(ev);
+    status_ = status::closing;
+    if(code != close_code::none && ! wr_close_)
+    {
+        wr_close_ = true;
+        detail::frame_buffer fb;
+        write_close<
+            flat_static_buffer_base>(fb, code);
+        boost::asio::write(stream_, fb.data(), ec);
+        if(! check_ok(ec))
+            return;
+    }
+    using beast::websocket::teardown;
+    teardown(role_, stream_, ec);
+    if(ec == boost::asio::error::eof)
+    {
+        // Rationale:
+        // http://stackoverflow.com/questions/25587403/boost-asio-ssl-async-shutdown-always-finishes-with-an-error
+        ec.assign(0, ec.category());
+    }
+    if(! ec)
+        ec = ev;
+    if(ec && ec != error::closed)
+        status_ = status::failed;
+    else
+        status_ = status::closed;
+    close();
+}
 
 } // websocket
 } // beast

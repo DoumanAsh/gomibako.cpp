@@ -48,7 +48,7 @@ class stream<NextLayer>::ping_op
             detail::opcode op,
             ping_data const& payload)
             : ws(ws_)
-            , tok(ws.t_.unique())
+            , tok(ws.tok_.unique())
         {
             // Serialize the control frame
             ws.template write_ping<
@@ -131,12 +131,11 @@ operator()(error_code ec, std::size_t)
             d.ws.wr_block_ = d.tok;
 
             // Make sure the stream is open
-            if(d.ws.failed_)
+            if(! d.ws.check_open(ec))
             {
                 BOOST_ASIO_CORO_YIELD
                 d.ws.get_io_service().post(
-                    bind_handler(std::move(*this),
-                        boost::asio::error::operation_aborted));
+                    bind_handler(std::move(*this), ec));
                 goto upcall;
             }
         }
@@ -145,7 +144,7 @@ operator()(error_code ec, std::size_t)
             // Suspend
             BOOST_ASSERT(d.ws.wr_block_ != d.tok);
             BOOST_ASIO_CORO_YIELD
-            d.ws.ping_op_.emplace(std::move(*this));
+            d.ws.paused_ping_.emplace(std::move(*this));
 
             // Acquire the write block
             BOOST_ASSERT(! d.ws.wr_block_);
@@ -157,26 +156,23 @@ operator()(error_code ec, std::size_t)
             BOOST_ASSERT(d.ws.wr_block_ == d.tok);
 
             // Make sure the stream is open
-            if(d.ws.failed_)
-            {
-                ec = boost::asio::error::operation_aborted;
+            if(! d.ws.check_open(ec))
                 goto upcall;
-            }
         }
 
         // Send ping frame
         BOOST_ASIO_CORO_YIELD
         boost::asio::async_write(d.ws.stream_,
             d.fb.data(), std::move(*this));
-        if(ec)
-            d.ws.failed_ = true;
+        if(! d.ws.check_ok(ec))
+            goto upcall;
 
     upcall:
         BOOST_ASSERT(d.ws.wr_block_ == d.tok);
         d.ws.wr_block_.reset();
-        d.ws.close_op_.maybe_invoke() ||
-            d.ws.rd_op_.maybe_invoke() ||
-            d.ws.wr_op_.maybe_invoke();
+        d.ws.paused_close_.maybe_invoke() ||
+            d.ws.paused_rd_.maybe_invoke() ||
+            d.ws.paused_wr_.maybe_invoke();
         d_.invoke(ec);
     }
 }
@@ -200,15 +196,14 @@ stream<NextLayer>::
 ping(ping_data const& payload, error_code& ec)
 {
     // Make sure the stream is open
-    if(failed_)
-    {
-        ec = boost::asio::error::operation_aborted;
+    if(! check_open(ec))
         return;
-    }
     detail::frame_buffer fb;
     write_ping<flat_static_buffer_base>(
         fb, detail::opcode::ping, payload);
     boost::asio::write(stream_, fb.data(), ec);
+    if(! check_ok(ec))
+        return;
 }
 
 template<class NextLayer>
@@ -228,15 +223,14 @@ stream<NextLayer>::
 pong(ping_data const& payload, error_code& ec)
 {
     // Make sure the stream is open
-    if(failed_)
-    {
-        ec = boost::asio::error::operation_aborted;
+    if(! check_open(ec))
         return;
-    }
     detail::frame_buffer fb;
     write_ping<flat_static_buffer_base>(
         fb, detail::opcode::pong, payload);
     boost::asio::write(stream_, fb.data(), ec);
+    if(! check_ok(ec))
+        return;
 }
 
 template<class NextLayer>
