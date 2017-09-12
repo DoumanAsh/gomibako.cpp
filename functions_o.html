@@ -143,6 +143,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>operator bool()
 : <a class="el" href="classboost_1_1beast_1_1handler__ptr.html#a500087291d05227c31e7439e69da4a9f">boost::beast::handler_ptr&lt; T, Handler &gt;</a>
 , <a class="el" href="structboost_1_1beast_1_1websocket_1_1close__reason.html#a87243c3d07b59e2386d4f022521b574a">boost::beast::websocket::close_reason</a>
+, <a class="el" href="classboost_1_1beast_1_1websocket_1_1detail_1_1pausation.html#ad552b6bad160effdfead613db7ff5642">boost::beast::websocket::detail::pausation</a>
 </li>
 <li>operator boost::asio::const_buffer()
 : <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1chunk__crlf__iter__type_1_1value__type.html#a58b85ad11a03578a89c977fd21509322">boost::beast::http::detail::chunk_crlf_iter_type&lt; class &gt;::value_type</a>
@@ -180,14 +181,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structboost_1_1beast_1_1http_1_1detail_1_1opt__token__list__policy.html#a354aa9e64a08d9ec9e7248bbeb67c1db">boost::beast::http::detail::opt_token_list_policy</a>
 , <a class="el" href="structboost_1_1beast_1_1http_1_1detail_1_1parser__is__done.html#a3cb5141886a4f95804cbf1eccb3e114f">boost::beast::http::detail::parser_is_done</a>
 , <a class="el" href="structboost_1_1beast_1_1http_1_1detail_1_1parser__is__header__done.html#ad6b973dafb96064b048977e19edf3217">boost::beast::http::detail::parser_is_header_done</a>
-, <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1read__msg__op.html#a7f9588dfd2905bf544b35ada7fa1e65e">boost::beast::http::detail::read_msg_op&lt; Stream, DynamicBuffer, isRequest, Body, Allocator, Handler &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1read__op.html#aa120946edeb12f4399e1591ea4f368a9">boost::beast::http::detail::read_op&lt; Stream, DynamicBuffer, isRequest, Derived, Condition, Handler &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1read__some__op.html#a6e4001ca260079dbcb643f6f96c7cd7a">boost::beast::http::detail::read_some_op&lt; Stream, DynamicBuffer, isRequest, Derived, Handler &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1read__msg__op.html#a60f96f870f5f637514b4bed2d222c240">boost::beast::http::detail::read_msg_op&lt; Stream, DynamicBuffer, isRequest, Body, Allocator, Handler &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1read__op.html#a13df1df293f14a603db1aa91628e7011">boost::beast::http::detail::read_op&lt; Stream, DynamicBuffer, isRequest, Derived, Condition, Handler &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1read__some__op.html#a88e533f223b5c18d22ca5b7fee5b312f">boost::beast::http::detail::read_some_op&lt; Stream, DynamicBuffer, isRequest, Derived, Handler &gt;</a>
 , <a class="el" href="structboost_1_1beast_1_1http_1_1detail_1_1serializer__is__done.html#abb09868b0d11fad312501ee45a3e2bed">boost::beast::http::detail::serializer_is_done</a>
 , <a class="el" href="structboost_1_1beast_1_1http_1_1detail_1_1serializer__is__header__done.html#a32714679aecd3584c1d4fc1c0f99a40c">boost::beast::http::detail::serializer_is_header_done</a>
 , <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1write__lambda.html#a872d282f0ee000544d85eba8987fe989">boost::beast::http::detail::write_lambda&lt; Stream &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1write__msg__op.html#abfcfc017cd617a438d78a26a7bb2aad3">boost::beast::http::detail::write_msg_op&lt; Stream, Handler, isRequest, Body, Fields &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1write__op.html#a6e146ab93bcdef4eb4c66e8714b03e6c">boost::beast::http::detail::write_op&lt; Stream, Handler, Predicate, isRequest, Body, Fields &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1write__op.html#a0293d90a43307b4f8331a0352b9cc1de">boost::beast::http::detail::write_op&lt; Stream, Handler, Predicate, isRequest, Body, Fields &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1write__ostream__lambda.html#a683d6e403841cfeb2d38b48b361e198c">boost::beast::http::detail::write_ostream_lambda&lt; Serializer &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1write__some__lambda.html#a29409992cce1911735effbd79ff9221a">boost::beast::http::detail::write_some_lambda&lt; Stream &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1write__some__op.html#a2790d4760442ee732fdeb49c7984a8a8">boost::beast::http::detail::write_some_op&lt; Stream, Handler, isRequest, Body, Fields &gt;</a>
@@ -196,15 +197,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classboost_1_1beast_1_1websocket_1_1detail_1_1maskgen__t.html#a4472b0d6ded30d85b74e0692cc893ff5">boost::beast::websocket::detail::maskgen_t&lt; Generator &gt;</a>
 , <a class="el" href="structboost_1_1beast_1_1websocket_1_1detail_1_1pausation_1_1exemplar_1_1_h.html#a229e824f2e8b3b44c3123e4cdee91f53">boost::beast::websocket::detail::pausation::exemplar::H</a>
 , <a class="el" href="classboost_1_1beast_1_1websocket_1_1detail_1_1teardown__tcp__op.html#aba77fa283f816637ec5240b57610c86e">boost::beast::websocket::detail::teardown_tcp_op&lt; Handler &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1accept__op.html#a5336259b2276f4c98dd56c496f74b699">boost::beast::websocket::stream&lt; NextLayer &gt;::accept_op&lt; NextLayer &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1close__op.html#afec68d8cb2a3518271f3598267468a36">boost::beast::websocket::stream&lt; NextLayer &gt;::close_op&lt; NextLayer &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1fail__op.html#a2a9e6a9107c7513b5364de4b92fa79f5">boost::beast::websocket::stream&lt; NextLayer &gt;::fail_op&lt; NextLayer &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1handshake__op.html#a46e0aa7c212a4c63cc29ed6d39e93acb">boost::beast::websocket::stream&lt; NextLayer &gt;::handshake_op&lt; NextLayer &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1accept__op.html#afb6da54fda462200c8bfcb9adfc6f428">boost::beast::websocket::stream&lt; NextLayer &gt;::accept_op&lt; NextLayer &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1close__op.html#adfb0be5d15d60e31518898cae3891f5e">boost::beast::websocket::stream&lt; NextLayer &gt;::close_op&lt; NextLayer &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1handshake__op.html#a61ae5e88024695b746ceec092463e363">boost::beast::websocket::stream&lt; NextLayer &gt;::handshake_op&lt; NextLayer &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1ping__op.html#a5c3ef00ea9e24f801883de25003e0bfd">boost::beast::websocket::stream&lt; NextLayer &gt;::ping_op&lt; NextLayer &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1read__op.html#a5becf837fbdf119effd417842d426210">boost::beast::websocket::stream&lt; NextLayer &gt;::read_op&lt; NextLayer &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1read__some__op.html#ac83e2af33128eec3537e345f2af8e6fb">boost::beast::websocket::stream&lt; NextLayer &gt;::read_some_op&lt; NextLayer &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1response__op.html#ab386f375623d1bee6c3910efc48ee48d">boost::beast::websocket::stream&lt; NextLayer &gt;::response_op&lt; NextLayer &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1write__some__op.html#ae116f2f53854ced73883ea12bcb66c04">boost::beast::websocket::stream&lt; NextLayer &gt;::write_some_op&lt; NextLayer &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1read__some__op.html#a86543f8486b3f86ade7ce7a6f28c7336">boost::beast::websocket::stream&lt; NextLayer &gt;::read_some_op&lt; NextLayer &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1response__op.html#ae671fd0bb77b61ae08fd1e280e6841e3">boost::beast::websocket::stream&lt; NextLayer &gt;::response_op&lt; NextLayer &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1write__some__op.html#a3f9f8048bee8c40240b309b50e8be30f">boost::beast::websocket::stream&lt; NextLayer &gt;::write_some_op&lt; NextLayer &gt;</a>
 </li>
 <li>operator*()
 : <a class="el" href="classboost_1_1beast_1_1basic__multi__buffer_1_1const__buffers__type_1_1const__iterator.html#ab5e50eb0fd8e80c2ac4bdd24dd098165">boost::beast::basic_multi_buffer&lt; Allocator &gt;::const_buffers_type&lt; Allocator &gt;::const_iterator</a>
@@ -269,14 +269,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>operator=()
 : <a class="el" href="classboost_1_1beast_1_1basic__flat__buffer.html#a8e4f98dc7c0d26cbaca1d37a42151083">boost::beast::basic_flat_buffer&lt; Allocator &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1basic__multi__buffer_1_1const__buffers__type_1_1const__iterator.html#a77e1575cdc6dc4a078bcc614a28bed1c">boost::beast::basic_multi_buffer&lt; Allocator &gt;::const_buffers_type&lt; Allocator &gt;::const_iterator</a>
+, <a class="el" href="classboost_1_1beast_1_1basic__multi__buffer_1_1const__buffers__type_1_1const__iterator.html#a087088fb4da895eb3f1da33167fe1056">boost::beast::basic_multi_buffer&lt; Allocator &gt;::const_buffers_type&lt; Allocator &gt;::const_iterator</a>
 , <a class="el" href="classboost_1_1beast_1_1basic__multi__buffer_1_1const__buffers__type.html#a339eb0e7abeda7e452a18a89126f28d1">boost::beast::basic_multi_buffer&lt; Allocator &gt;::const_buffers_type&lt; Allocator &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1basic__multi__buffer_1_1element.html#ad314371c121ef90a7ab008acd80e1d37">boost::beast::basic_multi_buffer&lt; Allocator &gt;::element&lt; Allocator &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1basic__multi__buffer_1_1mutable__buffers__type_1_1const__iterator.html#ad82c25cd368a2fbf4a21cea30ff7b322">boost::beast::basic_multi_buffer&lt; Allocator &gt;::mutable_buffers_type&lt; Allocator &gt;::const_iterator</a>
 , <a class="el" href="classboost_1_1beast_1_1basic__multi__buffer_1_1mutable__buffers__type.html#a68e7355fe1d536f346f18dbd73ebb1b1">boost::beast::basic_multi_buffer&lt; Allocator &gt;::mutable_buffers_type&lt; Allocator &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1basic__multi__buffer.html#a17a1b6934f8f64a81678b278c9f7687e">boost::beast::basic_multi_buffer&lt; Allocator &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1basic__multi__buffer.html#a5653bde07b215af7cd3a96cd2c95960d">boost::beast::basic_multi_buffer&lt; Allocator &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1buffer__cat__view_1_1const__iterator.html#a34accae5c771783cdd1a741ab9d888b5">boost::beast::buffer_cat_view&lt; Buffers &gt;::const_iterator</a>
-, <a class="el" href="classboost_1_1beast_1_1buffer__cat__view.html#aaee44f11f87370b1b1054ebb1f47a779">boost::beast::buffer_cat_view&lt; Buffers &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1buffer__cat__view.html#aa4cfbf07659e07df16eae13679a6d427">boost::beast::buffer_cat_view&lt; Buffers &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1buffer__prefix__view_1_1const__iterator.html#ac9c48540c9a1e1876276dfe242cae30c">boost::beast::buffer_prefix_view&lt; BufferSequence &gt;::const_iterator</a>
 , <a class="el" href="classboost_1_1beast_1_1buffer__prefix__view.html#a1396cf8cd38bdc79ef14ccfaeb21fcfd">boost::beast::buffer_prefix_view&lt; BufferSequence &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1buffered__read__stream.html#aa9f6608018f0380efaf15bec2c8e9b0f">boost::beast::buffered_read_stream&lt; Stream, DynamicBuffer &gt;</a>
@@ -285,30 +285,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classboost_1_1beast_1_1buffers__adapter_1_1mutable__buffers__type_1_1const__iterator.html#a696dc89397f40ceeee30cb595e339b95">boost::beast::buffers_adapter&lt; MutableBufferSequence &gt;::mutable_buffers_type::const_iterator</a>
 , <a class="el" href="classboost_1_1beast_1_1buffers__adapter_1_1mutable__buffers__type.html#acc07336d3016440bf92077e5be0ce7d8">boost::beast::buffers_adapter&lt; MutableBufferSequence &gt;::mutable_buffers_type</a>
 , <a class="el" href="classboost_1_1beast_1_1buffers__adapter.html#aee38f04aa6889b275a87bb88cee4f284">boost::beast::buffers_adapter&lt; MutableBufferSequence &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1consuming__buffers_1_1const__iterator.html#ad4383f487f8c393c462943962a040375">boost::beast::consuming_buffers&lt; BufferSequence &gt;::const_iterator</a>
-, <a class="el" href="classboost_1_1beast_1_1consuming__buffers.html#ae6d584be103975afe8d3d353c5846d63">boost::beast::consuming_buffers&lt; BufferSequence &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1consuming__buffers_1_1const__iterator.html#a12aacba13a2c5476feb88b65ed674b0b">boost::beast::consuming_buffers&lt; BufferSequence &gt;::const_iterator</a>
+, <a class="el" href="classboost_1_1beast_1_1consuming__buffers.html#a3b09101612ea17cae079231c77ba65a5">boost::beast::consuming_buffers&lt; BufferSequence &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1detail_1_1buffers__ref.html#a0dde78a787a28d9a3a4e38293e626f02">boost::beast::detail::buffers_ref&lt; BufferSequence &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1detail_1_1variant.html#aa61f694376499fd948184f9017a19a61">boost::beast::detail::variant&lt; TN &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1detail_1_1variant.html#a9221e8d825e30c408dc412b0c557830e">boost::beast::detail::variant&lt; TN &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1file__stdio.html#aa017e2cdc5f184431447b37389c1aaee">boost::beast::file_stdio</a>
 , <a class="el" href="classboost_1_1beast_1_1flat__static__buffer.html#a7612965db93a4c600c15872219b2e10f">boost::beast::flat_static_buffer&lt; N &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1handler__alloc.html#a7f58180cd0672916ce2b933ee0fcaecf">boost::beast::handler_alloc&lt; T, Handler &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1handler__alloc.html#a1b344e177ee93cf367ad1e776454d6f8">boost::beast::handler_alloc&lt; T, Handler &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1handler__ptr.html#a359adf5cbe9db16d716759b4b567d6f4">boost::beast::handler_ptr&lt; T, Handler &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1http_1_1basic__chunk__extensions_1_1const__iterator.html#aa07201c037cb79cc166a79ba768d213d">boost::beast::http::basic_chunk_extensions&lt; Allocator &gt;::const_iterator</a>
-, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html#ac1f6b52799a2e1878e7470d4058ffab6">boost::beast::http::basic_fields&lt; Allocator &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html#a513236b08cea40bf0392037e5530244c">boost::beast::http::basic_fields&lt; Allocator &gt;</a>
 , <a class="el" href="structboost_1_1beast_1_1http_1_1basic__fields_1_1reader_1_1field__iterator.html#af34ab141713fe5ef8908a0233d4f26f5">boost::beast::http::basic_fields&lt; Allocator &gt;::reader::field_iterator</a>
 , <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields_1_1value__type.html#a2ab3c557fb717a6c8024a94ba1942f61">boost::beast::http::basic_fields&lt; Allocator &gt;::value_type</a>
 , <a class="el" href="classboost_1_1beast_1_1http_1_1basic__file__body_1_1value__type.html#ad4a4357d58014825e1cf1cf922485a10">boost::beast::http::basic_file_body&lt; File &gt;::value_type</a>
 , <a class="el" href="classboost_1_1beast_1_1http_1_1basic__parser.html#ac9fcc94b6bae7e8617c4525e2c290e57">boost::beast::http::basic_parser&lt; isRequest, Derived &gt;</a>
-, <a class="el" href="structboost_1_1beast_1_1http_1_1header_3_01false_00_01_fields_01_4.html#afff5ddee8a4b61ad5e23eec5c201583d">boost::beast::http::header&lt; false, Fields &gt;</a>
-, <a class="el" href="structboost_1_1beast_1_1http_1_1header_3_01true_00_01_fields_01_4.html#a40227a79bbde41c6edb5480338035076">boost::beast::http::header&lt; true, Fields &gt;</a>
+, <a class="el" href="structboost_1_1beast_1_1http_1_1header_3_01false_00_01_fields_01_4.html#ac357951d1253f02c5f1079ce5fbfd5cc">boost::beast::http::header&lt; false, Fields &gt;</a>
+, <a class="el" href="structboost_1_1beast_1_1http_1_1header_3_01true_00_01_fields_01_4.html#ab0b03f641807383fe07d7f5b426712ff">boost::beast::http::header&lt; true, Fields &gt;</a>
 , <a class="el" href="structboost_1_1beast_1_1http_1_1message.html#a2bb4addcad135b0d1c24f2ea4f6ee800">boost::beast::http::message&lt; isRequest, Body, Fields &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1http_1_1parser.html#a2eeabb498d290849f063f2e2d700955b">boost::beast::http::parser&lt; isRequest, Body, Allocator &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1http_1_1serializer.html#a40483fde9c70a9baac5688ce663e2556">boost::beast::http::serializer&lt; isRequest, Body, Fields &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1span.html#a945546146a40a21d2fd9074f4608f8f4">boost::beast::span&lt; T &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1span.html#ade2c48cd478c8922ac60dc8e2c2eb799">boost::beast::span&lt; T &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1static__buffer.html#a90e1a4f20effb371ba8b0999f5d62ab2">boost::beast::static_buffer&lt; N &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1static__string.html#a48e58ce2d4188368aa94316631578aa8">boost::beast::static_string&lt; N, CharT, Traits &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1string__param.html#a4e3d3f8896f3efa565ed89dd7c553d8c">boost::beast::string_param</a>
-, <a class="el" href="classboost_1_1beast_1_1websocket_1_1detail_1_1pausation.html#a75e2a0d159caf3297d7d10cad49063d2">boost::beast::websocket::detail::pausation</a>
+, <a class="el" href="classboost_1_1beast_1_1websocket_1_1detail_1_1pausation.html#a979251ff27b7d86b378758ac6a108e4b">boost::beast::websocket::detail::pausation</a>
 , <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a3ac639ff02b59da6f2dac2d384571257">boost::beast::websocket::stream&lt; NextLayer &gt;</a>
 </li>
 <li>operator==()
@@ -329,18 +329,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structboost_1_1beast_1_1zlib_1_1detail_1_1deflate__stream_1_1ct__data.html#ab8eaa8c32dad067dcddf07e80450f037">boost::beast::zlib::detail::deflate_stream::ct_data</a>
 </li>
 <li>operator[]()
-: <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html#a70811666df239cf54d69ece880b195c7">boost::beast::http::basic_fields&lt; Allocator &gt;</a>
-, <a class="el" href="classboost_1_1beast_1_1static__string.html#a9b143c32c9fbffba71ed0c89af967b23">boost::beast::static_string&lt; N, CharT, Traits &gt;</a>
+: <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html#ad15ace92e09b8402cb6778140182c616">boost::beast::http::basic_fields&lt; Allocator &gt;</a>
+, <a class="el" href="classboost_1_1beast_1_1static__string.html#a9d23dedcfebf809ec1c541e04e112b9a">boost::beast::static_string&lt; N, CharT, Traits &gt;</a>
 </li>
 <li>opt_len_
 : <a class="el" href="classboost_1_1beast_1_1zlib_1_1detail_1_1deflate__stream.html#a6d43698c4270efdb446be12e027d75fa">boost::beast::zlib::detail::deflate_stream</a>
 </li>
 <li>ostream_buffer()
-: <a class="el" href="classboost_1_1beast_1_1detail_1_1ostream__buffer_01_01_01_01_01_01_01_01_01_01_01_01_01_01_01_0146dd4737f6706135cafb52c960198c3a.html#a29c34808e7835ff2d70fbc25e4ebc79d">boost::beast::detail::ostream_buffer                                    &lt; DynamicBuffer, CharT, Traits, false &gt;</a>
+: <a class="el" href="classboost_1_1beast_1_1detail_1_1ostream__buffer_01_01_01_01_01_01_01_01_01_01_01_01_01_01_01_0146dd4737f6706135cafb52c960198c3a.html#adb51ce3c1e8ea765d680a6c28acebbcb">boost::beast::detail::ostream_buffer                                    &lt; DynamicBuffer, CharT, Traits, false &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1detail_1_1ostream__buffer_01_01_01_01_01_01_01_01_01_01_01_01_01_01_01_01b8816efdf22168155bff54f8b64f49b4.html#a55a80baa4d9fb91d7e8107c0411da340">boost::beast::detail::ostream_buffer                                    &lt; DynamicBuffer, CharT, Traits, true &gt;</a>
 </li>
 <li>ostream_helper()
-: <a class="el" href="classboost_1_1beast_1_1detail_1_1ostream__helper_3_01_01_01_01_01_01_01_01_01_01_01_01_01_01_01_82c3b6b05e448428625c85e7ccf2c45d.html#af5ebd282f6250f0f53718bbab1224af7">boost::beast::detail::ostream_helper&lt;                                                                                                  DynamicBuffer, CharT, Traits, false &gt;</a>
+: <a class="el" href="classboost_1_1beast_1_1detail_1_1ostream__helper_3_01_01_01_01_01_01_01_01_01_01_01_01_01_01_01_82c3b6b05e448428625c85e7ccf2c45d.html#a98356dfbaed535092ba716bf3aff6e0e">boost::beast::detail::ostream_helper&lt;                                                                                                  DynamicBuffer, CharT, Traits, false &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1detail_1_1ostream__helper_3_01_01_01_01_01_01_01_01_01_01_01_01_01_01_01_1da98d29bc7a09164deb91cd8c1ac3ca.html#a1b201941bc4b4a75ae10be4a1d590e7b">boost::beast::detail::ostream_helper&lt;                                                  DynamicBuffer, CharT, Traits, true &gt;</a>
 </li>
 <li>ostream_helper_base()

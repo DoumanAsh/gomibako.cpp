@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;boost/property_tree/json_parser.hpp&gt;</code><br />
 <code>#include &quot;<a class="el" href="server_8hpp_source.html">http/server.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="typed__headers_8hpp_source.html">http/typed_headers.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="convert_8hpp_source.html">utils/convert.hpp</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -111,6 +112,8 @@ Functions</h2></td></tr>
 <tr class="separator:a45e1c510e3bed8764152841ae6508f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1db75da21d6107e4d8f70dd2b348891"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ab1db75da21d6107e4d8f70dd2b348891">handle_headers</a> (<a class="el" href="structhttp_1_1_router_1_1_context.html">http::Router::Context</a> &amp;&amp;ctx)</td></tr>
 <tr class="separator:ab1db75da21d6107e4d8f70dd2b348891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9b2e5c56a4039400748ffb18eca4fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a5a9b2e5c56a4039400748ffb18eca4fc">handle_status</a> (<a class="el" href="structhttp_1_1_router_1_1_context.html">http::Router::Context</a> &amp;&amp;ctx)</td></tr>
+<tr class="separator:a5a9b2e5c56a4039400748ffb18eca4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b05a3e4e8992c3c02dd53270b67162e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a4b05a3e4e8992c3c02dd53270b67162e">main</a> (int, char[])</td></tr>
 <tr class="separator:a4b05a3e4e8992c3c02dd53270b67162e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -159,6 +162,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Handler for <code>/ip</code> route </p>
+
+</div>
+</div>
+<a class="anchor" id="a5a9b2e5c56a4039400748ffb18eca4fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handle_status </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhttp_1_1_router_1_1_context.html">http::Router::Context</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Handler for <code>/status/:code</code> route </p>
 
 </div>
 </div>

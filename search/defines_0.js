@@ -41,7 +41,6 @@ var searchData=
   ['boost_5fbeast_5fwebsocket_5fimpl_5faccept_5fipp',['BOOST_BEAST_WEBSOCKET_IMPL_ACCEPT_IPP',['../accept_8ipp.html#af0205b2642c416dbaa4af4ca7779ccc0',1,'accept.ipp']]],
   ['boost_5fbeast_5fwebsocket_5fimpl_5fclose_5fipp',['BOOST_BEAST_WEBSOCKET_IMPL_CLOSE_IPP',['../close_8ipp.html#a61c45aecb35452d87942efa9b598f77f',1,'close.ipp']]],
   ['boost_5fbeast_5fwebsocket_5fimpl_5ferror_5fipp',['BOOST_BEAST_WEBSOCKET_IMPL_ERROR_IPP',['../websocket_2impl_2error_8ipp.html#a4cff4f5af1d78589402f200e2d605c4a',1,'error.ipp']]],
-  ['boost_5fbeast_5fwebsocket_5fimpl_5ffail_5fipp',['BOOST_BEAST_WEBSOCKET_IMPL_FAIL_IPP',['../fail_8ipp.html#af911b4ceff495631a736a97e6b1d7ca0',1,'fail.ipp']]],
   ['boost_5fbeast_5fwebsocket_5fimpl_5fhandshake_5fipp',['BOOST_BEAST_WEBSOCKET_IMPL_HANDSHAKE_IPP',['../handshake_8ipp.html#acb09d38cc950294bce2c2d62e52cdb5d',1,'handshake.ipp']]],
   ['boost_5fbeast_5fwebsocket_5fimpl_5fping_5fipp',['BOOST_BEAST_WEBSOCKET_IMPL_PING_IPP',['../ping_8ipp.html#a3b1bd29985c5d75c19553cff5358f28c',1,'ping.ipp']]],
   ['boost_5fbeast_5fwebsocket_5fimpl_5fread_5fipp',['BOOST_BEAST_WEBSOCKET_IMPL_READ_IPP',['../websocket_2impl_2read_8ipp.html#a3775a069fd6afb16ddffa905105deace',1,'read.ipp']]],

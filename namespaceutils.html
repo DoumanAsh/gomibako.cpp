@@ -90,6 +90,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a5b6a8c3fd680d016083d00a7a8027dae"><td class="memTemplParams" colspan="2">template&lt;typename Target , typename Source &gt; </td></tr>
+<tr class="memitem:a5b6a8c3fd680d016083d00a7a8027dae"><td class="memTemplItemLeft" align="right" valign="top">std::optional&lt; Target &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceutils.html#a5b6a8c3fd680d016083d00a7a8027dae">convert</a> (const Source &amp;arg)</td></tr>
+<tr class="separator:a5b6a8c3fd680d016083d00a7a8027dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33825b2520987ef4f93efdeafed214d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutils.html#a33825b2520987ef4f93efdeafed214d8">log_error</a> (const boost::system::error_code &amp;error)</td></tr>
 <tr class="separator:a33825b2520987ef4f93efdeafed214d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bd9eea4eaaf9a0779f6c15c0d97458b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceutils.html#a8bd9eea4eaaf9a0779f6c15c0d97458b">log_error</a> (const boost::system::error_code &amp;error, const char *prefix)</td></tr>
@@ -98,6 +101,46 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Misc. utilities module. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a5b6a8c3fd680d016083d00a7a8027dae"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Target , typename Source &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt;Target&gt; utils::convert </td>
+          <td>(</td>
+          <td class="paramtype">const Source &amp;&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Converts between types using boost::lexical_cast</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>Source value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Converted value. </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">std::nullopt</td><td>On failure </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a33825b2520987ef4f93efdeafed214d8"></a>
 <div class="memitem">
 <div class="memproto">

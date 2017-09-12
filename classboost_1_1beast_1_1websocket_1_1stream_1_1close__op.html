@@ -114,8 +114,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe4dc5d0aa7784d16c2f780d94cd0523"><td class="memTemplParams" colspan="2">template&lt;class DeducedHandler &gt; </td></tr>
 <tr class="memitem:afe4dc5d0aa7784d16c2f780d94cd0523"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1close__op.html#afe4dc5d0aa7784d16c2f780d94cd0523">close_op</a> (DeducedHandler &amp;&amp;h, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">stream</a>&lt; NextLayer &gt; &amp;ws, <a class="el" href="structboost_1_1beast_1_1websocket_1_1close__reason.html">close_reason</a> const &amp;cr)</td></tr>
 <tr class="separator:afe4dc5d0aa7784d16c2f780d94cd0523"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afec68d8cb2a3518271f3598267468a36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1close__op.html#afec68d8cb2a3518271f3598267468a36">operator()</a> (<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> ec={}, std::size_t bytes_transferred=0)</td></tr>
-<tr class="separator:afec68d8cb2a3518271f3598267468a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfb0be5d15d60e31518898cae3891f5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1close__op.html#adfb0be5d15d60e31518898cae3891f5e">operator()</a> (<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> ec={}, std::size_t bytes_transferred=0, bool cont=true)</td></tr>
+<tr class="separator:adfb0be5d15d60e31518898cae3891f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -233,7 +233,7 @@ template&lt;class DeducedHandler &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="afec68d8cb2a3518271f3598267468a36"></a>
+<a class="anchor" id="adfb0be5d15d60e31518898cae3891f5e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -251,7 +251,13 @@ template&lt;class Handler &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>bytes_transferred</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>bytes_transferred</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cont</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

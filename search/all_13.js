@@ -32,6 +32,8 @@ var searchData=
   ['use_5fproxy',['use_proxy',['../namespaceboost_1_1beast_1_1http.html#ac21267a10b4c07b78b2990a16857607fa910b02467b0674ae0042a7fff67c9052',1,'boost::beast::http']]],
   ['used',['used',['../structboost_1_1beast_1_1zlib_1_1detail_1_1ranges_1_1range.html#af0634486594aa2e66027666616d95d8a',1,'boost::beast::zlib::detail::ranges::range']]],
   ['user_5fagent',['user_agent',['../namespaceboost_1_1beast_1_1http.html#a2b9f3522dec08954593392b5b98372e4a83647c700b7d38852412f4f946f00c88',1,'boost::beast::http']]],
+  ['useragent',['UserAgent',['../classhttp_1_1header_1_1_user_agent.html#a09b0563bf78678b5e01e80c9f0867afc',1,'http::header::UserAgent']]],
+  ['useragent',['UserAgent',['../classhttp_1_1header_1_1_user_agent.html',1,'http::header']]],
   ['utf8_5fchecker',['utf8_checker',['../namespaceboost_1_1beast_1_1websocket_1_1detail.html#a98a083efdfffeffe29a4037acbd71808',1,'boost::beast::websocket::detail']]],
   ['utf8_5fchecker_2ehpp',['utf8_checker.hpp',['../utf8__checker_8hpp.html',1,'']]],
   ['utf8_5fchecker_5ft',['utf8_checker_t',['../classboost_1_1beast_1_1websocket_1_1detail_1_1utf8__checker__t.html',1,'boost::beast::websocket::detail']]],

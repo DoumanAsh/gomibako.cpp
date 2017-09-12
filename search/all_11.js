@@ -96,7 +96,7 @@ var searchData=
   ['static_5fbuffer',['static_buffer',['../classboost_1_1beast_1_1static__buffer.html#a1f1cb3eb0841825e1f823ccabf0d8cc5',1,'boost::beast::static_buffer::static_buffer(static_buffer const &amp;)'],['../classboost_1_1beast_1_1static__buffer.html#a24af00546c310885a362393e0009e4d1',1,'boost::beast::static_buffer::static_buffer()']]],
   ['static_5fbuffer_2ehpp',['static_buffer.hpp',['../static__buffer_8hpp.html',1,'']]],
   ['static_5fbuffer_2eipp',['static_buffer.ipp',['../static__buffer_8ipp.html',1,'']]],
-  ['static_5fbuffer_3c_2btcp_5fframe_5fsize_20_3e',['static_buffer&lt;+tcp_frame_size &gt;',['../classboost_1_1beast_1_1static__buffer.html',1,'boost::beast']]],
+  ['static_5fbuffer_3c_20_2btcp_5fframe_5fsize_20_3e',['static_buffer&lt; +tcp_frame_size &gt;',['../classboost_1_1beast_1_1static__buffer.html',1,'boost::beast']]],
   ['static_5fbuffer_5fbase',['static_buffer_base',['../classboost_1_1beast_1_1static__buffer__base.html#aca2b47d8771eac0aa81777d078fa9ca4',1,'boost::beast::static_buffer_base::static_buffer_base(void *p, std::size_t size)'],['../classboost_1_1beast_1_1static__buffer__base.html#aa5e8b8d1e257989000a5735673a6e107',1,'boost::beast::static_buffer_base::static_buffer_base()']]],
   ['static_5fbuffer_5fbase',['static_buffer_base',['../classboost_1_1beast_1_1static__buffer__base.html',1,'boost::beast']]],
   ['static_5fdesc',['static_desc',['../structboost_1_1beast_1_1zlib_1_1detail_1_1deflate__stream_1_1static__desc.html',1,'boost::beast::zlib::detail::deflate_stream']]],

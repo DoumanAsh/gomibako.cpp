@@ -4,5 +4,6 @@ var searchData=
   ['update',['update',['../namespaceboost_1_1beast_1_1detail.html#a3c332e2766ede8ef3f9a9352d1d98d0e',1,'boost::beast::detail']]],
   ['update_5fhash',['update_hash',['../classboost_1_1beast_1_1zlib_1_1detail_1_1deflate__stream.html#a3d695be9a4d80e55e60cc126a306bc37',1,'boost::beast::zlib::detail::deflate_stream']]],
   ['upper_5fbound',['upper_bound',['../classboost_1_1beast_1_1zlib_1_1deflate__stream.html#a5a83071066ddfb6fa2938b27ec3b9161',1,'boost::beast::zlib::deflate_stream']]],
-  ['used',['used',['../structboost_1_1beast_1_1zlib_1_1detail_1_1ranges_1_1range.html#af0634486594aa2e66027666616d95d8a',1,'boost::beast::zlib::detail::ranges::range']]]
+  ['used',['used',['../structboost_1_1beast_1_1zlib_1_1detail_1_1ranges_1_1range.html#af0634486594aa2e66027666616d95d8a',1,'boost::beast::zlib::detail::ranges::range']]],
+  ['useragent',['UserAgent',['../classhttp_1_1header_1_1_user_agent.html#a09b0563bf78678b5e01e80c9f0867afc',1,'http::header::UserAgent']]]
 ];

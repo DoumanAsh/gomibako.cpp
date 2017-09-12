@@ -105,8 +105,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ac4919d77cf4c37287f9697f48fb0cf"><td class="memTemplParams" colspan="2">template&lt;class DeducedHandler &gt; </td></tr>
 <tr class="memitem:a8ac4919d77cf4c37287f9697f48fb0cf"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1read__op.html#a8ac4919d77cf4c37287f9697f48fb0cf">read_op</a> (DeducedHandler &amp;&amp;h, Stream &amp;s, DynamicBuffer &amp;b, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__parser.html">basic_parser</a>&lt; isRequest, Derived &gt; &amp;p)</td></tr>
 <tr class="separator:a8ac4919d77cf4c37287f9697f48fb0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa120946edeb12f4399e1591ea4f368a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1read__op.html#aa120946edeb12f4399e1591ea4f368a9">operator()</a> (<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> ec, std::size_t bytes_used=0)</td></tr>
-<tr class="separator:aa120946edeb12f4399e1591ea4f368a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13df1df293f14a603db1aa91628e7011"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1read__op.html#a13df1df293f14a603db1aa91628e7011">operator()</a> (<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> ec={}, std::size_t bytes_transferred=0)</td></tr>
+<tr class="separator:a13df1df293f14a603db1aa91628e7011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -224,7 +224,7 @@ template&lt;class DeducedHandler &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa120946edeb12f4399e1591ea4f368a9"></a>
+<a class="anchor" id="a13df1df293f14a603db1aa91628e7011"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -234,13 +234,13 @@ template&lt;class Stream , class DynamicBuffer , bool isRequest, class Derived ,
           <td class="memname">void <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1read__op.html">boost::beast::http::detail::read_op</a>&lt; Stream, DynamicBuffer, isRequest, Derived, Condition, Handler &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>&#160;</td>
-          <td class="paramname"><em>ec</em>, </td>
+          <td class="paramname"><em>ec</em> = <code>{}</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>bytes_used</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>bytes_transferred</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['fail_5fop',['fail_op',['../classboost_1_1beast_1_1websocket_1_1stream_1_1fail__op.html',1,'boost::beast::websocket::stream']]],
   ['field_5fiterator',['field_iterator',['../structboost_1_1beast_1_1http_1_1basic__fields_1_1reader_1_1field__iterator.html',1,'boost::beast::http::basic_fields::reader']]],
   ['field_5frange',['field_range',['../classboost_1_1beast_1_1http_1_1basic__fields_1_1reader_1_1field__range.html',1,'boost::beast::http::basic_fields::reader']]],
   ['field_5ftable',['field_table',['../structboost_1_1beast_1_1http_1_1detail_1_1field__table.html',1,'boost::beast::http::detail']]],

@@ -10,7 +10,7 @@ var searchData=
   ['span',['span',['../classboost_1_1beast_1_1span.html',1,'boost::beast']]],
   ['span_5fbody',['span_body',['../structboost_1_1beast_1_1http_1_1span__body.html',1,'boost::beast::http']]],
   ['static_5fbuffer',['static_buffer',['../classboost_1_1beast_1_1static__buffer.html',1,'boost::beast']]],
-  ['static_5fbuffer_3c_2btcp_5fframe_5fsize_20_3e',['static_buffer&lt;+tcp_frame_size &gt;',['../classboost_1_1beast_1_1static__buffer.html',1,'boost::beast']]],
+  ['static_5fbuffer_3c_20_2btcp_5fframe_5fsize_20_3e',['static_buffer&lt; +tcp_frame_size &gt;',['../classboost_1_1beast_1_1static__buffer.html',1,'boost::beast']]],
   ['static_5fbuffer_5fbase',['static_buffer_base',['../classboost_1_1beast_1_1static__buffer__base.html',1,'boost::beast']]],
   ['static_5fdesc',['static_desc',['../structboost_1_1beast_1_1zlib_1_1detail_1_1deflate__stream_1_1static__desc.html',1,'boost::beast::zlib::detail::deflate_stream']]],
   ['static_5fostream',['static_ostream',['../classboost_1_1beast_1_1detail_1_1static__ostream.html',1,'boost::beast::detail']]],

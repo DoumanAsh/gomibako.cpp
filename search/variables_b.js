@@ -4,6 +4,7 @@ var searchData=
   ['match_5favailable_5f',['match_available_',['../classboost_1_1beast_1_1zlib_1_1detail_1_1deflate__stream.html#aacc125c34974094982297b5a656d584e',1,'boost::beast::zlib::detail::deflate_stream']]],
   ['match_5flength_5f',['match_length_',['../classboost_1_1beast_1_1zlib_1_1detail_1_1deflate__stream.html#ab3dea669913ee8f6e1d02e1a78f56419',1,'boost::beast::zlib::detail::deflate_stream']]],
   ['match_5fstart_5f',['match_start_',['../classboost_1_1beast_1_1zlib_1_1detail_1_1deflate__stream.html#a8787121c29c6a822ecd63069df762a15',1,'boost::beast::zlib::detail::deflate_stream']]],
+  ['matches',['matches',['../structhttp_1_1_router_1_1_context.html#a994d2f3e68cc395b7f82acd7165e11c2',1,'http::Router::Context']]],
   ['matches_5f',['matches_',['../classboost_1_1beast_1_1zlib_1_1detail_1_1deflate__stream.html#a3da76ec53983d72343e9b07458a91e5d',1,'boost::beast::zlib::detail::deflate_stream']]],
   ['max_5fchain',['max_chain',['../structboost_1_1beast_1_1zlib_1_1detail_1_1deflate__stream_1_1config.html#a0b5a93b7504810ece9572475161d632d',1,'boost::beast::zlib::detail::deflate_stream::config']]],
   ['max_5fchain_5flength_5f',['max_chain_length_',['../classboost_1_1beast_1_1zlib_1_1detail_1_1deflate__stream.html#ae07cb9c3fdaa41b1a6606719a3cd6403',1,'boost::beast::zlib::detail::deflate_stream']]],

@@ -228,12 +228,9 @@ Functions</h2></td></tr>
 <tr class="separator:a6bcffba4162970eb299f9f14644289f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73d8ad290bb9000d7d5e56cac0bde9f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceboost_1_1beast_1_1websocket_1_1detail.html#a73d8ad290bb9000d7d5e56cac0bde9f1">pmd_normalize</a> (<a class="el" href="structboost_1_1beast_1_1websocket_1_1detail_1_1pmd__offer.html">pmd_offer</a> &amp;offer)</td></tr>
 <tr class="separator:a73d8ad290bb9000d7d5e56cac0bde9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfdd3d1eb4b8368de10bf074dcf5b4de"><td class="memTemplParams" colspan="2">template&lt;class InflateStream , class DynamicBuffer &gt; </td></tr>
-<tr class="memitem:abfdd3d1eb4b8368de10bf074dcf5b4de"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceboost_1_1beast_1_1websocket_1_1detail.html#abfdd3d1eb4b8368de10bf074dcf5b4de">inflate</a> (InflateStream &amp;zi, DynamicBuffer &amp;buffer, boost::asio::const_buffer const &amp;in, <a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;ec)</td></tr>
-<tr class="separator:abfdd3d1eb4b8368de10bf074dcf5b4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac631d69a5dc9ec77cd7ffd33cfe67097"><td class="memTemplParams" colspan="2">template&lt;class DeflateStream , class ConstBufferSequence &gt; </td></tr>
-<tr class="memitem:ac631d69a5dc9ec77cd7ffd33cfe67097"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceboost_1_1beast_1_1websocket_1_1detail.html#ac631d69a5dc9ec77cd7ffd33cfe67097">deflate</a> (DeflateStream &amp;zo, boost::asio::mutable_buffer &amp;out, <a class="el" href="classboost_1_1beast_1_1consuming__buffers.html">consuming_buffers</a>&lt; ConstBufferSequence &gt; &amp;cb, bool fin, <a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;ec)</td></tr>
-<tr class="separator:ac631d69a5dc9ec77cd7ffd33cfe67097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af286bf9400d86b08a2fe4f2918684b68"><td class="memTemplParams" colspan="2">template&lt;class DeflateStream , class ConstBufferSequence &gt; </td></tr>
+<tr class="memitem:af286bf9400d86b08a2fe4f2918684b68"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceboost_1_1beast_1_1websocket_1_1detail.html#af286bf9400d86b08a2fe4f2918684b68">deflate</a> (DeflateStream &amp;zo, boost::asio::mutable_buffer &amp;out, <a class="el" href="classboost_1_1beast_1_1consuming__buffers.html">consuming_buffers</a>&lt; ConstBufferSequence &gt; &amp;cb, bool fin, std::size_t &amp;total_in, <a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;ec)</td></tr>
+<tr class="separator:af286bf9400d86b08a2fe4f2918684b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe098872b66297fa4f0d6c8882da7638"><td class="memTemplParams" colspan="2">template&lt;class  = void&gt; </td></tr>
 <tr class="memitem:afe098872b66297fa4f0d6c8882da7638"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceboost_1_1beast_1_1websocket_1_1detail.html#afe098872b66297fa4f0d6c8882da7638">check_utf8</a> (char const *p, std::size_t n)</td></tr>
 <tr class="separator:afe098872b66297fa4f0d6c8882da7638"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -486,7 +483,7 @@ template&lt;class  = void&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac631d69a5dc9ec77cd7ffd33cfe67097"></a>
+<a class="anchor" id="af286bf9400d86b08a2fe4f2918684b68"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -515,6 +512,12 @@ template&lt;class DeflateStream , class ConstBufferSequence &gt; </div>
           <td></td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>fin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>total_in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -551,46 +554,6 @@ template&lt;class DeflateStream , class ConstBufferSequence &gt; </div>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abfdd3d1eb4b8368de10bf074dcf5b4de"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class InflateStream , class DynamicBuffer &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void boost::beast::websocket::detail::inflate </td>
-          <td>(</td>
-          <td class="paramtype">InflateStream &amp;&#160;</td>
-          <td class="paramname"><em>zi</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">DynamicBuffer &amp;&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boost::asio::const_buffer const &amp;&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;&#160;</td>
-          <td class="paramname"><em>ec</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>

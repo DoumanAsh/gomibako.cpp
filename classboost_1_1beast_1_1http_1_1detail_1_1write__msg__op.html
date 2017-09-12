@@ -108,8 +108,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad310e14d98c337b9f2a7b4f5415b24f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfcfc017cd617a438d78a26a7bb2aad3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1write__msg__op.html#abfcfc017cd617a438d78a26a7bb2aad3">operator()</a> ()</td></tr>
 <tr class="separator:abfcfc017cd617a438d78a26a7bb2aad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2c641f109b4ca797f35a7f7db156a84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1write__msg__op.html#ab2c641f109b4ca797f35a7f7db156a84">operator()</a> (<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> ec)</td></tr>
-<tr class="separator:ab2c641f109b4ca797f35a7f7db156a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9832ed17ed784dbc12905ab781dae3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1write__msg__op.html#ac9832ed17ed784dbc12905ab781dae3b">operator()</a> (<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> ec, std::size_t bytes_transferred)</td></tr>
+<tr class="separator:ac9832ed17ed784dbc12905ab781dae3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -238,7 +238,7 @@ template&lt;class Stream , class Handler , bool isRequest, class Body , class Fi
 
 </div>
 </div>
-<a class="anchor" id="ab2c641f109b4ca797f35a7f7db156a84"></a>
+<a class="anchor" id="ac9832ed17ed784dbc12905ab781dae3b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -248,8 +248,18 @@ template&lt;class Stream , class Handler , bool isRequest, class Body , class Fi
           <td class="memname">void <a class="el" href="classboost_1_1beast_1_1http_1_1detail_1_1write__msg__op.html">boost::beast::http::detail::write_msg_op</a>&lt; Stream, Handler, isRequest, Body, Fields &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>&#160;</td>
-          <td class="paramname"><em>ec</em></td><td>)</td>
+          <td class="paramname"><em>ec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>bytes_transferred</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

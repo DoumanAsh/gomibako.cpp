@@ -127,6 +127,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>c_str()
 : <a class="el" href="classboost_1_1beast_1_1static__string.html#a4b90f86f37f7e290ae3e0be2d892726a">boost::beast::static_string&lt; N, CharT, Traits &gt;</a>
 </li>
+<li>callback
+: <a class="el" href="classhttp_1_1_router_1_1_route.html#a6d529c155bf4c1832a5d4cb9085cf394">http::Router::Route</a>
+</li>
 <li>capacity()
 : <a class="el" href="classboost_1_1beast_1_1basic__flat__buffer.html#a43e0db49177097d45d2f0877296c0733">boost::beast::basic_flat_buffer&lt; Allocator &gt;</a>
 , <a class="el" href="classboost_1_1beast_1_1basic__multi__buffer.html#a9e249d4f993462d36499e9f7808dfb1c">boost::beast::basic_multi_buffer&lt; Allocator &gt;</a>
@@ -161,7 +164,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classboost_1_1beast_1_1http_1_1chunk__body.html#a5a13df6d61ce5dae7cd9f59c7d185bfb">boost::beast::http::chunk_body&lt; ConstBufferSequence &gt;</a>
 </li>
 <li>chunk_crlf()
-: <a class="el" href="structboost_1_1beast_1_1http_1_1chunk__crlf.html#a73f860d9eb7475487689750254baef35">boost::beast::http::chunk_crlf</a>
+: <a class="el" href="structboost_1_1beast_1_1http_1_1chunk__crlf.html#ab66899e60e41907f0cdd789fe2f51cdd">boost::beast::http::chunk_crlf</a>
 </li>
 <li>chunk_extensions_impl()
 : <a class="el" href="structboost_1_1beast_1_1http_1_1detail_1_1chunk__extensions__impl.html#a31bb06baa9b43e1846d2a73a988e3aab">boost::beast::http::detail::chunk_extensions_impl&lt; ChunkExtensions &gt;</a>
@@ -206,10 +209,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a8a052ced8a3f5080d503884a7269330c">boost::beast::websocket::stream&lt; NextLayer &gt;</a>
 </li>
 <li>close_op()
-: <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1close__op.html#afee964ee519799cd08dd0102ddaaf360">boost::beast::websocket::stream&lt; NextLayer &gt;::close_op&lt; NextLayer &gt;</a>
+: <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1close__op.html#aae85d9898ae981c20def6a666aaa091a">boost::beast::websocket::stream&lt; NextLayer &gt;::close_op&lt; NextLayer &gt;</a>
 </li>
 <li>close_reason()
 : <a class="el" href="structboost_1_1beast_1_1websocket_1_1close__reason.html#ad55b5f14e283af01084af28e6b316190">boost::beast::websocket::close_reason</a>
+</li>
+<li>close_test
+: <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#ad5caf1a60ad298203711eedc002ebc19">boost::beast::websocket::stream&lt; NextLayer &gt;</a>
 </li>
 <li>code
 : <a class="el" href="structboost_1_1beast_1_1websocket_1_1close__reason.html#a04e630aee7d1ac9bf1111b1521d39b20">boost::beast::websocket::close_reason</a>
@@ -266,8 +272,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classboost_1_1beast_1_1basic__multi__buffer_1_1const__buffers__type_1_1const__iterator.html#a757ea0b7a0c02fc10d3d712339968a22">boost::beast::basic_multi_buffer&lt; Allocator &gt;::const_buffers_type&lt; Allocator &gt;::const_iterator</a>
 , <a class="el" href="classboost_1_1beast_1_1basic__multi__buffer_1_1mutable__buffers__type_1_1const__iterator.html#af8c6eac7907d6db41b04aea8ae23224d">boost::beast::basic_multi_buffer&lt; Allocator &gt;::mutable_buffers_type&lt; Allocator &gt;::const_iterator</a>
 , <a class="el" href="classboost_1_1beast_1_1buffer__cat__view_1_1const__iterator.html#a3d7b34731f75ab55da51eeebd14db29b">boost::beast::buffer_cat_view&lt; Buffers &gt;::const_iterator</a>
-, <a class="el" href="classboost_1_1beast_1_1buffer__prefix__view_1_1const__iterator.html#a3b300a31cb2808c8cde6c8ef203cfc6a">boost::beast::buffer_prefix_view&lt; BufferSequence &gt;::const_iterator</a>
-, <a class="el" href="classboost_1_1beast_1_1buffers__adapter_1_1_01_01_01_01_01_01_01_01_01_01_01const__buffers__type_1_1const__iterator.html#ab47b00e23e83af9cd77b3af20024e2d2">boost::beast::buffers_adapter&lt; MutableBufferSequence &gt;::           const_buffers_type::const_iterator</a>
+, <a class="el" href="classboost_1_1beast_1_1buffer__prefix__view_1_1const__iterator.html#a521e32e00b591d2817e3793ebdb2a07e">boost::beast::buffer_prefix_view&lt; BufferSequence &gt;::const_iterator</a>
+, <a class="el" href="classboost_1_1beast_1_1buffers__adapter_1_1_01_01_01_01_01_01_01_01_01_01_01const__buffers__type_1_1const__iterator.html#a4a6ecdf1ca67b4b57ccbcd22b3b44a2e">boost::beast::buffers_adapter&lt; MutableBufferSequence &gt;::           const_buffers_type::const_iterator</a>
 , <a class="el" href="classboost_1_1beast_1_1buffers__adapter_1_1mutable__buffers__type_1_1const__iterator.html#a7186f2694816788fdf38eeeed84fb6fb">boost::beast::buffers_adapter&lt; MutableBufferSequence &gt;::mutable_buffers_type::const_iterator</a>
 , <a class="el" href="classboost_1_1beast_1_1consuming__buffers_1_1const__iterator.html#a0a357375ed544f06d1610f6df7bcb6c1">boost::beast::consuming_buffers&lt; BufferSequence &gt;::const_iterator</a>
 , <a class="el" href="classboost_1_1beast_1_1detail_1_1buffers__ref.html#a58bac7e9a92f371c1944342ef7e51b0c">boost::beast::detail::buffers_ref&lt; BufferSequence &gt;</a>
@@ -312,7 +318,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classboost_1_1beast_1_1static__buffer__base.html#ae14f4064dc8fde0ccfec411aa2342bfa">boost::beast::static_buffer_base</a>
 </li>
 <li>consuming_buffers()
-: <a class="el" href="classboost_1_1beast_1_1consuming__buffers.html#a833a5edbb67ba8edff63a4a76e1ddc53">boost::beast::consuming_buffers&lt; BufferSequence &gt;</a>
+: <a class="el" href="classboost_1_1beast_1_1consuming__buffers.html#adf066fa2408e86e940001bc8e35c71c1">boost::beast::consuming_buffers&lt; BufferSequence &gt;</a>
 </li>
 <li>consuming_buffers&lt; Buffers &gt;
 : <a class="el" href="classboost_1_1beast_1_1consuming__buffers_1_1const__iterator.html#a735089aebf1fa85fa2f5c1e6dc5865f3">boost::beast::consuming_buffers&lt; BufferSequence &gt;::const_iterator</a>
@@ -322,13 +328,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structboost_1_1beast_1_1http_1_1message.html#ac92917c1925fd21f239d3b75a83756d8">boost::beast::http::message&lt; isRequest, Body, Fields &gt;</a>
 </li>
 <li>ContentType()
-: <a class="el" href="classhttp_1_1header_1_1_content_type.html#aa6f3251bcdc8f8bc152aa72bf60d2310">http::header::ContentType</a>
+: <a class="el" href="classhttp_1_1header_1_1_content_type.html#a0f54a86717ccfb8a75ac63d3bad179f0">http::header::ContentType</a>
 </li>
 <li>Context()
-: <a class="el" href="structhttp_1_1_router_1_1_context.html#a39ebc753ebdea9ea7fa2ad08718891ae">http::Router::Context</a>
+: <a class="el" href="structhttp_1_1_router_1_1_context.html#a2cef5f8e556dd9145bd81f6b106b93db">http::Router::Context</a>
 </li>
 <li>control_callback()
-: <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a7e1b674c997a6a86b36ea5c467ae449f">boost::beast::websocket::stream&lt; NextLayer &gt;</a>
+: <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#ade292bb6341560a9386a8b06a3db7062">boost::beast::websocket::stream&lt; NextLayer &gt;</a>
 </li>
 <li>copy()
 : <a class="el" href="classboost_1_1beast_1_1static__string.html#aa8289ac323b6b005e52e9af40b9b58a1">boost::beast::static_string&lt; N, CharT, Traits &gt;</a>
@@ -337,7 +343,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="classboost_1_1beast_1_1zlib_1_1detail_1_1deflate__stream.html#a513e5019bf7a380ce02f3d9728814c67">boost::beast::zlib::detail::deflate_stream</a>
 </li>
 <li>count()
-: <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html#acbf666d5df6580ce63041fc6db03f63f">boost::beast::http::basic_fields&lt; Allocator &gt;</a>
+: <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html#aaaa7782a038cfaba77809dfd3ead9cf9">boost::beast::http::basic_fields&lt; Allocator &gt;</a>
 </li>
 <li>cpu_num
 : <a class="el" href="classconfig_1_1_config.html#a863e7e0aeb07a51e32d31cbdaf99125e">config::Config</a>

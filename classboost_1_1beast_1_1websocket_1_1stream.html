@@ -106,8 +106,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1close__op.html">close_op</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1fail__op.html">fail_op</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1handshake__op.html">handshake_op</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream_1_1ping__op.html">ping_op</a></td></tr>
@@ -151,6 +149,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a34f82c817a53fc8fe6109da1ce89b7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94b33ccf6b9a4a6db72e230ebb031493"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#ab6118df5dd6f1bdb4adfd10886ce6b3d">lowest_layer_type</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a94b33ccf6b9a4a6db72e230ebb031493">lowest_layer</a> () const </td></tr>
 <tr class="separator:a94b33ccf6b9a4a6db72e230ebb031493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d86969c130fdf9dfb37e9a32ccf1b3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a3d86969c130fdf9dfb37e9a32ccf1b3c">is_open</a> () const </td></tr>
+<tr class="separator:a3d86969c130fdf9dfb37e9a32ccf1b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11f1ec62c55d8752564396ffd5797e0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a11f1ec62c55d8752564396ffd5797e0d">got_binary</a> () const </td></tr>
 <tr class="separator:a11f1ec62c55d8752564396ffd5797e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a13693e92798fba7eae53f459960b86"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a0a13693e92798fba7eae53f459960b86">got_text</a> () const </td></tr>
@@ -267,18 +267,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a65ca2c5f87acc90b743d9e474c2aa01f"><td class="memTemplParams" colspan="2">template&lt;class Body , class Allocator , class ResponseDecorator &gt; </td></tr>
 <tr class="memitem:a65ca2c5f87acc90b743d9e474c2aa01f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a65ca2c5f87acc90b743d9e474c2aa01f">accept_ex</a> (<a class="el" href="namespaceboost_1_1beast_1_1http.html#ad10b07a117ed1d74fee4dded03e49437">http::request</a>&lt; Body, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html">http::basic_fields</a>&lt; Allocator &gt;&gt; const &amp;req, ResponseDecorator const &amp;decorator, <a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;ec)</td></tr>
 <tr class="separator:a65ca2c5f87acc90b743d9e474c2aa01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4677a6bb3fdf236c83a47fa903de8f4"><td class="memTemplParams" colspan="2">template&lt;class Body , class Allocator , class ConstBufferSequence &gt; </td></tr>
-<tr class="memitem:ac4677a6bb3fdf236c83a47fa903de8f4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#ac4677a6bb3fdf236c83a47fa903de8f4">accept</a> (<a class="el" href="namespaceboost_1_1beast_1_1http.html#ad10b07a117ed1d74fee4dded03e49437">http::request</a>&lt; Body, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html">http::basic_fields</a>&lt; Allocator &gt;&gt; const &amp;req, ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>)</td></tr>
-<tr class="separator:ac4677a6bb3fdf236c83a47fa903de8f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43064908fb6130087a577d9785035a74"><td class="memTemplParams" colspan="2">template&lt;class Body , class Allocator , class ConstBufferSequence , class ResponseDecorator &gt; </td></tr>
-<tr class="memitem:a43064908fb6130087a577d9785035a74"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a43064908fb6130087a577d9785035a74">accept_ex</a> (<a class="el" href="namespaceboost_1_1beast_1_1http.html#ad10b07a117ed1d74fee4dded03e49437">http::request</a>&lt; Body, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html">http::basic_fields</a>&lt; Allocator &gt;&gt; const &amp;req, ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>, ResponseDecorator const &amp;decorator)</td></tr>
-<tr class="separator:a43064908fb6130087a577d9785035a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a209b592d63f62029f20ce48127c4a3cb"><td class="memTemplParams" colspan="2">template&lt;class Body , class Allocator , class ConstBufferSequence &gt; </td></tr>
-<tr class="memitem:a209b592d63f62029f20ce48127c4a3cb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a209b592d63f62029f20ce48127c4a3cb">accept</a> (<a class="el" href="namespaceboost_1_1beast_1_1http.html#ad10b07a117ed1d74fee4dded03e49437">http::request</a>&lt; Body, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html">http::basic_fields</a>&lt; Allocator &gt;&gt; const &amp;req, ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>, <a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;ec)</td></tr>
-<tr class="separator:a209b592d63f62029f20ce48127c4a3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69c461eedc7ce71f12fb4d239061c677"><td class="memTemplParams" colspan="2">template&lt;class Body , class Allocator , class ConstBufferSequence , class ResponseDecorator &gt; </td></tr>
-<tr class="memitem:a69c461eedc7ce71f12fb4d239061c677"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a69c461eedc7ce71f12fb4d239061c677">accept_ex</a> (<a class="el" href="namespaceboost_1_1beast_1_1http.html#ad10b07a117ed1d74fee4dded03e49437">http::request</a>&lt; Body, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html">http::basic_fields</a>&lt; Allocator &gt;&gt; const &amp;req, ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>, ResponseDecorator const &amp;decorator, <a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;ec)</td></tr>
-<tr class="separator:a69c461eedc7ce71f12fb4d239061c677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafadf51c9b1d80f219a1213088858d00"><td class="memTemplParams" colspan="2">template&lt;class AcceptHandler &gt; </td></tr>
 <tr class="memitem:aafadf51c9b1d80f219a1213088858d00"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; AcceptHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> (AcceptHandler &amp;&amp;handler)</td></tr>
 <tr class="separator:aafadf51c9b1d80f219a1213088858d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,12 +285,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a631a201327b65466cd7872859dee27a8"><td class="memTemplParams" colspan="2">template&lt;class Body , class Allocator , class ResponseDecorator , class AcceptHandler &gt; </td></tr>
 <tr class="memitem:a631a201327b65466cd7872859dee27a8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; AcceptHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a631a201327b65466cd7872859dee27a8">async_accept_ex</a> (<a class="el" href="namespaceboost_1_1beast_1_1http.html#ad10b07a117ed1d74fee4dded03e49437">http::request</a>&lt; Body, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html">http::basic_fields</a>&lt; Allocator &gt;&gt; const &amp;req, ResponseDecorator const &amp;decorator, AcceptHandler &amp;&amp;handler)</td></tr>
 <tr class="separator:a631a201327b65466cd7872859dee27a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8259141fea542c9354146aae4e0eaa1e"><td class="memTemplParams" colspan="2">template&lt;class Body , class Allocator , class ConstBufferSequence , class AcceptHandler &gt; </td></tr>
-<tr class="memitem:a8259141fea542c9354146aae4e0eaa1e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; AcceptHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a8259141fea542c9354146aae4e0eaa1e">async_accept</a> (<a class="el" href="namespaceboost_1_1beast_1_1http.html#ad10b07a117ed1d74fee4dded03e49437">http::request</a>&lt; Body, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html">http::basic_fields</a>&lt; Allocator &gt;&gt; const &amp;req, ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>, AcceptHandler &amp;&amp;handler)</td></tr>
-<tr class="separator:a8259141fea542c9354146aae4e0eaa1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab56c788b77c92f32a0aac65ce3e6f90c"><td class="memTemplParams" colspan="2">template&lt;class Body , class Allocator , class ConstBufferSequence , class ResponseDecorator , class AcceptHandler &gt; </td></tr>
-<tr class="memitem:ab56c788b77c92f32a0aac65ce3e6f90c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; AcceptHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#ab56c788b77c92f32a0aac65ce3e6f90c">async_accept_ex</a> (<a class="el" href="namespaceboost_1_1beast_1_1http.html#ad10b07a117ed1d74fee4dded03e49437">http::request</a>&lt; Body, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html">http::basic_fields</a>&lt; Allocator &gt;&gt; const &amp;req, ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>, ResponseDecorator const &amp;decorator, AcceptHandler &amp;&amp;handler)</td></tr>
-<tr class="separator:ab56c788b77c92f32a0aac65ce3e6f90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a052ced8a3f5080d503884a7269330c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a8a052ced8a3f5080d503884a7269330c">close</a> (<a class="el" href="structboost_1_1beast_1_1websocket_1_1close__reason.html">close_reason</a> const &amp;cr)</td></tr>
 <tr class="separator:a8a052ced8a3f5080d503884a7269330c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a651a52f10414e96533eeaac9fe4ba116"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a651a52f10414e96533eeaac9fe4ba116">close</a> (<a class="el" href="structboost_1_1beast_1_1websocket_1_1close__reason.html">close_reason</a> const &amp;cr, <a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;ec)</td></tr>
@@ -351,33 +333,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a39916c9e612b5000ccd8d57e3a830d27"><td class="memTemplParams" colspan="2">template&lt;class MutableBufferSequence , class ReadHandler &gt; </td></tr>
 <tr class="memitem:a39916c9e612b5000ccd8d57e3a830d27"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; ReadHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>, std::size_t)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a39916c9e612b5000ccd8d57e3a830d27">async_read_some</a> (MutableBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>, ReadHandler &amp;&amp;handler)</td></tr>
 <tr class="separator:a39916c9e612b5000ccd8d57e3a830d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a761a6ef1d4c11daadc6f17da4cd801c7"><td class="memTemplParams" colspan="2">template&lt;class ConstBufferSequence &gt; </td></tr>
-<tr class="memitem:a761a6ef1d4c11daadc6f17da4cd801c7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a761a6ef1d4c11daadc6f17da4cd801c7">write</a> (ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>)</td></tr>
-<tr class="separator:a761a6ef1d4c11daadc6f17da4cd801c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4f83527e4d8685de0bd066d4c87f099"><td class="memTemplParams" colspan="2">template&lt;class ConstBufferSequence &gt; </td></tr>
-<tr class="memitem:ad4f83527e4d8685de0bd066d4c87f099"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#ad4f83527e4d8685de0bd066d4c87f099">write</a> (ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>, <a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;ec)</td></tr>
-<tr class="separator:ad4f83527e4d8685de0bd066d4c87f099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ba8843e0d75cb95392f36d026741032"><td class="memTemplParams" colspan="2">template&lt;class ConstBufferSequence , class WriteHandler &gt; </td></tr>
-<tr class="memitem:a5ba8843e0d75cb95392f36d026741032"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; WriteHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a5ba8843e0d75cb95392f36d026741032">async_write</a> (ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>, WriteHandler &amp;&amp;handler)</td></tr>
-<tr class="separator:a5ba8843e0d75cb95392f36d026741032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3afdc8e68406936eea62138590815c8"><td class="memTemplParams" colspan="2">template&lt;class ConstBufferSequence &gt; </td></tr>
-<tr class="memitem:ab3afdc8e68406936eea62138590815c8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#ab3afdc8e68406936eea62138590815c8">write_some</a> (bool fin, ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>)</td></tr>
-<tr class="separator:ab3afdc8e68406936eea62138590815c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af03e88f22613ae4fcf9e4e8071fcdf7d"><td class="memTemplParams" colspan="2">template&lt;class ConstBufferSequence &gt; </td></tr>
-<tr class="memitem:af03e88f22613ae4fcf9e4e8071fcdf7d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#af03e88f22613ae4fcf9e4e8071fcdf7d">write_some</a> (bool fin, ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>, <a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;ec)</td></tr>
-<tr class="separator:af03e88f22613ae4fcf9e4e8071fcdf7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2867311bbdf791acefea89f6568e91c4"><td class="memTemplParams" colspan="2">template&lt;class ConstBufferSequence , class WriteHandler &gt; </td></tr>
-<tr class="memitem:a2867311bbdf791acefea89f6568e91c4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; WriteHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a2867311bbdf791acefea89f6568e91c4">async_write_some</a> (bool fin, ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>, WriteHandler &amp;&amp;handler)</td></tr>
-<tr class="separator:a2867311bbdf791acefea89f6568e91c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39023db67766c460a729e2ee70c2f017"><td class="memTemplParams" colspan="2">template&lt;class ConstBufferSequence &gt; </td></tr>
+<tr class="memitem:a39023db67766c460a729e2ee70c2f017"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a39023db67766c460a729e2ee70c2f017">write</a> (ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>)</td></tr>
+<tr class="separator:a39023db67766c460a729e2ee70c2f017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9c176e0d515399f78288ab274fe02f"><td class="memTemplParams" colspan="2">template&lt;class ConstBufferSequence &gt; </td></tr>
+<tr class="memitem:a2a9c176e0d515399f78288ab274fe02f"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a2a9c176e0d515399f78288ab274fe02f">write</a> (ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>, <a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;ec)</td></tr>
+<tr class="separator:a2a9c176e0d515399f78288ab274fe02f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd7d5ff9cd82b108fb81ec7c793a2b4"><td class="memTemplParams" colspan="2">template&lt;class ConstBufferSequence , class WriteHandler &gt; </td></tr>
+<tr class="memitem:afdd7d5ff9cd82b108fb81ec7c793a2b4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; WriteHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>, std::size_t)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#afdd7d5ff9cd82b108fb81ec7c793a2b4">async_write</a> (ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>, WriteHandler &amp;&amp;handler)</td></tr>
+<tr class="separator:afdd7d5ff9cd82b108fb81ec7c793a2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d5732ce9c295652a085f56c1afb498"><td class="memTemplParams" colspan="2">template&lt;class ConstBufferSequence &gt; </td></tr>
+<tr class="memitem:a04d5732ce9c295652a085f56c1afb498"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a04d5732ce9c295652a085f56c1afb498">write_some</a> (bool fin, ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>)</td></tr>
+<tr class="separator:a04d5732ce9c295652a085f56c1afb498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad76f3b7a2af344d600f931896d84af19"><td class="memTemplParams" colspan="2">template&lt;class ConstBufferSequence &gt; </td></tr>
+<tr class="memitem:ad76f3b7a2af344d600f931896d84af19"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#ad76f3b7a2af344d600f931896d84af19">write_some</a> (bool fin, ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>, <a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;ec)</td></tr>
+<tr class="separator:ad76f3b7a2af344d600f931896d84af19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f628f009801786987f77aeed112e2fe"><td class="memTemplParams" colspan="2">template&lt;class ConstBufferSequence , class WriteHandler &gt; </td></tr>
+<tr class="memitem:a8f628f009801786987f77aeed112e2fe"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; WriteHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>, std::size_t)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a8f628f009801786987f77aeed112e2fe">async_write_some</a> (bool fin, ConstBufferSequence const &amp;<a class="el" href="namespaceboost_1_1beast.html#a3a622817d1bdd0133835e358c37ebda7">buffers</a>, WriteHandler &amp;&amp;handler)</td></tr>
+<tr class="separator:a8f628f009801786987f77aeed112e2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a9095eef7d6ed640e30ae2add0e267583"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a9095eef7d6ed640e30ae2add0e267583">detail::frame_test</a></td></tr>
-<tr class="separator:a9095eef7d6ed640e30ae2add0e267583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa435e3810b5c6dc9008ee5fe2df01abd"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aa435e3810b5c6dc9008ee5fe2df01abd">stream_test</a></td></tr>
-<tr class="separator:aa435e3810b5c6dc9008ee5fe2df01abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5caf1a60ad298203711eedc002ebc19"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#ad5caf1a60ad298203711eedc002ebc19">close_test</a></td></tr>
+<tr class="separator:ad5caf1a60ad298203711eedc002ebc19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa70fd38b759202d7d18632bb8b6d8227"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aa70fd38b759202d7d18632bb8b6d8227">frame_test</a></td></tr>
 <tr class="separator:aa70fd38b759202d7d18632bb8b6d8227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72cfaba76b80cfb00ba0bcae616dc9d1"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a72cfaba76b80cfb00ba0bcae616dc9d1">ping_test</a></td></tr>
+<tr class="separator:a72cfaba76b80cfb00ba0bcae616dc9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ac1dc90b2d453e00b70e5fa60265b83"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a8ac1dc90b2d453e00b70e5fa60265b83">read_test</a></td></tr>
+<tr class="separator:a8ac1dc90b2d453e00b70e5fa60265b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa435e3810b5c6dc9008ee5fe2df01abd"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aa435e3810b5c6dc9008ee5fe2df01abd">stream_test</a></td></tr>
+<tr class="separator:aa435e3810b5c6dc9008ee5fe2df01abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc02be922bd83ae0b600f376165522db"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#adc02be922bd83ae0b600f376165522db">write_test</a></td></tr>
+<tr class="separator:adc02be922bd83ae0b600f376165522db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class NextLayer&gt;<br />
@@ -556,7 +544,7 @@ template&lt;class NextLayer &gt; </div>
 </ul>
 <p>This function is implemented in terms of one or more calls to the next layer's <code>read_some</code> and <code>write_some</code> functions.</p>
 <p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When this call returns, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure.</p>
-<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#ae425f8884c93ad39853e0f254e79eade"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a63d24ddb3d0668c1987081ddb997f6a2"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
+<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#aa5227496e49d45c3448cac05357d0d68"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a8f3a847ccae9e273d082a956e3dca73d"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">system_error</td><td>Thrown on failure. </td></tr>
@@ -591,7 +579,7 @@ template&lt;class NextLayer &gt; </div>
 </ul>
 <p>This function is implemented in terms of one or more calls to the next layer's <code>read_some</code> and <code>write_some</code> functions.</p>
 <p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When this call returns, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure.</p>
-<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#ae425f8884c93ad39853e0f254e79eade"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a63d24ddb3d0668c1987081ddb997f6a2"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
+<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#aa5227496e49d45c3448cac05357d0d68"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a8f3a847ccae9e273d082a956e3dca73d"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ec</td><td>Set to indicate what error occurred, if any. </td></tr>
@@ -628,7 +616,7 @@ template&lt;class ConstBufferSequence &gt; </div>
 </ul>
 <p>This function is implemented in terms of one or more calls to the next layer's <code>read_some</code> and <code>write_some</code> functions.</p>
 <p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When this call returns, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure.</p>
-<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#ae425f8884c93ad39853e0f254e79eade"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a63d24ddb3d0668c1987081ddb997f6a2"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
+<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#aa5227496e49d45c3448cac05357d0d68"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a8f3a847ccae9e273d082a956e3dca73d"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffers</td><td>Caller provided data that has already been received on the stream. The implementation will copy the caller provided data before the function returns.</td></tr>
@@ -681,7 +669,7 @@ template&lt;class ConstBufferSequence &gt; </div>
 </ul>
 <p>This function is implemented in terms of one or more calls to the next layer's <code>read_some</code> and <code>write_some</code> functions.</p>
 <p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When this call returns, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure.</p>
-<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#ae425f8884c93ad39853e0f254e79eade"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a63d24ddb3d0668c1987081ddb997f6a2"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
+<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#aa5227496e49d45c3448cac05357d0d68"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a8f3a847ccae9e273d082a956e3dca73d"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffers</td><td>Caller provided data that has already been received on the stream. The implementation will copy the caller provided data before the function returns.</td></tr>
@@ -781,115 +769,6 @@ template&lt;class Body , class Allocator &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac4677a6bb3fdf236c83a47fa903de8f4"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class NextLayer &gt; </div>
-<div class="memtemplate">
-template&lt;class Body , class Allocator , class ConstBufferSequence &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::accept </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceboost_1_1beast_1_1http.html#ad10b07a117ed1d74fee4dded03e49437">http::request</a>&lt; Body, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html">http::basic_fields</a>&lt; Allocator &gt;&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>req</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ConstBufferSequence const &amp;&#160;</td>
-          <td class="paramname"><em>buffers</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Respond to a WebSocket HTTP Upgrade request</p>
-<p>This function is used to synchronously send the HTTP response to an HTTP request possibly containing a WebSocket Upgrade. The call blocks until one of the following conditions is true:</p>
-<ul>
-<li>The response finishes sending.</li>
-</ul>
-<ul>
-<li>An error occurs on the stream.</li>
-</ul>
-<p>This function is implemented in terms of one or more calls to the next layer's <code>read_some</code> and <code>write_some</code> functions.</p>
-<p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When this call returns, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure.</p>
-<p>The implementation uses fixed size internal storage to copy the buffer. If the buffer is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to supply larger buffers should wrap the next layer in a <a class="el" href="classboost_1_1beast_1_1buffered__read__stream.html">buffered_read_stream</a> and store the buffer contents in the wrapper before calling accept.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">req</td><td>An object containing the HTTP Upgrade request. Ownership is not transferred, the implementation will not access this object from other threads.</td></tr>
-    <tr><td class="paramname">buffers</td><td>Caller provided data that has already been received on the stream. This must not include the octets corresponding to the HTTP Upgrade request. The implementation will copy the caller provided data before the function returns.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">system_error</td><td>Thrown on failure. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a209b592d63f62029f20ce48127c4a3cb"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class NextLayer &gt; </div>
-<div class="memtemplate">
-template&lt;class Body , class Allocator , class ConstBufferSequence &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::accept </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceboost_1_1beast_1_1http.html#ad10b07a117ed1d74fee4dded03e49437">http::request</a>&lt; Body, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html">http::basic_fields</a>&lt; Allocator &gt;&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>req</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ConstBufferSequence const &amp;&#160;</td>
-          <td class="paramname"><em>buffers</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;&#160;</td>
-          <td class="paramname"><em>ec</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Respond to a WebSocket HTTP Upgrade request</p>
-<p>This function is used to synchronously send the HTTP response to an HTTP request possibly containing a WebSocket Upgrade. The call blocks until one of the following conditions is true:</p>
-<ul>
-<li>The response finishes sending.</li>
-</ul>
-<ul>
-<li>An error occurs on the stream.</li>
-</ul>
-<p>This function is implemented in terms of one or more calls to the next layer's <code>read_some</code> and <code>write_some</code> functions.</p>
-<p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When this call returns, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure.</p>
-<p>The implementation uses fixed size internal storage to copy the buffer. If the buffer is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to supply larger buffers should wrap the next layer in a <a class="el" href="classboost_1_1beast_1_1buffered__read__stream.html">buffered_read_stream</a> and store the buffer contents in the wrapper before calling accept.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">req</td><td>An object containing the HTTP Upgrade request. Ownership is not transferred, the implementation will not access this object from other threads.</td></tr>
-    <tr><td class="paramname">buffers</td><td>Caller provided data that has already been received on the stream. This must not include the octets corresponding to the HTTP Upgrade request. The implementation will copy the caller provided data before the function returns.</td></tr>
-    <tr><td class="paramname">ec</td><td>Set to indicate what error occurred, if any. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="adcded0ef580e06f864898ab1c2fa28e4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -917,7 +796,7 @@ template&lt;class ResponseDecorator &gt; </div>
 </ul>
 <p>This function is implemented in terms of one or more calls to the next layer's <code>read_some</code> and <code>write_some</code> functions.</p>
 <p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When this call returns, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure.</p>
-<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#ae425f8884c93ad39853e0f254e79eade"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a63d24ddb3d0668c1987081ddb997f6a2"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
+<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#aa5227496e49d45c3448cac05357d0d68"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a8f3a847ccae9e273d082a956e3dca73d"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">decorator</td><td>A function object which will be called to modify the HTTP response object delivered by the implementation. This could be used to set the Server field, subprotocols, or other application or HTTP specific fields. The object will be called with this equivalent signature: <div class="fragment"><div class="line"> <span class="keywordtype">void</span> decorator(</div><div class="line">    <a class="code" href="namespaceboost_1_1beast_1_1websocket.html#afe58b94c1157584e348fa3e662dde936">response_type</a>&amp; res</div><div class="line">); </div></div><!-- fragment --></td></tr>
@@ -970,7 +849,7 @@ template&lt;class ResponseDecorator &gt; </div>
 </ul>
 <p>This function is implemented in terms of one or more calls to the next layer's <code>read_some</code> and <code>write_some</code> functions.</p>
 <p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When this call returns, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure.</p>
-<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#ae425f8884c93ad39853e0f254e79eade"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a63d24ddb3d0668c1987081ddb997f6a2"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
+<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#aa5227496e49d45c3448cac05357d0d68"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a8f3a847ccae9e273d082a956e3dca73d"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">decorator</td><td>A function object which will be called to modify the HTTP response object delivered by the implementation. This could be used to set the Server field, subprotocols, or other application or HTTP specific fields. The object will be called with this equivalent signature: <div class="fragment"><div class="line"> <span class="keywordtype">void</span> decorator(</div><div class="line">    <a class="code" href="namespaceboost_1_1beast_1_1websocket.html#afe58b94c1157584e348fa3e662dde936">response_type</a>&amp; res</div><div class="line">); </div></div><!-- fragment --></td></tr>
@@ -1018,7 +897,7 @@ template&lt;class ConstBufferSequence , class ResponseDecorator &gt; </div>
 </ul>
 <p>This function is implemented in terms of one or more calls to the next layer's <code>read_some</code> and <code>write_some</code> functions.</p>
 <p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When this call returns, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure.</p>
-<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#ae425f8884c93ad39853e0f254e79eade"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a63d24ddb3d0668c1987081ddb997f6a2"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
+<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#aa5227496e49d45c3448cac05357d0d68"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a8f3a847ccae9e273d082a956e3dca73d"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffers</td><td>Caller provided data that has already been received on the stream. The implementation will copy the caller provided data before the function returns.</td></tr>
@@ -1078,7 +957,7 @@ template&lt;class ConstBufferSequence , class ResponseDecorator &gt; </div>
 </ul>
 <p>This function is implemented in terms of one or more calls to the next layer's <code>read_some</code> and <code>write_some</code> functions.</p>
 <p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When this call returns, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure.</p>
-<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#ae425f8884c93ad39853e0f254e79eade"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a63d24ddb3d0668c1987081ddb997f6a2"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
+<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#aa5227496e49d45c3448cac05357d0d68"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a8f3a847ccae9e273d082a956e3dca73d"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffers</td><td>Caller provided data that has already been received on the stream. The implementation will copy the caller provided data before the function returns.</td></tr>
@@ -1197,129 +1076,6 @@ template&lt;class Body , class Allocator , class ResponseDecorator &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a43064908fb6130087a577d9785035a74"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class NextLayer &gt; </div>
-<div class="memtemplate">
-template&lt;class Body , class Allocator , class ConstBufferSequence , class ResponseDecorator &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::accept_ex </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceboost_1_1beast_1_1http.html#ad10b07a117ed1d74fee4dded03e49437">http::request</a>&lt; Body, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html">http::basic_fields</a>&lt; Allocator &gt;&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>req</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ConstBufferSequence const &amp;&#160;</td>
-          <td class="paramname"><em>buffers</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ResponseDecorator const &amp;&#160;</td>
-          <td class="paramname"><em>decorator</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Respond to a WebSocket HTTP Upgrade request</p>
-<p>This function is used to synchronously send the HTTP response to an HTTP request possibly containing a WebSocket Upgrade. The call blocks until one of the following conditions is true:</p>
-<ul>
-<li>The response finishes sending.</li>
-</ul>
-<ul>
-<li>An error occurs on the stream.</li>
-</ul>
-<p>This function is implemented in terms of one or more calls to the next layer's <code>read_some</code> and <code>write_some</code> functions.</p>
-<p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When this call returns, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure.</p>
-<p>The implementation uses fixed size internal storage to copy the buffer. If the buffer is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to supply larger buffers should wrap the next layer in a <a class="el" href="classboost_1_1beast_1_1buffered__read__stream.html">buffered_read_stream</a> and store the buffer contents in the wrapper before calling accept.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">req</td><td>An object containing the HTTP Upgrade request. Ownership is not transferred, the implementation will not access this object from other threads.</td></tr>
-    <tr><td class="paramname">buffers</td><td>Caller provided data that has already been received on the stream. This must not include the octets corresponding to the HTTP Upgrade request. The implementation will copy the caller provided data before the function returns.</td></tr>
-    <tr><td class="paramname">decorator</td><td>A function object which will be called to modify the HTTP response object delivered by the implementation. This could be used to set the Server field, subprotocols, or other application or HTTP specific fields. The object will be called with this equivalent signature: <div class="fragment"><div class="line"> <span class="keywordtype">void</span> decorator(</div><div class="line">    <a class="code" href="namespaceboost_1_1beast_1_1websocket.html#afe58b94c1157584e348fa3e662dde936">response_type</a>&amp; res</div><div class="line">); </div></div><!-- fragment --></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">system_error</td><td>Thrown on failure. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a69c461eedc7ce71f12fb4d239061c677"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class NextLayer &gt; </div>
-<div class="memtemplate">
-template&lt;class Body , class Allocator , class ConstBufferSequence , class ResponseDecorator &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::accept_ex </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceboost_1_1beast_1_1http.html#ad10b07a117ed1d74fee4dded03e49437">http::request</a>&lt; Body, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html">http::basic_fields</a>&lt; Allocator &gt;&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>req</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ConstBufferSequence const &amp;&#160;</td>
-          <td class="paramname"><em>buffers</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ResponseDecorator const &amp;&#160;</td>
-          <td class="paramname"><em>decorator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;&#160;</td>
-          <td class="paramname"><em>ec</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Respond to a WebSocket HTTP Upgrade request</p>
-<p>This function is used to synchronously send the HTTP response to an HTTP request possibly containing a WebSocket Upgrade. The call blocks until one of the following conditions is true:</p>
-<ul>
-<li>The response finishes sending.</li>
-</ul>
-<ul>
-<li>An error occurs on the stream.</li>
-</ul>
-<p>This function is implemented in terms of one or more calls to the next layer's <code>read_some</code> and <code>write_some</code> functions.</p>
-<p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When this call returns, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure.</p>
-<p>The implementation uses fixed size internal storage to copy the buffer. If the buffer is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to supply larger buffers should wrap the next layer in a <a class="el" href="classboost_1_1beast_1_1buffered__read__stream.html">buffered_read_stream</a> and store the buffer contents in the wrapper before calling accept.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">req</td><td>An object containing the HTTP Upgrade request. Ownership is not transferred, the implementation will not access this object from other threads.</td></tr>
-    <tr><td class="paramname">buffers</td><td>Caller provided data that has already been received on the stream. This must not include the octets corresponding to the HTTP Upgrade request. The implementation will copy the caller provided data before the function returns.</td></tr>
-    <tr><td class="paramname">decorator</td><td>A function object which will be called to modify the HTTP response object delivered by the implementation. This could be used to set the Server field, subprotocols, or other application or HTTP specific fields. The object will be called with this equivalent signature: <div class="fragment"><div class="line"> <span class="keywordtype">void</span> decorator(</div><div class="line">    <a class="code" href="namespaceboost_1_1beast_1_1websocket.html#afe58b94c1157584e348fa3e662dde936">response_type</a>&amp; res</div><div class="line">); </div></div><!-- fragment --></td></tr>
-    <tr><td class="paramname">ec</td><td>Set to indicate what error occurred, if any. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="aafadf51c9b1d80f219a1213088858d00"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1347,7 +1103,7 @@ template&lt;class AcceptHandler &gt; </div>
 </ul>
 <p>This operation is implemented in terms of one or more calls to the next layer's <code>async_read_some</code> and <code>async_write_some</code> functions, and is known as a <em>composed operation</em>. The program must ensure that the stream performs no other asynchronous operations until this operation completes.</p>
 <p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When the completion handler is invoked, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure, and the completion handler will be invoked with a suitable error code set.</p>
-<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#ae425f8884c93ad39853e0f254e79eade"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a63d24ddb3d0668c1987081ddb997f6a2"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
+<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#aa5227496e49d45c3448cac05357d0d68"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a8f3a847ccae9e273d082a956e3dca73d"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td>The handler to be called when the request completes. Copies will be made of the handler as required. The equivalent function signature of the handler must be: <div class="fragment"><div class="line"> <span class="keywordtype">void</span> handler(</div><div class="line">    <a class="code" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> <span class="keyword">const</span>&amp; ec    <span class="comment">// Result of operation</span></div><div class="line">); </div></div><!-- fragment --> Regardless of whether the asynchronous operation completes immediately or not, the handler will not be invoked from within this function. Invocation of the handler will be performed in a manner equivalent to using <code>boost::asio::io_service::post</code>. </td></tr>
@@ -1394,7 +1150,7 @@ template&lt;class ConstBufferSequence , class AcceptHandler &gt; </div>
 </ul>
 <p>This operation is implemented in terms of one or more calls to the next layer's <code>async_read_some</code> and <code>async_write_some</code> functions, and is known as a <em>composed operation</em>. The program must ensure that the stream performs no other asynchronous operations until this operation completes.</p>
 <p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When the completion handler is invoked, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure, and the completion handler will be invoked with a suitable error code set.</p>
-<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#ae425f8884c93ad39853e0f254e79eade"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a63d24ddb3d0668c1987081ddb997f6a2"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
+<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#aa5227496e49d45c3448cac05357d0d68"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a8f3a847ccae9e273d082a956e3dca73d"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffers</td><td>Caller provided data that has already been received on the stream. This may be used for implementations allowing multiple protocols on the same stream. The buffered data will first be applied to the handshake, and then to received WebSocket frames. The implementation will copy the caller provided data before the function returns.</td></tr>
@@ -1452,61 +1208,6 @@ template&lt;class Body , class Allocator , class AcceptHandler &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a8259141fea542c9354146aae4e0eaa1e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class NextLayer &gt; </div>
-<div class="memtemplate">
-template&lt;class Body , class Allocator , class ConstBufferSequence , class AcceptHandler &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; AcceptHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>)&gt; <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::async_accept </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceboost_1_1beast_1_1http.html#ad10b07a117ed1d74fee4dded03e49437">http::request</a>&lt; Body, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html">http::basic_fields</a>&lt; Allocator &gt;&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>req</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ConstBufferSequence const &amp;&#160;</td>
-          <td class="paramname"><em>buffers</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AcceptHandler &amp;&amp;&#160;</td>
-          <td class="paramname"><em>handler</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Start responding to a WebSocket HTTP Upgrade request.</p>
-<p>This function is used to asynchronously send the HTTP response to an HTTP request possibly containing a WebSocket Upgrade request. The function call always returns immediately. The asynchronous operation will continue until one of the following conditions is true:</p>
-<ul>
-<li>The response finishes sending.</li>
-</ul>
-<ul>
-<li>An error occurs on the stream.</li>
-</ul>
-<p>This operation is implemented in terms of one or more calls to the next layer's <code>async_write_some</code> functions, and is known as a <em>composed operation</em>. The program must ensure that the stream performs no other operations until this operation completes.</p>
-<p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When the completion handler is invoked, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure, and the completion handler will be invoked with a suitable error code set.</p>
-<p>The implementation uses fixed size internal storage to copy the buffer. If the buffer is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to supply larger buffers should wrap the next layer in a <a class="el" href="classboost_1_1beast_1_1buffered__read__stream.html">buffered_read_stream</a> and store the buffer contents in the wrapper before calling accept.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">req</td><td>An object containing the HTTP Upgrade request. Ownership is not transferred, the implementation will not access this object from other threads.</td></tr>
-    <tr><td class="paramname">buffers</td><td>Caller provided data that has already been received on the stream. This may be used for implementations allowing multiple protocols on the same stream. The buffered data will first be applied to the handshake, and then to received WebSocket frames. The implementation will copy the caller provided data before the function returns.</td></tr>
-    <tr><td class="paramname">handler</td><td>The handler to be called when the request completes. Copies will be made of the handler as required. The equivalent function signature of the handler must be: <div class="fragment"><div class="line"> <span class="keywordtype">void</span> handler(</div><div class="line">    <a class="code" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> <span class="keyword">const</span>&amp; ec    <span class="comment">// Result of operation</span></div><div class="line">); </div></div><!-- fragment --> Regardless of whether the asynchronous operation completes immediately or not, the handler will not be invoked from within this function. Invocation of the handler will be performed in a manner equivalent to using <code>boost::asio::io_service::post</code>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="a9c51edbbde7d3602ff69d52473b08d49"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1544,7 +1245,7 @@ template&lt;class ResponseDecorator , class AcceptHandler &gt; </div>
 </ul>
 <p>This operation is implemented in terms of one or more calls to the next layer's <code>async_read_some</code> and <code>async_write_some</code> functions, and is known as a <em>composed operation</em>. The program must ensure that the stream performs no other asynchronous operations until this operation completes.</p>
 <p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When the completion handler is invoked, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure, and the completion handler will be invoked with a suitable error code set.</p>
-<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#ae425f8884c93ad39853e0f254e79eade"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a63d24ddb3d0668c1987081ddb997f6a2"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
+<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#aa5227496e49d45c3448cac05357d0d68"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a8f3a847ccae9e273d082a956e3dca73d"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">decorator</td><td>A function object which will be called to modify the HTTP response object delivered by the implementation. This could be used to set the Server field, subprotocols, or other application or HTTP specific fields. The object will be called with this equivalent signature: <div class="fragment"><div class="line"> <span class="keywordtype">void</span> decorator(</div><div class="line">    <a class="code" href="namespaceboost_1_1beast_1_1websocket.html#afe58b94c1157584e348fa3e662dde936">response_type</a>&amp; res</div><div class="line">); </div></div><!-- fragment --></td></tr>
@@ -1598,7 +1299,7 @@ template&lt;class ConstBufferSequence , class ResponseDecorator , class AcceptHa
 </ul>
 <p>This operation is implemented in terms of one or more calls to the next layer's <code>async_read_some</code> and <code>async_write_some</code> functions, and is known as a <em>composed operation</em>. The program must ensure that the stream performs no other asynchronous operations until this operation completes.</p>
 <p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When the completion handler is invoked, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure, and the completion handler will be invoked with a suitable error code set.</p>
-<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#ae425f8884c93ad39853e0f254e79eade"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a63d24ddb3d0668c1987081ddb997f6a2"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
+<p>The implementation uses fixed size internal storage to receive the request. If the request is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to receive larger requests should first read the request using their own buffer and a suitable overload of <a class="el" href="namespaceboost_1_1beast_1_1http.html#aa5227496e49d45c3448cac05357d0d68"><a href="http::read">http::read</a></a> or <a class="el" href="namespaceboost_1_1beast_1_1http.html#a8f3a847ccae9e273d082a956e3dca73d"><a href="http::async_read">http::async_read</a></a>, then call <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a825357ae0a6861a7ba82bb32e24ebd31">accept</a> or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aafadf51c9b1d80f219a1213088858d00">async_accept</a> with the request.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffers</td><td>Caller provided data that has already been received on the stream. This may be used for implementations allowing multiple protocols on the same stream. The buffered data will first be applied to the handshake, and then to received WebSocket frames. The implementation will copy the caller provided data before the function returns.</td></tr>
@@ -1664,68 +1365,6 @@ template&lt;class Body , class Allocator , class ResponseDecorator , class Accep
 
 </div>
 </div>
-<a class="anchor" id="ab56c788b77c92f32a0aac65ce3e6f90c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class NextLayer &gt; </div>
-<div class="memtemplate">
-template&lt;class Body , class Allocator , class ConstBufferSequence , class ResponseDecorator , class AcceptHandler &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; AcceptHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>)&gt; <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::async_accept_ex </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceboost_1_1beast_1_1http.html#ad10b07a117ed1d74fee4dded03e49437">http::request</a>&lt; Body, <a class="el" href="classboost_1_1beast_1_1http_1_1basic__fields.html">http::basic_fields</a>&lt; Allocator &gt;&gt; const &amp;&#160;</td>
-          <td class="paramname"><em>req</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ConstBufferSequence const &amp;&#160;</td>
-          <td class="paramname"><em>buffers</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ResponseDecorator const &amp;&#160;</td>
-          <td class="paramname"><em>decorator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AcceptHandler &amp;&amp;&#160;</td>
-          <td class="paramname"><em>handler</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Start responding to a WebSocket HTTP Upgrade request.</p>
-<p>This function is used to asynchronously send the HTTP response to an HTTP request possibly containing a WebSocket Upgrade request. The function call always returns immediately. The asynchronous operation will continue until one of the following conditions is true:</p>
-<ul>
-<li>The response finishes sending.</li>
-</ul>
-<ul>
-<li>An error occurs on the stream.</li>
-</ul>
-<p>This operation is implemented in terms of one or more calls to the next layer's <code>async_write_some</code> functions, and is known as a <em>composed operation</em>. The program must ensure that the stream performs no other operations until this operation completes.</p>
-<p>If the stream receives a valid HTTP WebSocket Upgrade request, an HTTP response is sent back indicating a successful upgrade. When the completion handler is invoked, the stream is then ready to send and receive WebSocket protocol frames and messages. If the HTTP Upgrade request is invalid or cannot be satisfied, an HTTP response is sent indicating the reason and status code (typically 400, "Bad Request"). This counts as a failure, and the completion handler will be invoked with a suitable error code set.</p>
-<p>The implementation uses fixed size internal storage to copy the buffer. If the buffer is too large, the error <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa0d998bc644f3d7bb85b68137d2bd62c2">error::buffer_overflow</a> will be indicated. Applications that wish to supply larger buffers should wrap the next layer in a <a class="el" href="classboost_1_1beast_1_1buffered__read__stream.html">buffered_read_stream</a> and store the buffer contents in the wrapper before calling accept.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">req</td><td>An object containing the HTTP Upgrade request. Ownership is not transferred, the implementation will not access this object from other threads.</td></tr>
-    <tr><td class="paramname">buffers</td><td>Caller provided data that has already been received on the stream. This may be used for implementations allowing multiple protocols on the same stream. The buffered data will first be applied to the handshake, and then to received WebSocket frames. The implementation will copy the caller provided data before the function returns.</td></tr>
-    <tr><td class="paramname">decorator</td><td>A function object which will be called to modify the HTTP response object delivered by the implementation. This could be used to set the Server field, subprotocols, or other application or HTTP specific fields. The object will be called with this equivalent signature: <div class="fragment"><div class="line"> <span class="keywordtype">void</span> decorator(</div><div class="line">    <a class="code" href="namespaceboost_1_1beast_1_1websocket.html#afe58b94c1157584e348fa3e662dde936">response_type</a>&amp; res</div><div class="line">); </div></div><!-- fragment --></td></tr>
-    <tr><td class="paramname">handler</td><td>The handler to be called when the request completes. Copies will be made of the handler as required. The equivalent function signature of the handler must be: <div class="fragment"><div class="line"> <span class="keywordtype">void</span> handler(</div><div class="line">    <a class="code" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> <span class="keyword">const</span>&amp; ec    <span class="comment">// Result of operation</span></div><div class="line">); </div></div><!-- fragment --> Regardless of whether the asynchronous operation completes immediately or not, the handler will not be invoked from within this function. Invocation of the handler will be performed in a manner equivalent to using <code>boost::asio::io_service::post</code>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="aaec74c7d9eb8ae1e5b3b7d0ca42401a9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1761,7 +1400,7 @@ template&lt;class CloseHandler &gt; </div>
 <ul>
 <li>An error occurs on the stream.</li>
 </ul>
-<p>This operation is implemented in terms of one or more calls to the next layer's <code>async_write_some</code> functions, and is known as a <em>composed operation</em>. The program must ensure that the stream performs no other write operations (such as <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a37c2ef2165f90ddef92cd599c52d9f61">async_ping</a>, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a5ba8843e0d75cb95392f36d026741032">stream::async_write</a>, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a2867311bbdf791acefea89f6568e91c4">stream::async_write_some</a>, or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aaec74c7d9eb8ae1e5b3b7d0ca42401a9">stream::async_close</a>) until this operation completes.</p>
+<p>This operation is implemented in terms of one or more calls to the next layer's <code>async_write_some</code> functions, and is known as a <em>composed operation</em>. The program must ensure that the stream performs no other write operations (such as <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a37c2ef2165f90ddef92cd599c52d9f61">async_ping</a>, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#afdd7d5ff9cd82b108fb81ec7c793a2b4">stream::async_write</a>, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a8f628f009801786987f77aeed112e2fe">stream::async_write_some</a>, or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aaec74c7d9eb8ae1e5b3b7d0ca42401a9">stream::async_close</a>) until this operation completes.</p>
 <p>If the close reason specifies a close code other than beast::websocket::close_code::none, the close frame is sent with the close code and optional reason string. Otherwise, the close frame is sent with no payload.</p>
 <p>Callers should not attempt to write WebSocket data after initiating the close. Instead, callers should continue reading until an error occurs. A read returning <a class="el" href="namespaceboost_1_1beast_1_1websocket.html#a14d8b350031b261b16075c122606eb3fa349e686330723975502e9ef4f939a5ac">error::closed</a> indicates a successful connection closure.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -2303,7 +1942,7 @@ template&lt;class MutableBufferSequence , class ReadHandler &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a5ba8843e0d75cb95392f36d026741032"></a>
+<a class="anchor" id="afdd7d5ff9cd82b108fb81ec7c793a2b4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -2312,7 +1951,7 @@ template&lt;class NextLayer &gt; </div>
 template&lt;class ConstBufferSequence , class WriteHandler &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; WriteHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>)&gt; <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::async_write </td>
+          <td class="memname"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; WriteHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>, std::size_t)&gt; <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::async_write </td>
           <td>(</td>
           <td class="paramtype">ConstBufferSequence const &amp;&#160;</td>
           <td class="paramname"><em>buffers</em>, </td>
@@ -2338,19 +1977,19 @@ template&lt;class ConstBufferSequence , class WriteHandler &gt; </div>
 <ul>
 <li>An error occurs.</li>
 </ul>
-<p>This operation is implemented in terms of one or more calls to the next layer's <code>async_write_some</code> functions, and is known as a <em>composed operation</em>. The program must ensure that the stream performs no other write operations (such as <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a5ba8843e0d75cb95392f36d026741032">stream::async_write</a>, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a2867311bbdf791acefea89f6568e91c4">stream::async_write_some</a>, or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aaec74c7d9eb8ae1e5b3b7d0ca42401a9">stream::async_close</a>).</p>
+<p>This operation is implemented in terms of one or more calls to the next layer's <code>async_write_some</code> functions, and is known as a <em>composed operation</em>. The program must ensure that the stream performs no other write operations (such as <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#afdd7d5ff9cd82b108fb81ec7c793a2b4">stream::async_write</a>, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a8f628f009801786987f77aeed112e2fe">stream::async_write_some</a>, or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aaec74c7d9eb8ae1e5b3b7d0ca42401a9">stream::async_close</a>).</p>
 <p>The current setting of the <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a3dd8bbab79019ecc97dc9b67bf5a120a">binary</a> option controls whether the message opcode is set to text or binary. If the <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a99b34aa1feb4bddf99490b0383c78cc5">auto_fragment</a> option is set, the message will be split into one or more frames as necessary. The actual payload contents sent may be transformed as per the WebSocket protocol settings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffers</td><td>The buffers containing the entire message payload. The implementation will make copies of this object as needed, but ownership of the underlying memory is not transferred. The caller is responsible for ensuring that the memory locations pointed to by buffers remains valid until the completion handler is called.</td></tr>
-    <tr><td class="paramname">handler</td><td>The handler to be called when the write operation completes. Copies will be made of the handler as required. The function signature of the handler must be: <div class="fragment"><div class="line"><span class="keywordtype">void</span> handler(</div><div class="line">    <a class="code" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> <span class="keyword">const</span>&amp; ec     <span class="comment">// Result of operation</span></div><div class="line">);</div></div><!-- fragment --> Regardless of whether the asynchronous operation completes immediately or not, the handler will not be invoked from within this function. Invocation of the handler will be performed in a manner equivalent to using <code>boost::asio::io_service::post</code>. </td></tr>
+    <tr><td class="paramname">handler</td><td>The handler to be called when the write operation completes. Copies will be made of the handler as required. The function signature of the handler must be: <div class="fragment"><div class="line"><span class="keywordtype">void</span> handler(</div><div class="line">    <a class="code" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> <span class="keyword">const</span>&amp; ec,           <span class="comment">// Result of operation</span></div><div class="line">    std::size_t bytes_transferred   <span class="comment">// Number of bytes written from the</span></div><div class="line">                                    <span class="comment">// buffers. If an error occurred,</span></div><div class="line">                                    <span class="comment">// this will be less than the sum</span></div><div class="line">                                    <span class="comment">// of the buffer sizes.</span></div><div class="line">);</div></div><!-- fragment --> Regardless of whether the asynchronous operation completes immediately or not, the handler will not be invoked from within this function. Invocation of the handler will be performed in a manner equivalent to using <code>boost::asio::io_service::post</code>. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a2867311bbdf791acefea89f6568e91c4"></a>
+<a class="anchor" id="a8f628f009801786987f77aeed112e2fe"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -2359,7 +1998,7 @@ template&lt;class NextLayer &gt; </div>
 template&lt;class ConstBufferSequence , class WriteHandler &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; WriteHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>)&gt; <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::async_write_some </td>
+          <td class="memname"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; WriteHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>, std::size_t)&gt; <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::async_write_some </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>fin</em>, </td>
@@ -2391,13 +2030,13 @@ template&lt;class ConstBufferSequence , class WriteHandler &gt; </div>
 <ul>
 <li>An error occurs.</li>
 </ul>
-<p>This operation is implemented in terms of one or more calls to the next layer's <code>async_write_some</code> functions, and is known as a <em>composed operation</em>. The actual payload sent may be transformed as per the WebSocket protocol settings. The program must ensure that the stream performs no other write operations (such as <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a5ba8843e0d75cb95392f36d026741032">stream::async_write</a>, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a2867311bbdf791acefea89f6568e91c4">stream::async_write_some</a>, or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aaec74c7d9eb8ae1e5b3b7d0ca42401a9">stream::async_close</a>).</p>
+<p>This operation is implemented in terms of one or more calls to the next layer's <code>async_write_some</code> functions, and is known as a <em>composed operation</em>. The actual payload sent may be transformed as per the WebSocket protocol settings. The program must ensure that the stream performs no other write operations (such as <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#afdd7d5ff9cd82b108fb81ec7c793a2b4">stream::async_write</a>, <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a8f628f009801786987f77aeed112e2fe">stream::async_write_some</a>, or <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#aaec74c7d9eb8ae1e5b3b7d0ca42401a9">stream::async_close</a>).</p>
 <p>If this is the beginning of a new message, the message opcode will be set to text or binary as per the current setting of the <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a3dd8bbab79019ecc97dc9b67bf5a120a">binary</a> option. The actual payload sent may be transformed as per the WebSocket protocol settings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fin</td><td>A bool indicating whether or not the frame is the last frame in the corresponding WebSockets message.</td></tr>
+    <tr><td class="paramname">fin</td><td><code>true</code> if this is the last part of the message.</td></tr>
     <tr><td class="paramname">buffers</td><td>A object meeting the requirements of ConstBufferSequence which holds the payload data before any masking or compression. Although the buffers object may be copied as necessary, ownership of the underlying buffers is retained by the caller, which must guarantee that they remain valid until the handler is called.</td></tr>
-    <tr><td class="paramname">handler</td><td>The handler to be called when the write completes. Copies will be made of the handler as required. The equivalent function signature of the handler must be: <div class="fragment"><div class="line"> <span class="keywordtype">void</span> handler(</div><div class="line">    <a class="code" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> <span class="keyword">const</span>&amp; ec    <span class="comment">// Result of operation</span></div><div class="line">); </div></div><!-- fragment --> </td></tr>
+    <tr><td class="paramname">handler</td><td>The handler to be called when the write completes. Copies will be made of the handler as required. The equivalent function signature of the handler must be: <div class="fragment"><div class="line"> <span class="keywordtype">void</span> handler(</div><div class="line">    <a class="code" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> <span class="keyword">const</span>&amp; ec,           <span class="comment">// Result of operation</span></div><div class="line">    std::size_t bytes_transferred   <span class="comment">// Number of bytes written from the</span></div><div class="line">                                    <span class="comment">// buffers. If an error occurred,</span></div><div class="line">                                    <span class="comment">// this will be less than the sum</span></div><div class="line">                                    <span class="comment">// of the buffer sizes.</span></div><div class="line">); </div></div><!-- fragment --> </td></tr>
   </table>
   </dd>
 </dl>
@@ -3313,6 +2952,33 @@ template&lt;class NextLayer &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a3d86969c130fdf9dfb37e9a32ccf1b3c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class NextLayer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::is_open </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns <code>true</code> if the stream is open.</p>
+<p>The stream is open after a successful handshake, and when no error has occurred. </p>
+
+</div>
+</div>
 <a class="anchor" id="a34f82c817a53fc8fe6109da1ce89b7de"></a>
 <div class="memitem">
 <div class="memproto">
@@ -4218,7 +3884,7 @@ template&lt;class NextLayer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a761a6ef1d4c11daadc6f17da4cd801c7"></a>
+<a class="anchor" id="a39023db67766c460a729e2ee70c2f017"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -4227,7 +3893,7 @@ template&lt;class NextLayer &gt; </div>
 template&lt;class ConstBufferSequence &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::write </td>
+          <td class="memname">std::size_t <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::write </td>
           <td>(</td>
           <td class="paramtype">ConstBufferSequence const &amp;&#160;</td>
           <td class="paramname"><em>buffers</em></td><td>)</td>
@@ -4251,17 +3917,18 @@ template&lt;class ConstBufferSequence &gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes written from the buffers. If an error occurred, this will be less than the sum of the buffer sizes.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">system_error</td><td>Thrown on failure.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This function always sends an entire message. To send a message in fragments, use <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#ab3afdc8e68406936eea62138590815c8">write_some</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function always sends an entire message. To send a message in fragments, use <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a04d5732ce9c295652a085f56c1afb498">write_some</a>. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ad4f83527e4d8685de0bd066d4c87f099"></a>
+<a class="anchor" id="a2a9c176e0d515399f78288ab274fe02f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -4270,7 +3937,7 @@ template&lt;class NextLayer &gt; </div>
 template&lt;class ConstBufferSequence &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::write </td>
+          <td class="memname">std::size_t <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::write </td>
           <td>(</td>
           <td class="paramtype">ConstBufferSequence const &amp;&#160;</td>
           <td class="paramname"><em>buffers</em>, </td>
@@ -4301,6 +3968,12 @@ template&lt;class ConstBufferSequence &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffers</td><td>The buffers containing the entire message payload. The implementation will make copies of this object as needed, but ownership of the underlying memory is not transferred. The caller is responsible for ensuring that the memory locations pointed to by buffers remains valid until the completion handler is called.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes written from the buffers. If an error occurred, this will be less than the sum of the buffer sizes.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramname">ec</td><td>Set to indicate what error occurred, if any.</td></tr>
   </table>
   </dd>
@@ -4311,7 +3984,7 @@ template&lt;class ConstBufferSequence &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This function always sends an entire message. To send a message in fragments, use <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#ab3afdc8e68406936eea62138590815c8">write_some</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function always sends an entire message. To send a message in fragments, use <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a04d5732ce9c295652a085f56c1afb498">write_some</a>. </dd></dl>
 
 </div>
 </div>
@@ -4380,7 +4053,7 @@ template&lt;class NextLayer &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab3afdc8e68406936eea62138590815c8"></a>
+<a class="anchor" id="a04d5732ce9c295652a085f56c1afb498"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -4389,7 +4062,7 @@ template&lt;class NextLayer &gt; </div>
 template&lt;class ConstBufferSequence &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::write_some </td>
+          <td class="memname">std::size_t <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::write_some </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>fin</em>, </td>
@@ -4422,12 +4095,12 @@ template&lt;class ConstBufferSequence &gt; </div>
 <p>If this is the beginning of a new message, the message opcode will be set to text or binary as per the current setting of the <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a3dd8bbab79019ecc97dc9b67bf5a120a">binary</a> option. The actual payload sent may be transformed as per the WebSocket protocol settings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fin</td><td><code>true</code> if this is the last frame in the message.</td></tr>
+    <tr><td class="paramname">fin</td><td><code>true</code> if this is the last part of the message.</td></tr>
     <tr><td class="paramname">buffers</td><td>The input buffer sequence holding the data to write.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number of bytes consumed in the input buffers.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes written from the buffers. If an error occurred, this will be less than the sum of the buffer sizes.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">system_error</td><td>Thrown on failure. </td></tr>
@@ -4437,7 +4110,7 @@ template&lt;class ConstBufferSequence &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af03e88f22613ae4fcf9e4e8071fcdf7d"></a>
+<a class="anchor" id="ad76f3b7a2af344d600f931896d84af19"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -4446,7 +4119,7 @@ template&lt;class NextLayer &gt; </div>
 template&lt;class ConstBufferSequence &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::write_some </td>
+          <td class="memname">std::size_t <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html">boost::beast::websocket::stream</a>&lt; NextLayer &gt;::write_some </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>fin</em>, </td>
@@ -4485,8 +4158,13 @@ template&lt;class ConstBufferSequence &gt; </div>
 <p>If this is the beginning of a new message, the message opcode will be set to text or binary as per the current setting of the <a class="el" href="classboost_1_1beast_1_1websocket_1_1stream.html#a3dd8bbab79019ecc97dc9b67bf5a120a">binary</a> option. The actual payload sent may be transformed as per the WebSocket protocol settings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fin</td><td><code>true</code> if this is the last frame in the message.</td></tr>
-    <tr><td class="paramname">buffers</td><td>The input buffer sequence holding the data to write.</td></tr>
+    <tr><td class="paramname">fin</td><td><code>true</code> if this is the last part of the message.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes written from the buffers. If an error occurred, this will be less than the sum of the buffer sizes.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramname">ec</td><td>Set to indicate what error occurred, if any.</td></tr>
   </table>
   </dd>
@@ -4496,7 +4174,7 @@ template&lt;class ConstBufferSequence &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a class="anchor" id="a9095eef7d6ed640e30ae2add0e267583"></a>
+<a class="anchor" id="ad5caf1a60ad298203711eedc002ebc19"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -4506,7 +4184,7 @@ template&lt;class NextLayer &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class detail::frame_test</td>
+          <td class="memname">friend class close_test</td>
         </tr>
       </table>
   </td>
@@ -4540,6 +4218,50 @@ template&lt;class NextLayer &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a72cfaba76b80cfb00ba0bcae616dc9d1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class NextLayer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class ping_test</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ac1dc90b2d453e00b70e5fa60265b83"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class NextLayer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class read_test</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aa435e3810b5c6dc9008ee5fe2df01abd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -4562,11 +4284,32 @@ template&lt;class NextLayer &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="adc02be922bd83ae0b600f376165522db"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class NextLayer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class write_test</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>3pp/beast/boost/beast/websocket/<a class="el" href="stream_8hpp_source.html">stream.hpp</a></li>
 <li>3pp/beast/boost/beast/websocket/impl/<a class="el" href="accept_8ipp.html">accept.ipp</a></li>
 <li>3pp/beast/boost/beast/websocket/impl/<a class="el" href="close_8ipp.html">close.ipp</a></li>
-<li>3pp/beast/boost/beast/websocket/impl/<a class="el" href="fail_8ipp.html">fail.ipp</a></li>
 <li>3pp/beast/boost/beast/websocket/impl/<a class="el" href="handshake_8ipp.html">handshake.ipp</a></li>
 <li>3pp/beast/boost/beast/websocket/impl/<a class="el" href="ping_8ipp.html">ping.ipp</a></li>
 <li>3pp/beast/boost/beast/websocket/impl/<a class="el" href="websocket_2impl_2read_8ipp.html">read.ipp</a></li>

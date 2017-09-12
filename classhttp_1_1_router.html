@@ -103,9 +103,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhttp_1_1_router_1_1_context.html">Context</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_router_1_1_route.html">Route</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a7d4c333c4ec237e9f6ddbd01a44205bc"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_router.html#a7d4c333c4ec237e9f6ddbd01a44205bc">matches</a></td></tr>
+<tr class="separator:a7d4c333c4ec237e9f6ddbd01a44205bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f408aa5b03b7aad5e7531fc299d2a8f"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(<a class="el" href="structhttp_1_1_router_1_1_context.html">Context</a> &amp;&amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_router.html#a9f408aa5b03b7aad5e7531fc299d2a8f">router_handler</a></td></tr>
 <tr class="memdesc:a9f408aa5b03b7aad5e7531fc299d2a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of route's handler.  <a href="#a9f408aa5b03b7aad5e7531fc299d2a8f">More...</a><br /></td></tr>
 <tr class="separator:a9f408aa5b03b7aad5e7531fc299d2a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,8 +119,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a026c00f6ea1b8fcb932918beb0474867"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_router.html#a026c00f6ea1b8fcb932918beb0474867">Router</a> () noexcept</td></tr>
 <tr class="memdesc:a026c00f6ea1b8fcb932918beb0474867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes router.  <a href="#a026c00f6ea1b8fcb932918beb0474867">More...</a><br /></td></tr>
 <tr class="separator:a026c00f6ea1b8fcb932918beb0474867"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab67e123b9d5bf1e65c66b55a736b42b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhttp_1_1_router.html">Router</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_router.html#ab67e123b9d5bf1e65c66b55a736b42b8">add_route</a> (<a class="el" href="namespacehttp.html#ad6f0ed7c44035f65821fa7509a03d4cf">Method</a> method, std::string &amp;&amp;route, <a class="el" href="classhttp_1_1_router.html#a9f408aa5b03b7aad5e7531fc299d2a8f">router_handler</a> fn)</td></tr>
-<tr class="separator:ab67e123b9d5bf1e65c66b55a736b42b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf99b0d7853886d03c1186676fc47e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhttp_1_1_router.html">Router</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_router.html#acaf99b0d7853886d03c1186676fc47e0">add_route</a> (<a class="el" href="namespacehttp.html#ad6f0ed7c44035f65821fa7509a03d4cf">Method</a> method, const char *route, <a class="el" href="classhttp_1_1_router.html#a9f408aa5b03b7aad5e7531fc299d2a8f">router_handler</a> fn)</td></tr>
+<tr class="separator:acaf99b0d7853886d03c1186676fc47e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f964cd719bf3c57c8f8a8fc0d134fa7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_router.html#a1f964cd719bf3c57c8f8a8fc0d134fa7">dispatch</a> (const boost::asio::ip::tcp::socket &amp;socket, const <a class="el" href="namespacehttp.html#a7ac99e4224baf376bf9f6a62cfda539c">dynamic_request</a> &amp;<a class="el" href="namespaceboost_1_1beast_1_1http.html#ad10b07a117ed1d74fee4dded03e49437">request</a>, <a class="el" href="namespacehttp.html#a72a2527790a4c9c49947d16b157a711c">dynamic_response</a> &amp;<a class="el" href="namespaceboost_1_1beast_1_1http.html#ab950804b8c3261aeb2f8127ffe138c2e">response</a>) const  noexcept</td></tr>
 <tr class="separator:a1f964cd719bf3c57c8f8a8fc0d134fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc1b2f2e8db80fcab924e243cd33cf59"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1_router.html#adc1b2f2e8db80fcab924e243cd33cf59">is_method_used</a> (<a class="el" href="namespaceboost_1_1beast_1_1http.html#a817a25f3da653b784f541ae293a84348">boost::beast::http::verb</a> method) const  noexcept</td></tr>
@@ -125,6 +129,18 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>HTTP <a class="el" href="classhttp_1_1_router.html">Router</a> class </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a7d4c333c4ec237e9f6ddbd01a44205bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::unordered_map&lt;std::string, std::string&gt; <a class="el" href="classhttp_1_1_router.html#a7d4c333c4ec237e9f6ddbd01a44205bc">http::Router::matches</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a9f408aa5b03b7aad5e7531fc299d2a8f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +182,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab67e123b9d5bf1e65c66b55a736b42b8"></a>
+<a class="anchor" id="acaf99b0d7853886d03c1186676fc47e0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -179,7 +195,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string &amp;&amp;&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>route</em>, </td>
         </tr>
         <tr>

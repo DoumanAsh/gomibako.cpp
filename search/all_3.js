@@ -18,7 +18,7 @@ var searchData=
   ['default_5ferror_5fcondition',['default_error_condition',['../classboost_1_1beast_1_1http_1_1detail_1_1http__error__category.html#a007e4e9e4b4bab48a3ce2b6c00b7f84d',1,'boost::beast::http::detail::http_error_category::default_error_condition()'],['../classboost_1_1beast_1_1websocket_1_1detail_1_1websocket__error__category.html#a3fa32022b97f9b7f69eceae0318888f5',1,'boost::beast::websocket::detail::websocket_error_category::default_error_condition()'],['../classboost_1_1beast_1_1zlib_1_1detail_1_1zlib__error__category.html#a95a969dfdd06cb2a150d06706076fc3f',1,'boost::beast::zlib::detail::zlib_error_category::default_error_condition()']]],
   ['default_5fstyle',['default_style',['../namespaceboost_1_1beast_1_1http.html#a2b9f3522dec08954593392b5b98372e4aebb7f4a926eea585ded212ce82818e54',1,'boost::beast::http']]],
   ['deferred_5fdelivery',['deferred_delivery',['../namespaceboost_1_1beast_1_1http.html#a2b9f3522dec08954593392b5b98372e4a92788b9b35ad7e2135466a3905c27042',1,'boost::beast::http']]],
-  ['deflate',['deflate',['../namespaceboost_1_1beast_1_1websocket_1_1detail.html#ac631d69a5dc9ec77cd7ffd33cfe67097',1,'boost::beast::websocket::detail']]],
+  ['deflate',['deflate',['../namespaceboost_1_1beast_1_1websocket_1_1detail.html#af286bf9400d86b08a2fe4f2918684b68',1,'boost::beast::websocket::detail']]],
   ['deflate_5ffast',['deflate_fast',['../classboost_1_1beast_1_1zlib_1_1detail_1_1deflate__stream.html#a1c7022a6bbd98c87beb831699f9c660d',1,'boost::beast::zlib::detail::deflate_stream']]],
   ['deflate_5fhuff',['deflate_huff',['../classboost_1_1beast_1_1zlib_1_1detail_1_1deflate__stream.html#a949f9990488ac6cad9dd55277bfc6aa2',1,'boost::beast::zlib::detail::deflate_stream']]],
   ['deflate_5frle',['deflate_rle',['../classboost_1_1beast_1_1zlib_1_1detail_1_1deflate__stream.html#a9797ce693a59be94176856b450afddb9',1,'boost::beast::zlib::detail::deflate_stream']]],
@@ -93,6 +93,5 @@ var searchData=
   ['dynamic_5fbody',['dynamic_body',['../namespaceboost_1_1beast_1_1http.html#a9096a768e1099fa45f3f7c77dbdce5be',1,'boost::beast::http']]],
   ['dynamic_5fbody_2ehpp',['dynamic_body.hpp',['../dynamic__body_8hpp.html',1,'']]],
   ['dynamic_5frequest',['dynamic_request',['../namespacehttp.html#a7ac99e4224baf376bf9f6a62cfda539c',1,'http']]],
-  ['dynamic_5fresponse',['dynamic_response',['../namespacehttp.html#a72a2527790a4c9c49947d16b157a711c',1,'http']]],
-  ['frame_5ftest',['frame_test',['../classboost_1_1beast_1_1websocket_1_1stream.html#a9095eef7d6ed640e30ae2add0e267583',1,'boost::beast::websocket::stream']]]
+  ['dynamic_5fresponse',['dynamic_response',['../namespacehttp.html#a72a2527790a4c9c49947d16b157a711c',1,'http']]]
 ];

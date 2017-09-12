@@ -105,13 +105,14 @@ Inheritance diagram for http::header::TypedHeader:</div>
 <area href="classhttp_1_1header_1_1_content_type.html" alt="http::header::ContentType" shape="rect" coords="0,56,161,80"/>
 <area href="classhttp_1_1header_1_1_e_tag.html" alt="http::header::ETag" shape="rect" coords="171,56,332,80"/>
 <area href="classhttp_1_1header_1_1_server.html" alt="http::header::Server" shape="rect" coords="342,56,503,80"/>
+<area href="classhttp_1_1header_1_1_user_agent.html" alt="http::header::UserAgent" shape="rect" coords="513,56,674,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab905256af7bbfecf785628d0ec31b083"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceboost_1_1beast_1_1http.html#a2b9f3522dec08954593392b5b98372e4">boost::beast::http::field</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1header_1_1_typed_header.html#ab905256af7bbfecf785628d0ec31b083">name</a> () const  =0</td></tr>
-<tr class="separator:ab905256af7bbfecf785628d0ec31b083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed25ba67e89d5c13d1f71c36418b46b3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceboost_1_1beast.html#a0d1b90bc7eb00c02839930489cf4adc4">boost::beast::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1header_1_1_typed_header.html#aed25ba67e89d5c13d1f71c36418b46b3">name</a> () const  =0</td></tr>
+<tr class="separator:aed25ba67e89d5c13d1f71c36418b46b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f8c99d1d4cadeae6604a6fb84cf71cf"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhttp_1_1header_1_1_typed_header.html#a0f8c99d1d4cadeae6604a6fb84cf71cf">value</a> () const  =0</td></tr>
 <tr class="separator:a0f8c99d1d4cadeae6604a6fb84cf71cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -119,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Typed header interface.</p>
 <p>It provides way to serialize and de-serialize http header. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab905256af7bbfecf785628d0ec31b083"></a>
+<a class="anchor" id="aed25ba67e89d5c13d1f71c36418b46b3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -127,7 +128,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceboost_1_1beast_1_1http.html#a2b9f3522dec08954593392b5b98372e4">boost::beast::http::field</a> http::header::TypedHeader::name </td>
+          <td class="memname">virtual <a class="el" href="namespaceboost_1_1beast.html#a0d1b90bc7eb00c02839930489cf4adc4">boost::beast::string_view</a> http::header::TypedHeader::name </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -141,7 +142,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>HTTP header name </dd></dl>
 
-<p>Implemented in <a class="el" href="classhttp_1_1header_1_1_content_type.html#a2ada58f5616828de1b77dfa71caa3711">http::header::ContentType</a>, <a class="el" href="classhttp_1_1header_1_1_server.html#a37b14a6304932918fc5b45c5befc102d">http::header::Server</a>, and <a class="el" href="classhttp_1_1header_1_1_e_tag.html#ab4505bbc68c60a72cd942fc9c846fa57">http::header::ETag</a>.</p>
+<p>Implemented in <a class="el" href="classhttp_1_1header_1_1_user_agent.html#a59066e18d27328f1867a5ed6161d2cf9">http::header::UserAgent</a>, <a class="el" href="classhttp_1_1header_1_1_content_type.html#a5d4aa736fd4fcf51f9b0bc86512bc6cb">http::header::ContentType</a>, <a class="el" href="classhttp_1_1header_1_1_server.html#adefde01d0e2d0d7cd4e019995225d2fb">http::header::Server</a>, and <a class="el" href="classhttp_1_1header_1_1_e_tag.html#aa2834b51a2f217add7e0b4e7085be664">http::header::ETag</a>.</p>
 
 </div>
 </div>
@@ -167,7 +168,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>HTTP header value </dd></dl>
 
-<p>Implemented in <a class="el" href="classhttp_1_1header_1_1_content_type.html#ade589610ef7b17e931732a15b2654194">http::header::ContentType</a>, <a class="el" href="classhttp_1_1header_1_1_server.html#a3d89952a2d89af7ab467b122b3ec299e">http::header::Server</a>, and <a class="el" href="classhttp_1_1header_1_1_e_tag.html#abfa5346513157459d8d25bcaa1cab83a">http::header::ETag</a>.</p>
+<p>Implemented in <a class="el" href="classhttp_1_1header_1_1_user_agent.html#a9f386fabf9c3547704a098d4cb3e075f">http::header::UserAgent</a>, <a class="el" href="classhttp_1_1header_1_1_content_type.html#ade589610ef7b17e931732a15b2654194">http::header::ContentType</a>, <a class="el" href="classhttp_1_1header_1_1_server.html#a3d89952a2d89af7ab467b122b3ec299e">http::header::Server</a>, and <a class="el" href="classhttp_1_1header_1_1_e_tag.html#abfa5346513157459d8d25bcaa1cab83a">http::header::ETag</a>.</p>
 
 </div>
 </div>

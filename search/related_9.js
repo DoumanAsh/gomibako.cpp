@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['param_5flist',['param_list',['../classboost_1_1beast_1_1http_1_1param__list_1_1const__iterator.html#abfc6449f50b02c0317052a2093feddfe',1,'boost::beast::http::param_list::const_iterator']]],
-  ['parser',['parser',['../classboost_1_1beast_1_1http_1_1parser.html#a981ad229a3e9795881a66056bf60ee63',1,'boost::beast::http::parser']]]
+  ['read_5ftest',['read_test',['../classboost_1_1beast_1_1websocket_1_1stream.html#a8ac1dc90b2d453e00b70e5fa60265b83',1,'boost::beast::websocket::stream']]],
+  ['reader',['reader',['../classboost_1_1beast_1_1http_1_1basic__file__body_1_1value__type.html#a0e6b5ca720b55b305ae96f8bcf7f5c4b',1,'boost::beast::http::basic_file_body::value_type']]]
 ];

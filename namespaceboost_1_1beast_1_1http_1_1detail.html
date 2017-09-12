@@ -248,12 +248,12 @@ Functions</h2></td></tr>
 <tr class="memitem:afe8b9610814b12a263b355b3d998289e"><td class="memTemplParams" colspan="2">template&lt;class  = void&gt; </td></tr>
 <tr class="memitem:afe8b9610814b12a263b355b3d998289e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceboost_1_1beast_1_1http.html#a817a25f3da653b784f541ae293a84348">verb</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceboost_1_1beast_1_1http_1_1detail.html#afe8b9610814b12a263b355b3d998289e">string_to_verb</a> (<a class="el" href="namespaceboost_1_1beast.html#a0d1b90bc7eb00c02839930489cf4adc4">string_view</a> v)</td></tr>
 <tr class="separator:afe8b9610814b12a263b355b3d998289e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a801ceabea880995083df051e772b3e4c"><td class="memTemplParams" colspan="2">template&lt;class SyncWriteStream , bool isRequest, class Body , class Fields &gt; </td></tr>
-<tr class="memitem:a801ceabea880995083df051e772b3e4c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceboost_1_1beast_1_1http_1_1detail.html#a801ceabea880995083df051e772b3e4c">write_some</a> (SyncWriteStream &amp;stream, <a class="el" href="classboost_1_1beast_1_1http_1_1serializer.html">serializer</a>&lt; isRequest, Body, Fields &gt; &amp;sr, <a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;ec)</td></tr>
-<tr class="separator:a801ceabea880995083df051e772b3e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a494190d0307eff689418fc706e2c0b"><td class="memTemplParams" colspan="2">template&lt;class AsyncWriteStream , bool isRequest, class Body , class Fields , class WriteHandler &gt; </td></tr>
-<tr class="memitem:a8a494190d0307eff689418fc706e2c0b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; WriteHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceboost_1_1beast_1_1http_1_1detail.html#a8a494190d0307eff689418fc706e2c0b">async_write_some</a> (AsyncWriteStream &amp;stream, <a class="el" href="classboost_1_1beast_1_1http_1_1serializer.html">serializer</a>&lt; isRequest, Body, Fields &gt; &amp;sr, WriteHandler &amp;&amp;handler)</td></tr>
-<tr class="separator:a8a494190d0307eff689418fc706e2c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab777a1835c4dab12c591d8120ecfc2e7"><td class="memTemplParams" colspan="2">template&lt;class SyncWriteStream , bool isRequest, class Body , class Fields &gt; </td></tr>
+<tr class="memitem:ab777a1835c4dab12c591d8120ecfc2e7"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceboost_1_1beast_1_1http_1_1detail.html#ab777a1835c4dab12c591d8120ecfc2e7">write_some</a> (SyncWriteStream &amp;stream, <a class="el" href="classboost_1_1beast_1_1http_1_1serializer.html">serializer</a>&lt; isRequest, Body, Fields &gt; &amp;sr, <a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a> &amp;ec)</td></tr>
+<tr class="separator:ab777a1835c4dab12c591d8120ecfc2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf4c35f227ffa121478b15ab99f749ab"><td class="memTemplParams" colspan="2">template&lt;class AsyncWriteStream , bool isRequest, class Body , class Fields , class WriteHandler &gt; </td></tr>
+<tr class="memitem:abf4c35f227ffa121478b15ab99f749ab"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; WriteHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>, std::size_t)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceboost_1_1beast_1_1http_1_1detail.html#abf4c35f227ffa121478b15ab99f749ab">async_write_some</a> (AsyncWriteStream &amp;stream, <a class="el" href="classboost_1_1beast_1_1http_1_1serializer.html">serializer</a>&lt; isRequest, Body, Fields &gt; &amp;sr, WriteHandler &amp;&amp;handler)</td></tr>
+<tr class="separator:abf4c35f227ffa121478b15ab99f749ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="a6810a0631c2d7bf6546848272b29d7ab"></a>
@@ -295,14 +295,14 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a8a494190d0307eff689418fc706e2c0b"></a>
+<a class="anchor" id="abf4c35f227ffa121478b15ab99f749ab"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class AsyncWriteStream , bool isRequest, class Body , class Fields , class WriteHandler &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt;WriteHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>)&gt; boost::beast::http::detail::async_write_some </td>
+          <td class="memname"><a class="el" href="namespaceboost_1_1beast.html#a3e0a21d8d91f2c30be4d3dd8e796452c">async_return_type</a>&lt; WriteHandler, void(<a class="el" href="namespaceboost_1_1beast.html#a7a4590ac91d076157e0336480ef6388d">error_code</a>, std::size_t)&gt; boost::beast::http::detail::async_write_some </td>
           <td>(</td>
           <td class="paramtype">AsyncWriteStream &amp;&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
@@ -1001,14 +1001,14 @@ template&lt;class  = void&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a801ceabea880995083df051e772b3e4c"></a>
+<a class="anchor" id="ab777a1835c4dab12c591d8120ecfc2e7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class SyncWriteStream , bool isRequest, class Body , class Fields &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void boost::beast::http::detail::write_some </td>
+          <td class="memname">std::size_t boost::beast::http::detail::write_some </td>
           <td>(</td>
           <td class="paramtype">SyncWriteStream &amp;&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
