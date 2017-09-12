@@ -5,8 +5,7 @@
 
 #include <boost/test/unit_test.hpp>
 
-BOOST_AUTO_TEST_CASE(should_correctly_create_weak_etag)
-{
+BOOST_AUTO_TEST_CASE(should_correctly_create_weak_etag) {
     std::string tag = "OLOLO";
     bool weak = true;
     http::header::ETag etag(tag, weak);
@@ -19,8 +18,7 @@ BOOST_AUTO_TEST_CASE(should_correctly_create_weak_etag)
     BOOST_REQUIRE_EQUAL(expected_value, etag.value());
 }
 
-BOOST_AUTO_TEST_CASE(should_correctly_create_strong_etag)
-{
+BOOST_AUTO_TEST_CASE(should_correctly_create_strong_etag) {
     std::string tag = "OLOLO";
     bool weak = false;
     http::header::ETag etag(tag, weak);
@@ -33,8 +31,7 @@ BOOST_AUTO_TEST_CASE(should_correctly_create_strong_etag)
     BOOST_REQUIRE_EQUAL(expected_value, etag.value());
 }
 
-BOOST_AUTO_TEST_CASE(should_parse_weak_etag)
-{
+BOOST_AUTO_TEST_CASE(should_parse_weak_etag) {
     std::string etag_str = "W/\"loli\"";
     auto etag = http::header::ETag::parse(etag_str);
 
@@ -46,8 +43,7 @@ BOOST_AUTO_TEST_CASE(should_parse_weak_etag)
     BOOST_REQUIRE_EQUAL(etag_str, etag->value());
 }
 
-BOOST_AUTO_TEST_CASE(should_parse_strong_etag)
-{
+BOOST_AUTO_TEST_CASE(should_parse_strong_etag) {
     std::string etag_str = "\"loli\"";
     auto etag = http::header::ETag::parse(etag_str);
 

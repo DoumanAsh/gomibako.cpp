@@ -6,6 +6,8 @@
 #include "http/server.hpp"
 #include "http/typed_headers.hpp"
 
+#include "utils/convert.hpp"
+
 using tcp = boost::asio::ip::tcp;
 
 /**
@@ -45,6 +47,28 @@ void handle_headers(http::Router::Context&& ctx) {
     boost::property_tree::write_json(body_stream, content, false);
 }
 
+/**
+ * Handler for `/status/:code` route
+ */
+void handle_status(http::Router::Context&& ctx) {
+    const auto code = utils::convert<unsigned>(ctx.matches.at("code"));
+
+    if (code) {
+        try {
+            ctx.response.result(*code);
+        }
+        catch (const std::invalid_argument& error) {
+            ctx.response.result(http::status::bad_request);
+            boost::beast::ostream(ctx.response.body) << error.what()
+                                                     << "\n";
+        }
+    }
+    else {
+        ctx.response.result(http::status::bad_request);
+        boost::beast::ostream(ctx.response.body) << "status-code is not a number.\n";
+    }
+}
+
 int main(int, char[]) {
     std::ios_base::sync_with_stdio(false);
 
@@ -55,7 +79,8 @@ int main(int, char[]) {
     http::Router router;
     router.add_route(http::Method::GET, "/", hello_wolrd)
           .add_route(http::Method::GET, "/ip", handle_ip)
-          .add_route(http::Method::GET, "/headers", handle_headers);
+          .add_route(http::Method::GET, "/headers", handle_headers)
+          .add_route(http::Method::GET, "/status/:code", handle_status);
 
     http::Server server(std::move(config), std::move(router));
     server.start();

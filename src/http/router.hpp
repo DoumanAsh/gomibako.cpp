@@ -1,10 +1,13 @@
 #pragma once
 
+#include <regex>
 #include <string>
 #include <vector>
 #include <utility>
 #include <functional>
 #include <unordered_set>
+#include <unordered_map>
+#include <optional>
 
 #include <boost/beast/http/verb.hpp>
 #include <boost/asio/ip/tcp.hpp>
@@ -39,6 +42,8 @@ namespace http {
      */
     class Router {
         public:
+            typedef std::unordered_map<std::string, std::string> matches;
+
             /**
              * Context structure that contains beast's primitives.
              *
@@ -51,6 +56,8 @@ namespace http {
                 const dynamic_request& request;
                 ///boost::beast response into which handler writes stuff
                 dynamic_response& response;
+                ///regex matches
+                const matches matches;
 
                 //Since we store references here better to not let it get copied around
                 //Of course nothing prevents user from storing particular reference somewhere,
@@ -60,6 +67,55 @@ namespace http {
             };
             ///Type of route's handler.
             typedef std::function<void(Context&&)> router_handler;
+
+            /**
+             * HTTP Route class
+             */
+            class Route {
+                public:
+                    /**
+                     * Creates instance of route.
+                     *
+                     * @constructor
+                     *
+                     * @param[in] path Path to match against.
+                     * @param[in] fn Callback to invoke on match.
+                     *
+                     * Path can be either regex or string like `/:some` where
+                     * element `:some` will be returned as part of @ref Context in field matches.
+                     * The `some` will be key of the match.
+                     */
+                    Route(const char* path, router_handler fn);
+                    /**
+                     * Performs match against URI.
+                     *
+                     * @param[in] uri HTTP URI.
+                     *
+                     * @returns Matches.
+                     * @retval std::nullopt On no match.
+                     */
+                    std::optional<matches> match(const char* uri) const;
+                    /**
+                     * Performs match against URI.
+                     *
+                     * Version that accepts `boost::beast::string_view`
+                     */
+                    std::optional<matches> match(boost::beast::string_view uri) const;
+
+                    ///Route's handler.
+                    router_handler callback;
+
+                private:
+                    ///Route's matcher
+                    std::regex path;
+                    ///Route's components names
+                    std::vector<std::string> keys;
+                    ///Path component extractor match
+                    const char* component_re = ":([^\\/]+)?";
+                    ///Path component replacer
+                    const char* replace_re = "(?:([^\\/]+?))";
+
+            };
 
             ///Initializes router.
             Router() noexcept;
@@ -72,7 +128,7 @@ namespace http {
              * @param fn Handler for route.
              * @note Routes can be overridden.
              */
-            Router& add_route(Method method, std::string&& route, router_handler fn);
+            Router& add_route(Method method, const char* route, router_handler fn);
 
             /**
              * Dispatches Beast HTTP request.
@@ -100,7 +156,7 @@ namespace http {
             std::unordered_set<int> avail_methods;
 
             ///Router's handler map to UR paths type
-            typedef std::vector<std::pair<std::string, router_handler>> handler_map_t;
+            typedef std::vector<Route> handler_map_t;
             ///Map of GET handlers
             handler_map_t get_handlers;
             ///Map of HEAD handlers
