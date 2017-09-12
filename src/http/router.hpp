@@ -5,7 +5,6 @@
 #include <vector>
 #include <utility>
 #include <functional>
-#include <unordered_set>
 #include <unordered_map>
 #include <optional>
 
@@ -147,14 +146,6 @@ namespace http {
             bool is_method_used(boost::beast::http::verb method) const noexcept;
 
         private:
-            /**
-             * Stores HTTP methods which were inserted into routed.
-             *
-             * It may be useful to pre-check if method is available at all
-             * instead of iterating through all available methods.
-             */
-            std::unordered_set<int> avail_methods;
-
             ///Router's handler map to UR paths type
             typedef std::vector<Route> handler_map_t;
             ///Map of GET handlers

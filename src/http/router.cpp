@@ -56,7 +56,6 @@ Router& Router::add_route(Method method, const char* route, router_handler fn) {
 
     if (handlers == nullptr) throw std::range_error("Unknown method");
 
-    this->avail_methods.emplace(static_cast<int>(method));
     handlers->emplace_back(route, fn);
 
     return *this;
@@ -78,7 +77,8 @@ bool Router::dispatch(const tcp::socket& socket, const dynamic_request& request,
 }
 
 bool Router::is_method_used(boost::beast::http::verb method) const noexcept {
-    return this->avail_methods.count(static_cast<int>(method)) == 1;
+    const auto handlers = this->map_method(method);
+    return handlers != nullptr && handlers->size() > 0;
 }
 
 
