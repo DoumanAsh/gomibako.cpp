@@ -13,10 +13,10 @@ using tcp = boost::asio::ip::tcp;
 /**
  * Root page
  */
-void hello_wolrd(http::Router::Context&& ctx) {
+void hello_world(http::Router::Context&& ctx) {
     ctx.response.result(http::status::ok);
     http::header::set(ctx.response, http::header::ContentType::html());
-    boost::beast::ostream(ctx.response.body) << "<h1>Hello world</h1>\n";
+    boost::beast::ostream(ctx.response.body()) << "<h1>Hello world</h1>\n";
 }
 
 /**
@@ -28,12 +28,12 @@ void handle_ip(http::Router::Context&& ctx) {
 
     ctx.response.result(http::status::ok);
     http::header::set(ctx.response, http::header::ContentType::json());
-    auto body_stream = boost::beast::ostream(ctx.response.body);
+    auto body_stream = boost::beast::ostream(ctx.response.body());
     boost::property_tree::write_json(body_stream, content, false);
 }
 
 /**
- * Handler for `/heades` route
+ * Handler for `/headers` route
  */
 void handle_headers(http::Router::Context&& ctx) {
     ctx.response.result(http::status::ok);
@@ -43,7 +43,7 @@ void handle_headers(http::Router::Context&& ctx) {
     for (const auto& header : ctx.request) {
         content.put(std::string(header.name_string()), header.value());
     }
-    auto body_stream = boost::beast::ostream(ctx.response.body);
+    auto body_stream = boost::beast::ostream(ctx.response.body());
     boost::property_tree::write_json(body_stream, content, false);
 }
 
@@ -59,13 +59,13 @@ void handle_status(http::Router::Context&& ctx) {
         }
         catch (const std::invalid_argument& error) {
             ctx.response.result(http::status::bad_request);
-            boost::beast::ostream(ctx.response.body) << error.what()
-                                                     << "\n";
+            boost::beast::ostream(ctx.response.body()) << error.what()
+                                                       << "\n";
         }
     }
     else {
         ctx.response.result(http::status::bad_request);
-        boost::beast::ostream(ctx.response.body) << "status-code is not a number.\n";
+        boost::beast::ostream(ctx.response.body()) << "status-code is not a number.\n";
     }
 }
 
@@ -77,7 +77,7 @@ int main(int, char[]) {
     std::cout << "Start HTTP Server on port " << config.port << "\n";
 
     http::Router router;
-    router.add_route(http::Method::GET, "/", hello_wolrd)
+    router.add_route(http::Method::GET, "/", hello_world)
           .add_route(http::Method::GET, "/ip", handle_ip)
           .add_route(http::Method::GET, "/headers", handle_headers)
           .add_route(http::Method::GET, "/status/:code", handle_status);

@@ -123,7 +123,7 @@ class HttpListener {
             this->response.emplace();
             this->response->result(status);
             http::header::set(*this->response, http::header::ContentType::plain_text());
-            boost::beast::ostream(this->response->body) << error;
+            boost::beast::ostream(this->response->body()) << error;
 
             this->prepare_response();
             this->send_response();
