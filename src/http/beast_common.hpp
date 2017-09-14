@@ -5,6 +5,7 @@
 
 namespace http {
     using namespace boost::beast::http;
+    constexpr size_t STATIC_BUFFER_MAX = 4096;
 
     ///Alias to beast::http::request
     typedef request<dynamic_body> dynamic_request;

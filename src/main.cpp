@@ -1,4 +1,5 @@
 #include <iostream>
+#include <random>
 
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/json_parser.hpp>
@@ -69,6 +70,41 @@ void handle_status(http::Router::Context&& ctx) {
     }
 }
 
+/**
+ * Handler for `/bytes/:num`.
+ *
+ * Limited by http::STATIC_BUFFER_MAX.
+ */
+void handle_bytes(http::Router::Context&& ctx) {
+    const auto num = utils::convert<size_t>(ctx.matches.at("num"));
+
+    if (num) {
+        //TODO: Use chunked response here?
+        if (*num > http::STATIC_BUFFER_MAX) {
+            ctx.response.result(http::status::bad_request);
+            boost::beast::ostream(ctx.response.body()) << "Bytes limit is "
+                                                       << http::STATIC_BUFFER_MAX 
+                                                       << "\n";
+        }
+        else {
+            ctx.response.result(http::status::ok);
+            http::header::set(ctx.response, http::header::ContentType::octet_stream());
+
+            auto out = boost::beast::ostream(ctx.response.body());
+            std::random_device rd;
+
+            for (size_t idx = *num; idx; idx--)
+            {
+                out << static_cast<unsigned char>(rd());
+            }
+        }
+    }
+    else {
+        ctx.response.result(http::status::bad_request);
+        boost::beast::ostream(ctx.response.body()) << "Bytes is not a number.\n";
+    }
+}
+
 int main(int, char[]) {
     std::ios_base::sync_with_stdio(false);
 
@@ -80,7 +116,8 @@ int main(int, char[]) {
     router.add_route(http::Method::GET, "/", hello_world)
           .add_route(http::Method::GET, "/ip", handle_ip)
           .add_route(http::Method::GET, "/headers", handle_headers)
-          .add_route(http::Method::GET, "/status/:code", handle_status);
+          .add_route(http::Method::GET, "/status/:code", handle_status)
+          .add_route(http::Method::GET, "/bytes/:num", handle_bytes);
 
     http::Server server(std::move(config), std::move(router));
     server.start();

@@ -46,7 +46,7 @@ class HttpListener {
 
         ///4kb for reading incoming data
         ///Allocated on stack
-        using static_buffer_type = boost::beast::flat_static_buffer<4096>;
+        using static_buffer_type = boost::beast::flat_static_buffer<STATIC_BUFFER_MAX>;
 
         //Reading buffer for our async_read
         static_buffer_type read_buffer;
