@@ -1,10 +1,15 @@
 ###########################
 # Init
 ##########################
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.6)
 set(MODULE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/.cmake/Modules")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${MODULE_DIR})
 include(LazyUtils)
+
+option(CLANG_TIDY "Enable Clang tidy checks" OFF)
+if (CLANG_TIDY)
+    include(ClangTidy)
+endif()
 
 # Generates compile_commands.json
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)

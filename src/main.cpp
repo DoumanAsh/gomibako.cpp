@@ -83,7 +83,7 @@ void handle_bytes(http::Router::Context&& ctx) {
         if (*num > http::STATIC_BUFFER_MAX) {
             ctx.response.result(http::status::bad_request);
             boost::beast::ostream(ctx.response.body()) << "Bytes limit is "
-                                                       << http::STATIC_BUFFER_MAX 
+                                                       << http::STATIC_BUFFER_MAX
                                                        << "\n";
         }
         else {
@@ -93,7 +93,7 @@ void handle_bytes(http::Router::Context&& ctx) {
             auto out = boost::beast::ostream(ctx.response.body());
             std::random_device rd;
 
-            for (size_t idx = *num; idx; idx--)
+            for (size_t idx = *num; idx != 0u; idx--)
             {
                 out << static_cast<unsigned char>(rd());
             }
@@ -105,7 +105,7 @@ void handle_bytes(http::Router::Context&& ctx) {
     }
 }
 
-int main(int, char[]) {
+int main(int /*argc*/, char* /*argv[]*/) {
     std::ios_base::sync_with_stdio(false);
 
     config::Config config;

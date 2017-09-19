@@ -49,12 +49,14 @@ std::optional<Router::matches> Router::Route::match(boost::beast::string_view ur
 /////////////////////////////////////
 //Router
 /////////////////////////////////////
-Router::Router() noexcept {}
+Router::Router() noexcept = default;
 
 Router& Router::add_route(Method method, const char* route, router_handler fn) {
     handler_map_t* handlers = this->map_method(static_cast<boost::beast::http::verb>(method));
 
-    if (handlers == nullptr) throw std::range_error("Unknown method");
+    if (handlers == nullptr) {
+        throw std::range_error("Unknown method");
+    }
 
     handlers->emplace_back(route, fn);
 
@@ -64,7 +66,9 @@ Router& Router::add_route(Method method, const char* route, router_handler fn) {
 bool Router::dispatch(const tcp::socket& socket, const dynamic_request& request, dynamic_response& response) const noexcept {
     const handler_map_t* handlers = this->map_method(request.method());
 
-    if (handlers == nullptr) return false;
+    if (handlers == nullptr) {
+        return false;
+    }
 
     for (const auto& handler : *handlers) {
         if (const auto matches = handler.match(request.target())) {
