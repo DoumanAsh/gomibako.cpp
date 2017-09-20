@@ -8,7 +8,7 @@ using namespace http::header;
 #define http_field(_name) boost::beast::http::to_string(boost::beast::http::field::_name)
 
 //ETag
-ETag::ETag(const std::string& tag, bool weak=false) : tag(tag), weak(weak) {};
+ETag::ETag(std::string tag, bool weak=false) : tag(std::move(tag)), weak(weak) {};
 
 std::optional<ETag> ETag::parse(const std::string& raw_header) {
     constexpr const char* QUOTE = "\"";
@@ -51,7 +51,7 @@ std::string Server::value() const {
 }
 
 //ContentType
-ContentType::ContentType(const std::string& type) : type(type) {};
+ContentType::ContentType(std::string type) : type(std::move(type)) {};
 ContentType::ContentType(const char* type) : type(type) {};
 
 ContentType ContentType::json() { return ContentType("application/json"); }

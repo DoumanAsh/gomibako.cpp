@@ -8,7 +8,7 @@ namespace http {
     constexpr size_t STATIC_BUFFER_MAX = 4096;
 
     ///Alias to beast::http::request
-    typedef request<dynamic_body> dynamic_request;
+    using dynamic_request = request<dynamic_body>;
     ///Alias to beast::http::response
-    typedef response<dynamic_body> dynamic_response;
+    using dynamic_response = response<dynamic_body>;
 }

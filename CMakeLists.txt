@@ -6,11 +6,6 @@ set(MODULE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/.cmake/Modules")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${MODULE_DIR})
 include(LazyUtils)
 
-option(CLANG_TIDY "Enable Clang tidy checks" OFF)
-if (CLANG_TIDY)
-    include(ClangTidy)
-endif()
-
 # Generates compile_commands.json
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
@@ -31,6 +26,14 @@ endif()
 remove_msvc_default_warning_level()
 set_msvc_flags_if("/W4 /std:c++latest /source-charset:utf-8")
 set_gcc_flags_if("-Wall -Wextra")
+
+###########################
+# Linter
+##########################
+option(CLANG_TIDY "Enable Clang tidy checks" OFF)
+if (CLANG_TIDY)
+    include(ClangTidy)
+endif()
 
 ###########################
 # Output dir

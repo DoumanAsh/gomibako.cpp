@@ -41,7 +41,8 @@ namespace http {
      */
     class Router {
         public:
-            typedef std::unordered_map<std::string, std::string> matches;
+            ///Matches container type
+            using matches = std::unordered_map<std::string, std::string>;
 
             /**
              * Context structure that contains beast's primitives.
@@ -61,11 +62,12 @@ namespace http {
                 //Since we store references here better to not let it get copied around
                 //Of course nothing prevents user from storing particular reference somewhere,
                 //but it is not my problem. I did all I could.
+                Context() = delete;
                 Context(const Context& that) = delete;
                 Context(Context&& other) noexcept = delete;
             };
             ///Type of route's handler.
-            typedef std::function<void(Context&&)> router_handler;
+            using router_handler = std::function<void(Context&&)>;
 
             /**
              * HTTP Route class
@@ -147,7 +149,7 @@ namespace http {
 
         private:
             ///Router's handler map to UR paths type
-            typedef std::vector<Route> handler_map_t;
+            using handler_map_t = std::vector<Route>;
             ///Map of GET handlers
             handler_map_t get_handlers;
             ///Map of HEAD handlers

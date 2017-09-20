@@ -50,7 +50,7 @@ namespace http {
                  * @param tag Tag's value.
                  * @param weak Whether ETag is weak or not. Default is weak.
                  */
-                ETag(const std::string& tag, bool weak);
+                ETag(std::string tag, bool weak);
                 /**
                  * Parses raw HTTP header ETag and constructs @ref ETag.
                  *
@@ -99,7 +99,7 @@ namespace http {
                  *
                  * @param type ContentType's string.
                  */
-                explicit ContentType(const std::string& type);
+                explicit ContentType(std::string type);
                 explicit ContentType(const char* type);
 
                 ///Creates ContentType for JSON.

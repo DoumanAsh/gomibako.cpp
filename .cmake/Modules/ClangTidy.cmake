@@ -11,6 +11,7 @@ else()
     set(DO_CLANG_TIDY "${CLANG_TIDY_EXE}"
         "-checks=*,-clang-analyzer-alpha.*,-misc-unused-parameters,-google-build-using-namespace,-llvm-*,-google-*"
         "-p=."
+        "-extra-arg-before=-std=c++17"
         "-header-filter=\\.hpp$"
     )
     set(CMAKE_CXX_CLANG_TIDY "${DO_CLANG_TIDY}")
